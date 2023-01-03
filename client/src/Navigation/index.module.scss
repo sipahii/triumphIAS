@@ -105,7 +105,7 @@ nav{
                 background: #002147;
                 cursor: pointer;
 
-                i{
+                &>i{
                     color: #d3d3d3;
                 }
     
@@ -206,16 +206,17 @@ nav{
         transition: all 0.5s ease-out;
         position: relative;
 
-        i{
+        &>i{
             float: right;
             font-size: 12px;
             padding: 5px 0;
         }
-    }
-    &__subList:hover{
-        color: #fdc800;
-        padding-left: 25px;
-        background: #1A3B61;
+
+        &:hover{
+          color: #fdc800;
+          padding-left: 25px;
+          background: #1A3B61;
+      }
     }
 
     &__subList:hover .subDropdown{
@@ -240,25 +241,15 @@ nav{
             color: #FFFFFF;
             border-bottom: 1px solid #1A3B61;
             transition: all 0.5s ease-out;
-        }
 
-        p:hover{
-            color: #fdc800;
-            padding-left: 15px;
-            background: #1A3B61;
+            &:hover{
+              color: #fdc800;
+              padding-left: 15px;
+              background: #1A3B61;
+          }
         }
     }
 }
-
-// .dropdown1{
-//     width: 716px;
-//     display: flex;
-//     column-gap: 5px;
-
-//     &__subList{
-//         width: 200px;
-//     }
-// }
 
 .subDropdown{
     list-style-type: none;
@@ -271,7 +262,7 @@ nav{
     text-align: left;
     position: absolute;
     top: -1px;
-    left: 180px;
+    left: 200px;
     border-top: 1px solid #fdc800;
     opacity: 0;
     visibility: hidden;
@@ -283,11 +274,12 @@ nav{
         color: #FFFFFF;
         border-bottom: 1px solid #1A3B61;
         transition: all 0.5s ease-out;
-    }
-    &__subListDown:hover{
-        color: #fdc800;
-        padding-left: 25px;
-        background: #1A3B61;
+
+        &:hover{
+          color: #fdc800;
+          padding-left: 25px;
+          background: #1A3B61;
+      }
     }
 }
 
@@ -313,6 +305,7 @@ nav{
       display: block;
       overflow-y: scroll;
       height: 331px;
+      text-align: left;
     }
     @include if-device(largephone){
       display: block;
@@ -320,6 +313,7 @@ nav{
       padding: 0 50px;
       overflow-y: scroll;
       height: 331px;
+      text-align: left;
     }
     @include if-device(phone){
       display: block;
@@ -327,6 +321,7 @@ nav{
       padding: 0 20px;
       overflow-y: scroll;
       height: 331px;
+      text-align: left;
     }
   
       &__li{
@@ -348,7 +343,7 @@ nav{
           cursor: pointer;
   
         }
-        i{
+        &>i{
           color: #212121;
           font-weight: 700;
           font-size: 14px;
@@ -389,7 +384,7 @@ nav{
 
             }
 
-            i{
+            &>i{
               color: #212121;
               font-weight: 700;
               font-size: 14px;

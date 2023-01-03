@@ -43,8 +43,10 @@ header{
         padding: 0 15px 0 0;
         border-right: 1px solid #d0d6dd;
 
-        i{
+        &>i{
           font-size: 11px;
+          padding-right: 10px;
+          color: #fdc800;
         }
 
         &__number{
@@ -66,8 +68,10 @@ header{
         justify-content: center;
         column-gap: 5px;
 
-        i{
+        &>i{
           font-size: 13px;
+          padding-right: 10px;
+          color: #fdc800;
         }
 
         &__id{
@@ -81,10 +85,6 @@ header{
             color: #fdc800;
           }
         }
-      }
-      i{
-        padding-right: 10px;
-        color: #fdc800;
       }
     }
 
