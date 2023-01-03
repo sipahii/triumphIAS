@@ -1,0 +1,113 @@
+@import "../../public/Style/_breakpoints";
+
+header{
+  background: #002147;
+}
+
+.container {
+  width: 1164px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 15px;
+
+  @include if-device(desktop){
+    width: 100%;
+    padding: 0 50px;
+  }
+  
+  @include if-device(tablet){
+    width: 100%;
+    padding: 0 50px;
+  }
+  @include if-device(largephone){
+    display: none;
+  }
+  @include if-device(phone){
+    display: none;
+  }
+ 
+  
+
+  &__leftSide {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+
+      &__phone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 5px;
+        padding: 0 15px 0 0;
+        border-right: 1px solid #d0d6dd;
+
+        &>i{
+          font-size: 11px;
+          padding-right: 10px;
+          color: #fdc800;
+        }
+
+        &__number{
+          color: #d0d6dd;
+          transition: all 0.3s ease-out;
+          font-size: 13px;
+          font-family: "Roboto",sans-serif;
+          cursor: pointer;
+  
+          &:hover{
+            color: #fdc800;
+          }
+        }
+      }
+
+      &__email {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 5px;
+
+        &>i{
+          font-size: 13px;
+          padding-right: 10px;
+          color: #fdc800;
+        }
+
+        &__id{
+          color: #d0d6dd;
+          transition: all 0.3s ease-out;
+          font-size: 13px;
+          font-family: "Roboto",sans-serif;
+          cursor: pointer;
+  
+          &:hover{
+            color: #fdc800;
+          }
+        }
+      }
+    }
+
+    &__rightSide{
+
+      &__applyBtn{
+        text-align: center;
+        color: #002147;
+        padding: 10px 0;
+        width: 104px;
+        background: #fdc800;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+        border: 2px solid #fdc800;
+        transition: all 0.3s ease-out;
+        cursor: pointer;
+        font-family: "Roboto",sans-serif;
+      }
+      &__applyBtn:hover{
+        background: #002147;
+        color: #fff;
+      }
+    }
+}
+
