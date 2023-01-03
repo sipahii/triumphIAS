@@ -44,9 +44,19 @@ header{
         border-right: 1px solid #d0d6dd;
 
         i{
-          padding-right: 10px;
-          color: #fdc800;
           font-size: 11px;
+        }
+
+        &__number{
+          color: #d0d6dd;
+          transition: all 0.3s ease-out;
+          font-size: 13px;
+          font-family: "Roboto",sans-serif;
+          cursor: pointer;
+  
+          &:hover{
+            color: #fdc800;
+          }
         }
       }
 
@@ -57,19 +67,23 @@ header{
         column-gap: 5px;
 
         i{
-          padding-right: 10px;
-          color: #fdc800;
           font-size: 13px;
         }
+
+        &__id{
+          color: #d0d6dd;
+          transition: all 0.3s ease-out;
+          font-size: 13px;
+          font-family: "Roboto",sans-serif;
+          cursor: pointer;
+  
+          &:hover{
+            color: #fdc800;
+          }
+        }
       }
-      p{
-        color: #d0d6dd;
-        transition: all 0.3s ease-out;
-        font-size: 13px;
-        font-family: "Roboto",sans-serif;
-        cursor: pointer;
-      }
-      p:hover{
+      i{
+        padding-right: 10px;
         color: #fdc800;
       }
     }
