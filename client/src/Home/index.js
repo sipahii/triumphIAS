@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Header from "../Header";
-import Navigation from "../Navigation";
-import Banner from "./Banner";
+// import Header from "../Header";
+// import Navigation from "../Navigation";
+// import Banner from "./Banner";
+import Feature from "../Feature";
 
 const Home = () => {
   const [list, setList] = useState([]);
@@ -38,9 +39,10 @@ const Home = () => {
           );
         })}
       </table> */}
-      <Header />
+      {/* <Header />
       <Navigation />
-      <Banner />
+      <Banner /> */}
+      <Feature />
     </div>
   );
 };

@@ -1,0 +1,104 @@
+@import "../../../public/Style/breakpoints";
+
+.basicSubject{
+    @include if-device(smallPhone){
+        width: 100%;
+    }
+    @include if-device(phone){
+        width: 100%;
+    }
+    @include if-device(tablet){
+        width: 100%;
+        // padding: 0 50px;
+      }
+    @include if-device(largephone){
+        width: 100%;
+    }
+    @include if-device(desktop){
+        width: 100%;
+    }
+    width: 100%;
+    &__image{
+        width: 100%;
+        height: 435px;
+        cursor: context-menu;
+        position: relative;
+       
+        
+        &__imageLayer{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(253, 200, 0, 0.8);
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            visibility: visible;
+            transform:scaleX(0);
+            transition: all 1s ease;
+            transform-origin: left;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &__icon{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: #002147;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 0.5s ease-in;
+                cursor: pointer;
+                &:hover i{
+                    color: #fff;
+                }
+                &>i{
+                    color: #FDC800;
+                    font-size: 20px;
+                    transition: 0.3s ease-in;
+                }
+               
+            }
+        
+        }
+        &:hover &__imageLayer{
+          visibility: visible;
+          transform: scaleX(1);
+        }
+        &>img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__containt{
+        padding: 30px 20px 20px 20px;
+        background-color: #fff;
+        font-family: 'Roboto', sans-serif;
+        &>h3{
+            font-size: 22px;
+            color: #002147;
+            margin-bottom: 10px;
+            line-height: 1.5;
+            font-weight: 400;
+            transition: 0.3s ease-in;
+            cursor: pointer;
+            &:hover{
+                color: #FDC800;
+            }
+
+            @include if-device(desktop){
+                font-size: 28px;
+            }
+        }
+        &>p{
+            font-size: 15px;
+            color: #444444;
+            margin-bottom: 10px;
+            line-height: 1.5;
+            @include if-device(desktop){
+                font-size: 15px;
+                margin-bottom: 3px;
+            }
+        }
+    }
+}
