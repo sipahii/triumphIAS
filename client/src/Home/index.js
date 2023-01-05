@@ -24,6 +24,7 @@ const Home = ()=>{
                 <th>NAME</th>
                 <th>EMAIL</th>
                 <th>CONTACT</th>
+                <th>ddddd</th>
             </tr>
             {list.map(({ID,NAME,EMAIL,CONTACT})=>{
                 return <tr>
