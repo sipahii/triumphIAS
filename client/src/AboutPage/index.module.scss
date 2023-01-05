@@ -1,0 +1,63 @@
+@import "../../public/Style/breakpoints";
+.aboutArea {
+    &__heading {
+        & >h1 {
+            font-size: 48px;
+            color: #002147;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: 400;
+            @include if-device(phone){
+                font-size: 32px; 
+            }
+             @include if-device(largephone){
+                font-size: 36px; 
+            } 
+            @include if-device(tablet){
+                font-size: 40px; 
+            }
+        }
+
+        & > p {
+            width: 70%;
+            margin: 0 auto;
+            margin-bottom: 60px;
+            text-align: center;
+            line-height: 1.5;
+            font-size: 15px;
+            @include if-device(phone){
+                width: 100%;
+            } 
+             @include if-device(largephone){
+                width: 100%;
+            } 
+             @include if-device(tablet){
+             width: 100%;
+            } 
+            @include if-device(desktop){
+                width: 100%;
+               } 
+        }
+        &__servicewrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            column-gap: 25px;
+            @include if-device(phone){
+                flex-wrap: wrap;
+                row-gap: 30px;
+                column-gap: 12px;
+            } 
+            @include if-device(largephone){
+                flex-wrap: wrap;
+            } 
+            @include if-device(tablet){
+                column-gap: 14px;
+            } 
+            @include if-device(desktop){
+                column-gap: 35px;
+            }  
+           
+        }
+    }
+}
