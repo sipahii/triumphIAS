@@ -16,7 +16,8 @@ const Banner = () => {
     loop: true,
     fade: 100,
     autoplay: true,
-    autoplayTimeout: 3000,
+    autoplayTimeout: 4000,
+    smartSpeed: 1500,
     responsive: {
       0: {
         items: 1,

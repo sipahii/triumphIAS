@@ -1,10 +1,10 @@
 $desktopMinWidth: 1025px !default;
 $desktopMaxWidth: 1280px !default;
 $tabletMinWidth: 768px !default;
-$tabletMaxWidth: 1024px !default;
+$tabletMaxWidth: 1025px !default;
 $largePhoneMinWidth : 480px!default;
-$largePhoneMaxWidth : 767px!default;
-$phoneMaxWidth: 479px !default;
+$largePhoneMaxWidth : 768px!default;
+$phoneMaxWidth: 480px !default;
 $phoneMinWidth: 320px !default;
 
 @mixin if-device($device) {
