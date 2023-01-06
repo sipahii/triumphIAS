@@ -1,0 +1,122 @@
+@import "../../../public/Style/breakpoints";
+
+.menuList{
+    background: #f8f8f8;
+    position: absolute;
+    width: 100%;
+  
+      &__ul{
+        list-style-type: none;
+        width: 1164px;
+        margin: 0 auto;
+        padding: 1px 15px;
+        z-index: 99999;
+        display: none;
+        background: #f8f8f8;
+  
+      @include if-device(desktop){
+        display: none;
+      }
+      @include if-device(tablet){
+        width: 100%;
+        padding: 0 50px;
+        display: block;
+        overflow-y: scroll;
+        height: 331px;
+        text-align: left;
+      }
+      @include if-device(largephone){
+        display: block;
+        width: 100%;
+        padding: 0 50px;
+        overflow-y: scroll;
+        height: 331px;
+        text-align: left;
+      }
+      @include if-device(phone){
+        display: block;
+        width: 100%;
+        padding: 0 20px;
+        overflow-y: scroll;
+        height: 331px;
+        text-align: left;
+      }
+    
+        &__li{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: #f8f8f8;
+          text-transform: uppercase;
+          border-top: 1px solid#ddd;
+          flex-wrap: wrap;
+    
+          &__name{
+            color: #212121;
+            font-weight: 700;
+            font-family: "Roboto",sans-serif;
+            font-size: 12px;
+            width: 50%;
+            padding: 16px 5%;
+            cursor: pointer;
+    
+          }
+          &>i{
+            color: #212121;
+            font-weight: 700;
+            font-size: 14px;
+            width: 50%;
+            text-align: right;
+            cursor: pointer;
+          }
+  
+          &__dropdown{
+            list-style-type: none;
+            transition: all 0.5s ease-out;
+            width: 100%;
+  
+  
+  
+            &__subli{
+              border-top: 1px solid #ddd;
+              color: #212121;
+              text-transform: capitalize;
+              width: 100%;
+              font-family: 'Roboto', sans-serif;
+              font-weight: 500;
+              padding: 12px 10%;
+              font-size: 14px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              flex-wrap: wrap;
+  
+              &__name2{
+                color: #212121;
+                font-weight: 700;
+                font-family: "Roboto",sans-serif;
+                font-size: 14px;
+                width: 50%;
+                padding: 16px 5%;
+                cursor: pointer;
+  
+              }
+  
+              &>i{
+                color: #212121;
+                font-weight: 700;
+                font-size: 14px;
+                width: 50%;
+                text-align: right;
+                cursor: pointer;
+              }
+            }
+  
+            &__subli2{
+              padding: 0 10%;
+        }
+       }
+    }
+  }
+}
+  
