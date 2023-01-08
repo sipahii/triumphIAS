@@ -3,6 +3,7 @@ import axios from "axios";
 import Header from "../Header";
 import Navigation from "../Navigation";
 import Banner from "./Banner";
+import Feature from "../Feature";
 
 const Home = () => {
   const [list, setList] = useState([]);
@@ -41,6 +42,7 @@ const Home = () => {
       <Header />
       <Navigation />
       <Banner />
+      <Feature />
     </div>
   );
 };

@@ -1,0 +1,48 @@
+@import "../../../../public/Style/breakpoints";
+.coursesTabArea {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  &__tablistArea {
+    & > ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 5px;
+      list-style: none;
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
+  }
+}
+
+.list {
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid gray;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #002147;
+  transition: 0.4s ease-in;
+  @include if-device(smallPhone) {
+    width: 100%;
+  }
+  @include if-device(phone) {
+    width: 100%;
+  }
+}
+
+.activeTab {
+  background-color: #002147;
+  color: #fff;
+  @include if-device(smallPhone) {
+    width: 100%;
+  }
+  @include if-device(phone) {
+    width: 100%;
+  }
+}
