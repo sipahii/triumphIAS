@@ -1,0 +1,19 @@
+.studentQuotes{
+    margin: 88px 0 90px;
+
+    &__title{
+        text-transform: capitalize;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 45px;
+        color: #002147;
+        font-size: 30px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    &__area{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 30px;
+    }
+}
