@@ -4,6 +4,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Home from "./Home";
 import About from "./About";
+import CoursesDetails from "./Home/CourceDetails";
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
         <ToastContainer position="top-left" />
 
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/" element={<About />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/courseDetails" element={<CoursesDetails/>} />
         </Routes>
       </div>
     </BrowserRouter>

@@ -4,6 +4,7 @@ import Header from "../Header";
 import Navigation from "../Navigation";
 import Banner from "./Banner";
 import AboutArea from "./AboutArea";
+import CoursesDetails from "./CourceDetails";
 
 const Home = () => {
   const [list, setList] = useState([]);
@@ -31,11 +32,6 @@ const Home = () => {
         {list.map(({ ID, NAME, EMAIL, CONTACT }) => {
           return (
             <tr>
-                <th>ID</th>
-                <th>NAME</th>
-                <th>EMAIL</th>
-                <th>CONTACT</th>
-                <th>ddddd</th>
               <td>{ID}</td>
               <td>{NAME}</td>
               <td>{EMAIL}</td>
@@ -48,6 +44,7 @@ const Home = () => {
       <Navigation />
       <Banner />
       <AboutArea />
+      <CoursesDetails/>
     </div>
   );
 };
