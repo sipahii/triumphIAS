@@ -5,6 +5,7 @@ import Navigation from "../Navigation";
 import Banner from "./Banner";
 import AboutArea from "./AboutArea";
 import CoursesDetails from "./CourceDetails";
+import Feature from "../Feature";
 
 const Home = () => {
   const [list, setList] = useState([]);
@@ -44,7 +45,9 @@ const Home = () => {
       <Navigation />
       <Banner />
       <AboutArea />
-      <CoursesDetails/>
+     <CoursesDetails/>
+      <Feature />
+
     </div>
   );
 };

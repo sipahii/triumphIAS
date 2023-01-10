@@ -1,7 +1,5 @@
 import React from "react";
-import CommonTitle from "../CommonTitle";
 import Styles from "./index.module.scss";
-
 const CommonReview = (props) => {
     return (
         <div className={Styles.reviewArea}>
@@ -11,9 +9,8 @@ const CommonReview = (props) => {
                 </div>
                 <div className={Styles.reviewArea__media__body}>
                     <h3>{props.name}
-                        <br />
-                        <h4>Excellent course!</h4>
                     </h3>
+                    <h4>Excellent course!</h4>
                     <p>Rimply dummy text of the printinwhen an unknown printer took eype and scramb relofeletog and typesetting industry. Lorem </p>
                     <div className={Styles.reviewArea__media__body__replyArea}>
                         <ul>

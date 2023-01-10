@@ -1,0 +1,62 @@
+.quotesArea{
+
+    &__name{
+        margin-bottom: 5px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #002147;
+        transition: all 0.5s ease-out;
+        font-family: 'Roboto', sans-serif;
+        text-align: left;
+        width: 150px;
+        cursor: pointer;
+
+        &:hover{
+            color: #fdc800;
+        }
+    }
+
+    &__occupation{
+        margin-bottom: 40px;
+        display: block;
+        color: #646464;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        text-align: left;
+    }
+
+    &__quotesWrapper{
+        position: relative;
+        text-align: left;
+
+        &::after{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: 38px;
+            top: -30px;
+            border: 15px solid;
+            border-color: transparent transparent #f8f8f8 #f8f8f8;
+        }
+
+        &__quotes{
+            padding: 30px 130px 30px 30px;
+            background: #f8f8f8;
+            color: #646464;
+            font-size: 15px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        &__userImg{
+            position: absolute;
+            z-index: 1;
+            right: 15px;
+            top: -70px;
+
+            img{
+                border: 10px solid #fff;
+            }
+        }
+    }
+}

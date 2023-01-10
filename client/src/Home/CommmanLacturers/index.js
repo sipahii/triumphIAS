@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "./index.module.scss"
-const CommonLacture = (props) => {
+const CommonLactures = (props) => {
     return (
         <div className={Styles.lacturers}>
             <ul className={Styles.lacturers__line}>
@@ -32,4 +32,4 @@ const CommonLacture = (props) => {
         </div>
     )
 }
-export default CommonLacture;
+export default CommonLactures;
