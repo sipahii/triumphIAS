@@ -4,6 +4,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Home from "./Home";
 import About from "./About";
+import CoursePage from "./CoursePage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/CoursePage" element={<CoursePage />} />
         </Routes>
       </div>
     </BrowserRouter>
