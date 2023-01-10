@@ -9,23 +9,25 @@
         width: 1164px;
         margin: 0 auto;
         padding: 0 15px;
-
-        @include if-device(desktop){
-            width: 100%;
-            padding: 0 50px;
-          }
-          
-          @include if-device(tablet){
-            width: 100%;
-            padding: 0 50px;
-          }
-          @include if-device(largephone){
-            width: 100%;
-            padding: 0 50px;
-          }
-          @include if-device(phone){
-            width: 100%;
-            padding: 0 20px;
-          }
-    }
+        @include if-device(smallPhone) {
+          width: 100%;
+          padding: 0 10px;
+        }
+        @include if-device(desktop) {
+          width: 100%;
+          padding: 0 50px;
+        }
+        @include if-device(tablet) {
+          width: 100%;
+          padding: 0 50px;
+        }
+        @include if-device(largephone) {
+          width: 100%;
+          padding: 0 50px;
+        }
+        @include if-device(phone) {
+          width: 100%;
+          padding: 0 20px;
+        }
+  }
 }

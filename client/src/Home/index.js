@@ -9,6 +9,7 @@ import NewsEventSection from "./NewsEventSection";
 import CounterShow from "./CounterShow";
 import BookSection from "./BookSection";
 import Footer from "../Footer";
+import Feature from "../Feature";
 
 const Home = () => {
   const [list, setList] = useState([]);
@@ -47,6 +48,7 @@ const Home = () => {
       <Header />
       <Navigation />
       <Banner />
+      <Feature />
       <LecturerSection />
       <CampusVideo />
       <NewsEventSection />
