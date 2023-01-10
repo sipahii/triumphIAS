@@ -13,16 +13,15 @@ const EventComponent = (props) => {
           <div className={Styles.eventComponent__left__box__bottom}>
             <p>2017</p>
           </div>
+          21
         </div>
       </div>
       <div className={Styles.eventComponent__right}>
         <div className={Styles.eventComponent__right__top}>
           <h4>{props.heading}</h4>
           <p>
-            Pellentese turpis dignissim amet area ducation process facilitating
-            Knowledge. Pellentese turpis dignissim amet area ducation process
-            facilitating Knowledge. Pellentese turpis dignissim amet area
-            ducation.
+            Pellentese turpis dignissim amet area ducation process facilitating Knowledge. Pellentese turpis dignissim amet area ducation process facilitating Knowledge. Pellentese
+            turpis dignissim amet area ducation.
           </p>
         </div>
         <div className={Styles.eventComponent__right__bottom}>

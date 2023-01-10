@@ -1,0 +1,12 @@
+.uploadBanner{
+    border: 1px solid #cdcdcd;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: left;
+
+    input[type="file"]{
+        color: #444444;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+    }
+}
