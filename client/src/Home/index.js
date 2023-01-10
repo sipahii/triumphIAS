@@ -3,6 +3,12 @@ import axios from "axios";
 import Header from "../Header";
 import Navigation from "../Navigation";
 import Banner from "./Banner";
+import LecturerSection from "./LectureSection";
+import CampusVideo from "./CampusVideo";
+import NewsEventSection from "./NewsEventSection";
+import CounterShow from "./CounterShow";
+import BookSection from "./BookSection";
+import Footer from "../Footer";
 import Feature from "../Feature";
 
 const Home = () => {
@@ -43,6 +49,12 @@ const Home = () => {
       <Navigation />
       <Banner />
       <Feature />
+      <LecturerSection />
+      <CampusVideo />
+      <NewsEventSection />
+      <CounterShow />
+      <BookSection />
+      <Footer />
     </div>
   );
 };

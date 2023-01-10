@@ -1,0 +1,143 @@
+@import "../../../../public/Style/breakpoints";
+
+.eventComponent{
+    display: flex;
+    align-items: flex-start;
+    column-gap: 30px;
+    margin-bottom: 30px;
+    padding: 27px 20px 27px 20px;
+    background: #FFFFFF;
+    @include if-device(desktop){
+        flex-wrap: wrap;
+        row-gap: 50px;
+      }
+      @include if-device(largephone){
+        flex-wrap: wrap;
+        row-gap: 30px;
+      }
+      @include if-device(phone){
+        flex-wrap: wrap;
+        row-gap: 30px;
+      }
+
+    &__left{
+
+        &__box{
+            width: 100%;
+            text-align: center;
+            position: relative;
+            padding-top: 20px;
+            text-align: center;
+            width: 100px;
+            background: #fdc800;
+
+            &__top{
+                h3{
+                    font-size: 24px;
+                    color: #002147;
+                    margin-bottom: 0;
+                    line-height: 1;
+                    font-weight: 400;
+                    font-family: 'Roboto', sans-serif;
+                }
+                p{
+                    color: #002147;
+                    margin-bottom: 5px;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    font-family: 'Roboto', sans-serif;
+                }
+            }
+
+            &__top::before{
+                content: "\f111";
+                font-weight: 700;
+                font-family: "Font Awesome 6 free";
+                color: #002147;
+                font-size: 14px;
+                position: absolute;
+                left: 10px;
+                top: 10px;
+            }
+            &__top::after{
+                content: "\f111";
+                font-weight: 700;
+                font-family: "Font Awesome 6 free";
+                color: #002147;
+                font-size: 14px;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+            }
+
+            &__bottom{
+                p{
+                    line-height: 2.5;
+                    background: #002147;
+                    height: 40px;
+                    display: block;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    &__right{
+        text-align: left;
+
+        &__top{
+            h4{
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 10px;
+                font-family: 'Roboto', sans-serif;
+                color: #002147;
+                transition: all 0.5s ease-out;
+                cursor: pointer;
+            }
+            h4:hover{
+                color: #fdc800;
+            }
+
+            p{
+                margin-bottom: 10px;
+                font-family: 'Roboto', sans-serif;
+                line-height: 1.5;
+                font-weight: 400;
+                font-size: 15px;
+                color: #444444;
+            }
+        }
+
+        &__bottom{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            @include if-device(phone){
+                flex-wrap: wrap;
+                row-gap: 10px;
+              }
+
+            h3{
+                color: #002147;
+                font-weight: 500;
+                border-right: 1px solid #BDBDBD;
+                margin-right: 15px;
+                font-size: 15px;
+                font-family: 'Roboto', sans-serif;
+                padding-right: 15px;
+                line-height: 1;
+            }
+
+            h5{
+                color: #002147;
+                font-weight: 500;
+                margin-right: 15px;
+                font-size: 15px;
+                font-family: 'Roboto', sans-serif;
+                padding-right: 15px;
+                line-height: 1;
+            }
+        }
+    }
+}

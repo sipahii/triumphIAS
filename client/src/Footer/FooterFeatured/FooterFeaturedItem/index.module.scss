@@ -1,0 +1,25 @@
+.li{
+    display: flex;
+    align-items: center;
+
+    &>i{
+        color: #fdc800;
+        font-size: 12px;
+        margin-bottom: 7px;
+    }
+
+    &__para{
+        color: #f5f5f5;
+        transition: all 0.5s ease-out;
+        font-size: 16px;
+        margin-bottom: 12px;
+        position: relative;
+        padding-left: 15px;
+        font-family: "Roboto",sans-serif;
+        cursor: pointer;
+
+        &:hover{
+            color: #fdc800;
+        }
+    }
+}

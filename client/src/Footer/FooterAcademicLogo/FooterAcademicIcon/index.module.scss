@@ -1,0 +1,18 @@
+.li{
+    color: #b3b3b3;
+    font-size: 13px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #2b5788;
+    display: block;
+    text-align: center;
+    line-height: 27px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #fdc800;
+        color: #002147;
+        border: 1px solid #fdc800;
+    }
+}
