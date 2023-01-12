@@ -5,6 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Home from "./Home";
 import About from "./About";
 import CoursePage from "./CoursePage";
+import Gallary from "./Gallary";
 // import Feature from "./Feature";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/" element={<About />} />
           <Route path="/CoursePage" element={<CoursePage />} />
+          <Route path="/GallaryPage" element={<Gallary />} />
         </Routes>
       </div>
     </BrowserRouter>
