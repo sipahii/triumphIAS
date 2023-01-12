@@ -1,0 +1,16 @@
+.footerFeatured{
+    padding: 0 15px 0 0;
+
+    &__body{
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+
+        &__left,&__right{
+
+            &__ul{
+                list-style-type: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,104 @@
+@import "../../../public/Style/breakpoints";
+
+.campusVideo{
+    background-image: url("../../Assets/videoBg.webp");
+    height: 442px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 108px 0 120px;
+    position: relative;
+    z-index: 0;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 33, 71, 0.88);
+        z-index: -1;
+    }
+    
+    @include if-device(desktop){
+        width: 100%;
+        padding: 108px 50px 120px;
+      }
+      @include if-device(tablet){
+        width: 100%;
+        padding: 108px 50px 120px;
+      }
+      @include if-device(largephone){
+        width: 100%;
+        padding: 108px 50px 120px;
+      }
+      @include if-device(phone){
+        width: 100%;
+        padding: 108px 20px 120px;
+      }
+
+    &__container{
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3{
+            letter-spacing: 1px;
+            font-size: 36px;
+            color: #FFFFFF;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+        }
+
+        p{
+            color: #a3bed5;
+            text-align: center;
+            margin: 0 auto;
+            padding-bottom: 35px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            width: 450px;
+            line-height: 1.5;
+            z-index: 10;
+            @include if-device(largephone){
+                width: 100%;
+              }
+              @include if-device(phone){
+                width: 100%;
+              }
+        }
+
+        &__videoPlayBtn{
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+            width: 70px;
+            z-index: 2;
+            border: 3px solid #FFFFFF;
+            cursor: pointer;
+            transition: all 0.5s ease-out;
+            i{
+                color: #fdc800;
+                font-size: 20px;
+                transition: all 0.5s ease-out;
+                cursor: pointer;
+            }
+
+        }
+        &__videoPlayBtn:hover{
+            border: 3px solid #fdc800;
+        }
+        &__videoPlayBtn:hover i{
+            color: #FFFFFF;
+        }
+    }
+}
