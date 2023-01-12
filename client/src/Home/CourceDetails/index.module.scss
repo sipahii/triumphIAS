@@ -7,14 +7,57 @@
 
     &__rowflex {
         display: flex;
-        justify-content: space-between;
+        background-color: #f5f5f5;
+        column-gap: 20px;
+
+        @include if-device(smallPhone) {
+            display: block;
+
+        }
+
+        // @include if-device(desktop) {}
+
+        // @include if-device(tablet) {}
+        @include if-device(largephone) {
+            display: block;
+        }
+
+        @include if-device(phone) {
+            display: block;
+
+        }
 
         &__couresDetails {
-            width: 850px;
+            width: 74%;
+
+            @include if-device(phone) {
+                width: 100%;
+                margin-bottom: 0px;
+            }
+
+            @include if-device(smallPhone) {
+                width: 100%;
+                margin-bottom: 60px;
+            }
+
+            @include if-device(largephone) {
+                width: 100%;
+                margin-bottom: 60px;
+            }
+
+            @include if-device(tablet) {
+                width: 65%;
+                margin-bottom: 60px;
+            }
 
             &__inner {
                 padding: 20px 30px 30px;
                 background: #FFFFFF;
+
+                @include if-device(phone) {
+                    padding: 20px 15px 30px;
+                    margin-bottom: 35px;
+                }
 
                 &>h2 {
                     text-transform: capitalize;
@@ -26,6 +69,14 @@
                     font-family: 'Roboto', sans-serif;
                     line-height: 1.5;
                     position: relative;
+
+                    @include if-device(smallPhone) {
+                        font-size: 26px;
+                    }
+
+                    @include if-device(phone) {
+                        font-size: 26px;
+                    }
 
                     &::before {
                         content: "";
@@ -73,8 +124,30 @@
 
         &__sidebar {
             box-sizing: border-box;
-            width: 267px;
-            height: 360px;
+            // width: 24%;
+            flex: 1;
+            background-color: #f5f5f5;
+
+            @include if-device(smallPhone) {
+                width: 100%;
+            }
+
+            @include if-device(phone) {
+                width: 100%;
+            }
+
+            @include if-device(largephone) {
+                width: 100%;
+            }
+
+            @include if-device(tablet) {
+                width: 225px;
+            }
+
+            @include if-device(desktop) {
+                width: 225px;
+            }
+
 
         }
     }

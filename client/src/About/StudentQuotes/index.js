@@ -17,13 +17,6 @@ const StudentQuotes = () => {
           commodo lorem lectus pretium vehicula."
             user={user}
           />
-          <QuotesArea
-            name="Andrew Head"
-            occupation="Graduate"
-            quotes="Pellentesque tellus arcu, laoreet volutpavenenatis molestPellentesque
-          commodo lorem lectus pretium vehicula."
-            user={user}
-          />
         </div>
       </div>
     </Container>

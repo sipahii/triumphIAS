@@ -1,5 +1,6 @@
-.courcesPage {
+@import "../../../../public/Style/breakpoints";
 
+.courcesPage {
     &__tabArea {
         margin: 30px 0 0;
         overflow: hidden;
@@ -30,6 +31,22 @@
                 list-style-type: none;
                 grid-template-columns: auto auto;
                 display: grid;
+
+                @include if-device(smallPhone) {
+                    display: block;
+                }
+
+                @include if-device(phone) {
+                    display: block;
+                }
+
+                @include if-device(largephone) {
+                    display: block;
+                }
+
+                @include if-device(tablet) {
+                    display: block;
+                }
 
                 &>li {
 

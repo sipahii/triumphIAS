@@ -1,0 +1,91 @@
+.bookCard{
+    text-align: center;
+    &__top{
+        margin-bottom: 20px;
+        position: relative;
+
+        &:hover &__button{
+            opacity: 1;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        
+        
+        &__button{
+            position: absolute;
+            top: 0;
+            background-color: rgba(0, 33, 71, 0.8);
+            height: 100%;
+            width: 100%;
+            transition: all 0.75s ease-out;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            z-index: 2;
+
+            &:hover &__buyBtn{
+                transform: skewX(0deg);
+            }
+
+            &__buyBtn{
+                border: 2px solid #fdc800;
+                color: #FFFFFF;
+                padding: 12px 30px;
+                background: transparent;
+                z-index: 3;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 700;
+                text-align: center;
+                cursor: pointer;
+                transform: skewX(30deg);
+                transition: all 0.5s ease-out;
+
+                &:hover{
+                    background: #fdc800;
+                    color: #002147;
+                }
+            }
+        }
+    }
+
+    &__middle{
+        text-align: center;
+
+        &__bookName{
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 5px;
+            text-transform: capitalize;
+            font-family: 'Roboto', sans-serif;
+            color: #002147;
+            transition: all 0.5s ease-out;
+            cursor: pointer;
+
+            &:hover{
+                color: #fdc800;
+            }
+        }
+
+    }
+
+    &__bottom{
+
+
+        &__price{
+            font-size: 20px;
+            margin-bottom: 20px;
+            display: block;
+            font-weight: 500;
+            color: #fdc800;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+    }
+}

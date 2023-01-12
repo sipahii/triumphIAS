@@ -1,10 +1,23 @@
-.reviewArea {
+@import "../../../../public/Style/breakpoints";
 
+.reviewArea {
     &__media {
         display: flex;
         padding-bottom: 8px;
         margin-bottom: 35px;
         border-bottom: 1px solid #e3e3e3;
+
+        @include if-device(smallPhone) {
+            display: block;
+        }
+
+        @include if-device(phone) {
+            display: block;
+        }
+
+        @include if-device(largePhone) {
+            display: block;
+        }
 
         &__image {
             max-width: 67px;
@@ -15,10 +28,21 @@
             }
         }
 
-        &__body {
+        &__bodyArea {
             flex: 1;
             position: relative;
             padding-left: 20px;
+
+            @include if-device(phone) {
+                padding: 0px;
+                margin-top: 20px;
+            }
+
+            @include if-device(smallPhone) {
+                padding: 0px;
+                margin-top: 20px;
+            }
+
 
             &>h3 {
                 font-size: 16px;

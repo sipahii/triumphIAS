@@ -1,11 +1,33 @@
+ @import "../../../../public/Style/breakpoints";
+
  .courcesPage {
 
      &__sideBarBox {
          box-sizing: border-box;
 
          &__image {
-             max-width: 265px;
+             width: 265px;
              position: relative;
+
+             @include if-device(smallPhone) {
+                 width: 100%;
+             }
+
+             @include if-device(phone) {
+                 width: 100%;
+             }
+
+             @include if-device(largephone) {
+                 width: 100%;
+             }
+
+             @include if-device(tablet) {
+                 width: 100%;
+             }
+
+             @include if-device(desktop) {
+                 width: 100%;
+             }
 
              &::before {
                  content: "";
@@ -27,8 +49,11 @@
              &>span {
                  position: absolute;
                  top: 50%;
-                 left: 50px;
                  transform: translateY(-50%);
+                 left: 0;
+                 right: 0;
+                 margin: 0 auto;
+                 z-index: 2;
                  text-align: center;
                  color: #ffffff;
                  padding: 8px 0;
@@ -41,6 +66,7 @@
                  display: inline-block;
                  border: 2px solid #fdc800;
                  transition: all 0.3s ease-out;
+
 
                  &:hover {
                      border: 2px solid #fdc800;

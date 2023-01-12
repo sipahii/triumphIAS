@@ -2,17 +2,14 @@ import React, { useState } from "react";
 import Styles from "./index.module.scss";
 import Container from "../../component/Container";
 import Image from "../../../src/Assets/graphic.jpg";
-import Image1 from "../../Assets/one.jpg";
-import Image2 from "../../Assets/img2.jpg";
-import Image3 from "../../Assets/sideBar.jpg";
 import CommanBanner from "../../component/CommanBanner";
-import CommonTitle from "../CommonTitle";
 import TabArea from "./TabArea";
 import CourcePrice from "./CoursePrice";
 import AskQuestion from "./AskQuestion";
 import ApplyNow from "./SideBarApplyNow";
 import CourseReview from "./CourseReview";
 import CourseCrousel from "./CourseCrousel";
+import Footer from "../../Footer";
 
 const CoursesDetails = () => {
   const [show, setShow] = useState("Features");
@@ -40,10 +37,7 @@ const CoursesDetails = () => {
                 <img src={Image} alt="" />
                 <TabArea />
               </div>
-
-              <div
-                className={
-                  Styles.courcesPage__rowflex__couresDetails__crousalArea}>
+              <div className={Styles.courcesPage__rowflex__couresDetails__crousalArea}>
                 <h3>Related Courses</h3>
               </div>
               <CourseCrousel />
@@ -56,6 +50,7 @@ const CoursesDetails = () => {
             </div>
           </div>
         </Container>
+        <Footer />
       </div>
     </>
   );

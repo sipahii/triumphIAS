@@ -4,11 +4,6 @@
   width: 100%;
   height: 100%;
 
-      img{
-        width: 100%;
-        height: 100%;
-      }
-
       &__title{
         color: #FFFFFF;
         text-transform: capitalize;
@@ -44,10 +39,12 @@
             width: 100%;
           }
           @include if-device(largephone){
-            display: none;
+            width: 100%;
+            font-size: 13px;
           }
           @include if-device(phone){
-            display: none;
+            width: 100%;
+            font-size: 11px;
           }
       }
       
@@ -74,16 +71,32 @@
           padding: 14px 0;
         }
         @include if-device(phone){
-          display: none;
+          width: 100px;
+          padding: 10px 0;
+          font-size: 10px;
         }
       }
 
     &__bannerImages{
         width: 100%;
+        height: 529px;
         position: relative;
         img{
             width: 100%;
             height: 100%;
+        }
+
+        @include if-device(tablet){
+          width: 100%;
+          height: 429px;
+        }
+        @include if-device(largephone){
+          width: 100%;
+          height: 429px;
+        }
+        @include if-device(phone){
+          width: 100%;
+          height: 329px;
         }
 
         &__content{

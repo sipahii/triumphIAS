@@ -1,65 +1,71 @@
- .courcesPage {
+@import "../../../../public/Style/breakpoints";
 
-     &__askQuestoin {
-         padding: 30px 25px;
-         margin-bottom: 30px;
-         background: #FFFFFF;
-         border: 1px solid #e0e0e0;
+.courcesPage {
 
-         &__form {
+    &__askQuestoin {
+        padding: 30px 25px;
+        margin-bottom: 30px;
+        background: #FFFFFF;
+        border: 1px solid #e0e0e0;
 
-             &>input {
-                 border-radius: 0;
-                 background: #f5f5f5;
-                 color: #002147;
-                 height: 40px;
-                 border: 1px solid #e5e5e5;
-                 box-shadow: none;
-                 display: block;
-                 padding: 10px;
-                 margin-bottom: 15px;
-                 width: 100%;
-                 font-size: 1rem;
-                 font-weight: 400;
-                 line-height: 1.5;
-             }
+        @include if-device(tablet) {
+            padding: 30px 15px;
+        }
 
-             &>textarea {
-                 width: 100%;
-                 border: 1px solid #e5e5e5;
-                 background: #f5f5f5;
-                 padding: 10px;
-                 height: 86px;
-                 font-size: 1rem;
-                 font-weight: 400;
-                 box-shadow: none;
-                 color: #002147;
-                 font-family: 'Roboto', sans-serif;
-                 margin-bottom: 15px;
+        &__form {
 
-             }
+            &>input {
+                border-radius: 0;
+                background: #f5f5f5;
+                color: #002147;
+                height: 40px;
+                border: 1px solid #e5e5e5;
+                box-shadow: none;
+                display: block;
+                padding: 10px;
+                margin-bottom: 15px;
+                width: 100%;
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.5;
+            }
 
-             &>button {
-                 color: #FFFFFF;
-                 padding: 12px 0;
-                 background: #002147;
-                 text-transform: uppercase;
-                 font-size: 14px;
-                 font-weight: 700;
-                 display: inline-block;
-                 border: none;
-                 width: 100%;
-                 border: 2px solid #002147;
-                 cursor: pointer;
-                 transition: all 0.5s ease-out;
-                 font-family: 'Roboto', sans-serif;
+            &>textarea {
+                width: 100%;
+                border: 1px solid #e5e5e5;
+                background: #f5f5f5;
+                padding: 10px;
+                height: 86px;
+                font-size: 1rem;
+                font-weight: 400;
+                box-shadow: none;
+                color: #002147;
+                font-family: 'Roboto', sans-serif;
+                margin-bottom: 15px;
 
-                 &:hover {
-                     background-color: #FFFFFF;
-                     color: #002147;
-                     border: 2px solid #002147;
-                 }
-             }
-         }
-     }
- }
+            }
+
+            &>button {
+                color: #FFFFFF;
+                padding: 12px 0;
+                background: #002147;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 700;
+                display: inline-block;
+                border: none;
+                width: 100%;
+                border: 2px solid #002147;
+                cursor: pointer;
+                transition: all 0.5s ease-out;
+                font-family: 'Roboto', sans-serif;
+
+                &:hover {
+                    background-color: #FFFFFF;
+                    color: #002147;
+                    border: 2px solid #002147;
+                }
+            }
+        }
+    }
+}

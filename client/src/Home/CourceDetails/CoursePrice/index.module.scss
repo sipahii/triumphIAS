@@ -1,3 +1,5 @@
+@import "../../../../public/Style/breakpoints";
+
 .courcesPage {
     box-sizing: border-box;
 
@@ -8,6 +10,12 @@
 
         &__inner {
             padding: 30px 25px;
+
+            @include if-device(tablet) {
+                padding: 30px 15px;
+            }
+
+
 
             &__courcePrice {
                 box-sizing: border-box;

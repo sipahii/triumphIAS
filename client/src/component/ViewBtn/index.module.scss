@@ -1,0 +1,23 @@
+.viewBtn{
+    margin-top: 45px;
+    text-align: center;
+
+    &__btn{
+        text-align: center;
+        color: #FFFFFF;
+        padding: 14px 34px;
+        background: #002147;
+        text-transform: uppercase;
+        font-size: 14px;
+        border: none;
+        font-weight: 500;
+        transition: all 0.5s ease-out;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    &__btn:hover{
+        background: #fdc800;
+        color: #002147;
+    }
+}

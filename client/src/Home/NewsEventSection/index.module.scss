@@ -1,0 +1,73 @@
+@import "../../../public/Style/breakpoints";
+
+
+.newsEventSection{
+    background: #f5f5f5;
+
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 30px;
+          @include if-device(tablet){
+            flex-wrap: wrap;
+            row-gap: 50px;
+          }
+          @include if-device(largephone){
+            flex-wrap: wrap;
+            row-gap: 50px;
+          }
+          @include if-device(phone){
+            flex-wrap: wrap;
+            row-gap: 50px;
+          }
+
+        &__left{
+            width: 50%;
+            @include if-device(tablet){
+              width: 100%;
+            }
+            @include if-device(largephone){
+              width: 100%;
+            }
+            @include if-device(phone){
+              width: 100%;
+            }
+            
+
+            &__child{
+                background: #FFFFFF;
+                padding: 20px 20px 15px;
+
+                &__component{
+                    margin-bottom: 20px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #f5f5f5;
+                }
+            }
+        }
+
+        &__right{
+            width: 50%;
+            @include if-device(tablet){
+              width: 100%;
+            }
+            @include if-device(largephone){
+              width: 100%;
+            }
+            @include if-device(phone){
+              width: 100%;
+            }
+        }
+
+        h2{
+            text-transform: capitalize;
+            text-align: left;
+            font-weight: 500;
+            margin-bottom: 45px;
+            color: #002147;
+            font-size: 30px;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.footerTitle{
+    text-align: left;
+
+    &__title{
+        font-size: 20px;
+        margin-bottom: 30px;
+        color: #FFFFFF;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+    }
+}
