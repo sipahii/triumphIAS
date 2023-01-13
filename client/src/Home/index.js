@@ -3,6 +3,8 @@ import axios from "axios";
 import Header from "../Header";
 import Navigation from "../Navigation";
 import Banner from "./Banner";
+import AboutArea from "./AboutArea";
+import CoursesDetails from "./CourceDetails";
 import LecturerSection from "./LectureSection";
 import CampusVideo from "./CampusVideo";
 import NewsEventSection from "./NewsEventSection";
@@ -48,6 +50,8 @@ const Home = () => {
       <Header />
       <Navigation />
       <Banner />
+      <AboutArea />
+      <CoursesDetails />
       <Feature />
       <LecturerSection />
       <CampusVideo />

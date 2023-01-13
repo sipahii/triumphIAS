@@ -1,7 +1,7 @@
-.studentQuotes{
+.studentQuotes {
     margin: 88px 0 90px;
 
-    &__title{
+    &__title {
         text-transform: capitalize;
         text-align: center;
         font-weight: 500;
@@ -11,9 +11,17 @@
         font-family: 'Roboto', sans-serif;
     }
 
-    &__area{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-column-gap: 30px;
+    &__area {
+        // display: grid;
+        // grid-template-columns: auto auto;
+        // grid-column-gap: 30px;
+
+        // @include if-device(phone) {
+        //     display: block;
+        // }
+
+        // @include if-device(largephone) {
+        //     display: block;
+        // }
     }
 }

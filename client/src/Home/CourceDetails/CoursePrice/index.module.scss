@@ -1,0 +1,94 @@
+@import "../../../../public/Style/breakpoints";
+
+.courcesPage {
+    box-sizing: border-box;
+
+    &__Box {
+        margin-bottom: 30px;
+        background: #FFFFFF;
+        border: 1px solid #e0e0e0;
+
+        &__inner {
+            padding: 30px 25px;
+
+            @include if-device(tablet) {
+                padding: 30px 15px;
+            }
+
+
+
+            &__courcePrice {
+                box-sizing: border-box;
+
+                &>span {
+                    font-size: 40px;
+                    color: #002147;
+                    margin-bottom: 20px;
+                    display: block;
+                }
+
+                &__enrollBtn {
+                    margin-bottom: 30px;
+                    color: #002147;
+                    padding: 18px 0;
+                    background: #fdc800;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-weight: 700;
+                    display: inline-block;
+                    width: 100%;
+                    border: 2px solid #fdc800;
+                    text-align: center;
+                    transition: all 0.5s ease-out;
+
+                    &:hover {
+                        background-color: #FFFFFF;
+                        color: #fdc800;
+                    }
+                }
+
+                &__pdf {
+                    position: relative;
+                    color: #002147;
+                    padding: 18px 0;
+                    background: transparent;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-weight: 700;
+                    width: 100%;
+                    border: 1px solid #002147;
+                    text-align: center;
+                    transition: all 0.5s ease-out;
+                    border: 2px solid #002147;
+
+                    &::before {
+                        content: "\f019";
+                        position: absolute;
+                        font-family: FontAwesome;
+                        color: #002147;
+                        top: 50%;
+                        left: 8%;
+                        z-index: 1;
+                        transform: translateY(-50%);
+                        transition: all 0.5s ease-out;
+                    }
+
+                    &:hover {
+                        background-color: #fdc800;
+                        color: #FFFFFF;
+                        border: 2px solid #fdc800;
+
+                    }
+
+                    &:hover::before {
+
+                        color: #FFFFFF;
+
+
+                    }
+
+                }
+            }
+        }
+    }
+}
