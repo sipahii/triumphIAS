@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import Styles from './index.module.scss'
 import Image1 from "../../../Assets/one.jpg";
 import Image2 from "../../../Assets/img2.jpg";
-import CommonLactures from "../../CommmanLacturers";
-import CommonTitle from "../../CommonTitle";
+
+import CommonTitle from "../CommonTitle";
 import CommonReview from "../CommonReview";
+import CommonLactures from "../CommmanLacturers";
 // import Image3 from "../../Assets/sideBar.jpg";
 
 const TabArea = () => {

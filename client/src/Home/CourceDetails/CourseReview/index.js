@@ -1,5 +1,5 @@
 import React from "react";
-import CommonTitle from "../../CommonTitle";
+import CommonTitle from "../CommonTitle";
 import Styles from "./index.module.scss"
 
 const CourseReview = () => {
