@@ -32,9 +32,7 @@ const TabItem = (props) => {
             <TabList
               tabList="MATHEMATICS"
               showRelatedCourse={showRelatedCourseHandler}
-              className={
-                active === "MATHEMATICS" ? Styles.activeTab : Styles.list
-              }
+              className={active === "MATHEMATICS" ? Styles.activeTab : Styles.list}
             />
             <TabList
               tabList="ENGLISH"

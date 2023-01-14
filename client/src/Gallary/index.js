@@ -1,20 +1,16 @@
 import React from "react";
-import CoursesPage from "./CoursesSection";
 import Header from "../Header";
 import Navigation from "../Navigation";
 import Footer from "../Footer";
-import CommanBanner from "../component/CommanBanner";
-
-const CoursePage = () => {
+import GallaryAlbume from "./gallaryAlbum";
+const Gallary = () => {
   return (
     <>
       <Header />
       <Navigation />
-      <CommanBanner section="Courses_03" />
-      <CoursesPage />
+      <GallaryAlbume />
       <Footer />
     </>
   );
 };
-
-export default CoursePage;
+export default Gallary;
