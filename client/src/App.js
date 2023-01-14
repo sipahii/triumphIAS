@@ -44,6 +44,8 @@ import PersonalityTest from "./PersonalityTest";
 import Header from "./Header";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
+import CoursesDetails from "./Home/CourceDetails";
+import CoursePage from "./CoursePage";
 
 function App() {
   return (
@@ -54,6 +56,7 @@ function App() {
         <Navigation />
 
         <Routes>
+          <Route path="/course-details" element={<CoursesDetails />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/course-page" element={<CoursePage />} />
@@ -93,6 +96,7 @@ function App() {
           <Route path="/interim-budget-2019-20.pdf" element={<InterimBudget_2019_20 />} />
           <Route path="/important-articles" element={<ImportantArticles />} />
           <Route path="/personality-test" element={<PersonalityTest />} />
+          <Route path="/CoursePage" element={<CoursePage />} />s
         </Routes>
         <Footer />
       </div>
