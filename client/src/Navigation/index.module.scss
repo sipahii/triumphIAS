@@ -14,12 +14,12 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1px 15px;
+  padding: 0 15px;
   z-index: 99999;
 
   @include if-device(desktop){
     width: 100%;
-    padding: 0 50px;
+    padding: 10px 50px;
   }
   @include if-device(tablet){
     width: 100%;
@@ -66,28 +66,6 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-        &__search{
-            border-left: 1px solid #d3d3d3;
-            color: #444444;
-            padding-left: 30px;
-            transition: all 0.3s ease-out;
-            font-size: 14px;
-            cursor: pointer;
-
-            &:hover{
-                color: #fdc800;
-            }
-
-            @include if-device(tablet){
-                display: none;
-            }
-            @include if-device(largephone){
-                display: none;
-              }
-              @include if-device(phone){
-                display: none;
-              }
-        }
 
         &__menuTab{
 
@@ -127,6 +105,10 @@ nav{
                 display: block;
               }
               @include if-device(phone){
+                display: block;
+              }
+
+              @include if-device(desktop){
                 display: block;
               }
         }
