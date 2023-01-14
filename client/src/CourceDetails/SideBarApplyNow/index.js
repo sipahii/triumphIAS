@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from './index.module.scss'
-import Image3 from "../../../Assets/sideBar.jpg";
+import Image3 from "../../Assets/sideBar.jpg";
 const ApplyNow = () => {
     return (
         <div className={Styles.courcesPage}>

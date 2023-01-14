@@ -46,7 +46,6 @@ const Home = () => {
       </table> */}
       <Banner />
       <AboutArea />
-      <CoursesDetails />
       <Feature />
       <LecturerSection />
       <CampusVideo />
