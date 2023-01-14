@@ -1,0 +1,68 @@
+@import "../../../public/Style/breakpoints";
+.service__box {
+    text-align: center;
+    width: 100%;
+    @include if-device(phone){
+        width: 100%;
+    }
+    @include if-device(largephone){
+        width: 100%;
+    }
+    @include if-device(tablet){
+        width: 100%;
+    }
+
+    &:hover &__icon {
+        background-color: #fdc800;
+    }
+
+    &__icon {
+        border-radius: 50%;
+        height: 90px;
+        width: 90px;
+        display: block;
+        background: #eeeeee;
+        line-height: 100px;
+        margin: 0 auto;
+        transition: all 0.5s ease-out;
+        margin-bottom: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &>i {
+            color: #002147;
+            font-size: 36px;
+        }
+    }
+
+    &>span {
+        font-size: 22px;
+        font-weight: 500;
+        color: #002147;
+        cursor: pointer;
+        transition: all 0.5s ease-out;
+        background-color: transparent;
+
+        &:hover {
+            color: #fdc800;
+        }
+    }
+
+    &>p {
+        color: #444444;
+        padding-top: 15px;
+        width: 82%;
+        margin: 0 auto;
+        @include if-device(phone){
+            width: 100%; 
+        } 
+        @include if-device(largephone){
+            width: 100%; 
+        } 
+        @include if-device(tablet){
+            width: 100%; 
+        }
+
+    }
+}

@@ -42,6 +42,8 @@ const Home = () => {
       <Header />
       <Navigation />
       <Banner />
+      <AboutArea />
+      <CoursesDetails />
       <Feature />
     </div>
   );

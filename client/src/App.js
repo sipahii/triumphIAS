@@ -13,8 +13,8 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <ToastContainer position="top-left" />
-
         <Routes>
+          <Route path="/CourseDetails" element={<CoursesDetails />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/CoursePage" element={<CoursePage />} />
