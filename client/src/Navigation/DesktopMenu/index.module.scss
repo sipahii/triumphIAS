@@ -10,13 +10,23 @@
         text-transform: uppercase;
         text-decoration: none;
         font-weight: 500;
-        padding: 30px 25px;
-        transition: all .5s ease-out;
+        padding: 30px 20px;
+        transition: all .3s ease-out;
         cursor: pointer;
         position: relative;
 
+        a{
+          text-decoration: none;
+          color: #000000;
+          transition: all 0.3s ease-out;
+        }
+
+        &:hover a{
+          color: #fdc800;
+        }
+
         &:hover{
-            color: #fdc800;
+          color: #fdc800;
         }
 
         &:hover .dropdown{
@@ -40,6 +50,9 @@
       @include if-device(phone){
         display: none;
       }
+      @include if-device(desktop){
+        display: none;
+      }
 }
 
 .dropdown{
@@ -57,7 +70,7 @@
     opacity: 0;
     visibility: hidden;
     transform: scaleY(0);
-    width: 175px;
+    width: 300px;
 
     &__subList{
         padding: 10px 10px 10px 15px;
@@ -67,6 +80,12 @@
         transition: all 0.5s ease-out;
         position: relative;
 
+        &>a{
+          text-decoration: none;
+          color: #FFFFFF;
+          transition: all 0.5s ease-out;
+        }
+
         &>i{
             float: right;
             font-size: 12px;
@@ -74,41 +93,19 @@
         }
 
         &:hover{
-          color: #fdc800;
           padding-left: 25px;
           background: #1A3B61;
-      }
+        }
+
+        &:hover a{
+          color: #fdc800;
+        }
     }
 
     &__subList:hover .subDropdown{
         opacity: 1;
         visibility: visible;
         transform: scaleY(1);
-    }
-
-    &__subList1{
-        display: block;
-        color: #FFFFFF;
-        border-bottom: 1px solid #1A3B61;
-        transition: all 0.5s ease-out;
-        position: relative;
-        width: 175px;
-
-       
-
-        &>p{
-            padding: 10px 10px 10px 15px;
-            display: block;
-            color: #FFFFFF;
-            border-bottom: 1px solid #1A3B61;
-            transition: all 0.5s ease-out;
-
-            &:hover{
-              color: #fdc800;
-              padding-left: 25px;
-              background: #1A3B61;
-          }
-        }
     }
 }
 

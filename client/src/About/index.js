@@ -1,7 +1,5 @@
 import React from "react";
 import CommanBanner from "../component/CommanBanner";
-import Header from "../Header";
-import Navigation from "../Navigation";
 import AboutUs from "./AboutUs";
 import vikash from "../../src/Assets/vikash_ranjan.png";
 import triumphias from "../../src/Assets/logo-square.jpg";
@@ -11,8 +9,6 @@ import Container from "../component/Container";
 const About = () => {
   return (
     <>
-      <Header />
-      <Navigation />
       <CommanBanner section="About Us" />
       <Container>
         <AboutUs
