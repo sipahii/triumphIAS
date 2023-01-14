@@ -8,11 +8,7 @@ const PagesItem = (props) => {
         <div className={Styles.coursepageArea__coursespage}>
           <div className={Styles.coursepageArea__coursespage__courseImage}>
             <img src={props.imageSrc} alt="error"></img>
-            <div
-              className={
-                Styles.coursepageArea__coursespage__courseImage__imageLayer
-              }
-            >
+            <div className={Styles.coursepageArea__coursespage__courseImage__imageLayer}>
               <span>
                 <i className="fa-solid fa-link"></i>
               </span>
