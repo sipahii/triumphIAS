@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Styles from './index.module.scss'
-import Image1 from "../../../Assets/one.jpg";
-import Image2 from "../../../Assets/img2.jpg";
+import Image1 from "../../Assets/one.jpg";
+import Image2 from "../../Assets/img2.jpg";
 
 import CommonTitle from "../CommonTitle";
 import CommonReview from "../CommonReview";

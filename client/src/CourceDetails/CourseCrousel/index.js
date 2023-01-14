@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactOwlCrousel from "react-owl-carousel"
-import PagesItem from '../../../CoursePage/CoursesSection/coursePagess'
+import PagesItem from '../../CoursePage/CoursesSection/coursePagess'
 import Styles from "./index.module.scss"
 
 const CourseCrousel = () => {

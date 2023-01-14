@@ -1,15 +1,18 @@
 import React, { useState } from "react";
 import Styles from "./index.module.scss";
-import Container from "../../component/Container";
-import Image from "../../../src/Assets/graphic.jpg";
-import CommanBanner from "../../component/CommanBanner";
+import Container from "../component/Container";
+import Image from "../Assets/graphic.jpg";
+import CommanBanner from "../component/CommanBanner";
 import TabArea from "./TabArea";
 import CourcePrice from "./CoursePrice";
 import AskQuestion from "./AskQuestion";
 import ApplyNow from "./SideBarApplyNow";
 import CourseReview from "./CourseReview";
 import CourseCrousel from "./CourseCrousel";
-import Footer from "../../Footer";
+
+import Footer from "../Footer";
+import Header from "../Header";
+import Navigation from "../Navigation";
 
 const CoursesDetails = () => {
   const [show, setShow] = useState("Features");
@@ -20,6 +23,8 @@ const CoursesDetails = () => {
   };
   return (
     <>
+      <Header />
+      <Navigation />
       <CommanBanner section="Courses Details" />
       <div className={Styles.courcesPage}>
         <Container>
