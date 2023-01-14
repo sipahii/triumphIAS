@@ -1,27 +1,12 @@
 @import "../../../../public/Style/breakpoints";
 .coursepageArea {
-  width: 23%;
+  // width: 23%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   column-gap: 25px;
   row-gap: 30px;
-  @include if-device(phone) {
-    width: 100%;
-  }
-  @include if-device(tablet) {
-    width: 47%;
-  }
-  @include if-device(largephone) {
-    width: 100%;
-  }
-  @include if-device(desktop) {
-    width: 31%;
-  }
-  @include if-device(smallPhone) {
-    width: 100%;
-  }
 
   &__coursespage {
     width: 100%;

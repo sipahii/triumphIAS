@@ -45,7 +45,7 @@ import Header from "./Header";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
 import CoursesDetails from "./Home/CourceDetails";
-import CoursePage from "./CoursePage";
+import Gallary from "./Gallary";
 
 function App() {
   return (
@@ -96,7 +96,7 @@ function App() {
           <Route path="/interim-budget-2019-20.pdf" element={<InterimBudget_2019_20 />} />
           <Route path="/important-articles" element={<ImportantArticles />} />
           <Route path="/personality-test" element={<PersonalityTest />} />
-          <Route path="/CoursePage" element={<CoursePage />} />s
+          <Route path="/gallery" element={<Gallary />} />
         </Routes>
         <Footer />
       </div>
