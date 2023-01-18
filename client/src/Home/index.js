@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Banner from "./Banner";
 import AboutArea from "./AboutArea";
-import CoursesDetails from "./CourceDetails";
 import LecturerSection from "./LectureSection";
 import CampusVideo from "./CampusVideo";
 import NewsEventSection from "./NewsEventSection";
@@ -46,7 +45,6 @@ const Home = () => {
       </table> */}
       <Banner />
       <AboutArea />
-      <CoursesDetails />
       <Feature />
       <LecturerSection />
       <CampusVideo />
