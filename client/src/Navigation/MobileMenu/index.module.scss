@@ -15,7 +15,12 @@
         background: #f8f8f8;
   
       @include if-device(desktop){
-        display: none;
+        display: block;
+        width: 100%;
+        padding: 0 50px;
+        overflow-y: scroll;
+        height: 331px;
+        text-align: left;
       }
       @include if-device(tablet){
         width: 100%;
@@ -59,6 +64,14 @@
             width: 50%;
             padding: 16px 5%;
             cursor: pointer;
+
+            &>a{
+              color: #212121;
+              font-weight: 700;
+              font-family: "Roboto",sans-serif;
+              font-size: 12px;
+              text-decoration: none;
+            }
     
           }
           &>i{
@@ -90,6 +103,13 @@
               align-items: center;
               justify-content: space-between;
               flex-wrap: wrap;
+
+              &>a{
+                color: #212121;
+                font-family: "Roboto",sans-serif;
+                font-size: 14px;
+                text-decoration: none;
+              }
   
               &__name2{
                 color: #212121;

@@ -1,38 +1,42 @@
 @import "../../../public/Style/breakpoints";
 
-.bookSection{
-    padding: 88px 0px 100px 0px;
+.bookSection {
+  padding: 88px 0px 100px 0px;
 
-    &__container{
-        width: 1164px;
-        margin: 0 auto;
-        padding: 0 15px;
-        position: relative;
-        @include if-device(desktop){
-           width: 100%;
-           padding: 0 50px;
-          }
-          @include if-device(tablet){
-            width: 100%;
-           padding: 0 50px;
-          }
-          @include if-device(largephone){
-            width: 100%;
-            padding: 0 50px;
-          }
-          @include if-device(phone){
-            width: 100%;
-            padding: 0 20px;
-          }
+  &__container {
+    width: 1164px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
 
-       h2{
-        text-transform: capitalize;
-        text-align: left;
-        font-weight: 500;
-        margin-bottom: 45px;
-        color: #002147;
-        font-size: 30px;
-        font-family: 'Roboto', sans-serif;
-       }
+    @include if-device(desktop) {
+      width: 100%;
+      padding: 0 50px;
     }
+
+    @include if-device(tablet) {
+      width: 100%;
+      padding: 0 50px;
+    }
+
+    @include if-device(largephone) {
+      width: 100%;
+      padding: 0 50px;
+    }
+
+    @include if-device(phone) {
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    h2 {
+      text-transform: capitalize;
+      text-align: left;
+      font-weight: 500;
+      margin-bottom: 45px;
+      color: #002147;
+      font-size: 30px;
+      font-family: 'Roboto', sans-serif;
+    }
+  }
 }
