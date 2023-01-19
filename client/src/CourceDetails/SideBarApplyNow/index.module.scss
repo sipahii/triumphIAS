@@ -6,7 +6,7 @@
          box-sizing: border-box;
 
          &__image {
-             width: 265px;
+             width: 100%;
              position: relative;
 
              @include if-device(smallPhone) {

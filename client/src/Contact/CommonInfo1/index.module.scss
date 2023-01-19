@@ -5,13 +5,26 @@
     position: relative;
     border-bottom: 1px solid #BDBDBD;
 
+    @include if-device(tablet) {
+        padding: 15px 0 6px 12px;
+    }
+
     &>i {
         color: #002147;
         position: absolute;
         z-index: 1;
         right: 30px;
         top: 40px;
-        font-size: 20px;
+        font-size: 18px;
+
+        @include if-device(phone) {
+            top: 20px;
+        }
+
+        @include if-device(tablet) {
+            top: 20px;
+            right: 20px;
+        }
     }
 
     &>h3 {
@@ -26,5 +39,8 @@
     &>p {
         line-height: 1.5;
         margin: 0 0 20px 0;
+        font-family: 'Roboto', sans-serif;
+        color: #444444;
+        font-weight: 400;
     }
 }

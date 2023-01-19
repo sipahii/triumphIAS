@@ -1,5 +1,6 @@
 @import "../../../public/Style/breakpoints";
-.banner{
+
+.banner {
     width: 100%;
     position: relative;
     height: 315px;
@@ -7,7 +8,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 88px;
 
     // &::before{
     //     content: "";
@@ -21,55 +21,62 @@
     //     background-color: rgba(0, 0, 0, .75);
     // }
 
-    &__container{
+    &__container {
         width: 1164px;
         margin: 0 auto;
         padding: 0 15px;
 
-        &__body{
+        &__body {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
 
-            &__title{
+            &__title {
 
-                &__h1{
+                &__h1 {
                     text-transform: capitalize;
                     font-family: "Roboto", sans-serif;
                     font-weight: 700;
                     margin-bottom: 5px;
                     font-size: 48px;
                     color: #FFFFFF;
+
                     @include if-device(phone) {
                         font-size: 32px;
-                      }
-                      @include if-device(tablet) {
+                    }
+
+                    @include if-device(tablet) {
                         font-size: 42px;
-                      }
-                      @include if-device(largephone) {
+                    }
+
+                    @include if-device(largephone) {
                         font-size: 42px;
-                        
-                      }
-                      @include if-device(desktop) {
+
+                    }
+
+                    @include if-device(desktop) {
                         font-size: 42px;
-                      }
+                    }
                 }
 
             }
 
-            &__path{
+            &__path {
                 display: flex;
                 align-items: center;
                 column-gap: 5px;
 
-                &__start,&__mid,&__end{
+                &__start,
+                &__mid,
+                &__end {
                     color: #fdc800;
                     font-family: 'Roboto', sans-serif;
                     font-weight: 400;
                     font-size: 14px;
                 }
 
-                &__mid,&__end{
+                &__mid,
+                &__end {
                     color: #fff;
                 }
             }

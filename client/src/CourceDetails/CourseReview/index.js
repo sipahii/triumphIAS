@@ -1,73 +1,33 @@
 import React from "react";
 import CommonTitle from "../CommonTitle";
 import Styles from "./index.module.scss"
+import Image from "../../../src/Assets/qr-code.jpeg"
 
 const CourseReview = () => {
     return (
         <div className={Styles.courcesPage}>
             <div className={Styles.courcesPage__inner}>
-                <CommonTitle head="Course Reviews" />
+                <CommonTitle head="For Admission Deposit Your Fee in the Account Given" />
                 <div className={Styles.courcesPage__inner__review}>
-                    <h4>
-                        Average Rating <span>4.8</span>
-                    </h4>
-                    <ul>
-                        <li>
-                            <i className="fa-solid fa-star"></i>
-                        </li>
-                        <li>
-                            <i className="fa-solid fa-star"></i>
-                        </li>
-                        <li>
-                            <i className="fa-solid fa-star"></i>
-                        </li>
-                        <li>
-                            <i className="fa-solid fa-star"></i>
-                        </li>
-                        <li>
-                            <i className="fa-regular fa-star-half-stroke"></i>
+                    <p>Account Name - <span>TRIUMPH EDUCATION & PUBLISHING PVT. LTD.</span></p>
+                    <p>Bank Name-<span>ICICI BANK</span></p>
+                    <p>Current Account No.-<span>401705000081</span></p>
+                    <p>IFSC Code:<span>ICIC0004017</span></p>
+                    <p>Branch-<span> East Patel Nagar Branch</span></p>
+                    <p>After Payment send the confirmation details through</p>
+                    <p><span> whatsApp OR SMS to 7840888102 </span>get the payment receipt.</p>
 
-                        </li>
-                    </ul>
-                    <div className={Styles.courcesPage__inner__review__skillArea}>
-                        <div className={Styles.courcesPage__inner__review__skillArea__progress}>
-                            <div className={Styles.courcesPage__inner__review__skillArea__progress__lead}>
-                                5 Stars
-                            </div>
-                            <div className={Styles.courcesPage__inner__review__skillArea__progress__baar}></div>
-                            <span>10</span>
-                        </div>
+                    <div className={Styles.courcesPage__inner__review__barcode}>
+                        <h5>ACCEPT PAYMENT THROUGH QR CODE</h5>
 
-                        <div className={Styles.courcesPage__inner__review__skillArea__progress}>
-                            <div className={Styles.courcesPage__inner__review__skillArea__progress__lead}>
-                                4 Stars
-                            </div>
-                            <div className={Styles.courcesPage__inner__review__skillArea__progress__baar2}></div>
-                            <span>6</span>
-                        </div>
-
-                        <div className={Styles.courcesPage__inner__review__skillArea__progress}>
-                            <div className={Styles.courcesPage__inner__review__skillArea__progress__lead}>
-                                3 Stars
-                            </div>
-                            <div className={Styles.courcesPage__inner__review__skillArea__progress__baar3}></div>
-                            <span>3</span>
-                        </div>
-
-                        <div className={Styles.courcesPage__inner__review__skillArea__progress}>
-                            <div className={Styles.courcesPage__inner__review__skillArea__progress__lead}>
-                                2 Stars
-                            </div>
-                            <div className={Styles.courcesPage__inner__review__skillArea__progress__baar4}></div>
-                            <span>0</span>
-                        </div>
-                        <div className={Styles.courcesPage__inner__review__skillArea__progress}>
-                            <div className={Styles.courcesPage__inner__review__skillArea__progress__lead}>
-                                1 Stars
-                            </div>
-                            <div className={Styles.courcesPage__inner__review__skillArea__progress__baar5}></div>
-                            <span>0</span>
-                        </div>
+                        <img src={Image} alt="barcode" />
+                        <h4>Terms and Conditions</h4>
+                        <p>1. Fees once paid are not returnable/refundable or transferrable.</p>
+                        <p>2. Study material given to students is a proprietary material. It should not be shared or copied or circulated, disclose, reproduce, duplicate and distribute in any form. Strict action will be taken against violation. In case a student is found involved in any violation of copyrights of Triumph IAS material, the admission will be cancelled.</p>
+                        <p>3. Study material will be issued only once. Students are advised to keep them safe. No duplicate or copy of the material will be issued.</p>
+                        <p>4. The right to cancelled, the admission any student for indiscipline or violation of terms and conditions rests with the management.</p>
+                        <p>5. Students shall submit his/her recent passport size photograph & one ID Proof at the time of admission.</p>
+                        <p>6. By taking enrollment, the student submits to the above said terms and conditions.</p>
                     </div>
                 </div>
             </div>

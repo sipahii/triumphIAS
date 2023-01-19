@@ -1,6 +1,7 @@
 import React from 'react'
 import CommanBanner from '../component/CommanBanner'
 import Container from '../component/Container'
+import ViewBtn from '../component/ViewBtn'
 import Footer from '../Footer'
 import Header from '../Header'
 import Navigation from '../Navigation'
@@ -10,8 +11,6 @@ import Styles from "./index.module.scss"
 const contact = () => {
     return (
         <>
-            <Header />
-            <Navigation />
             <CommanBanner section="Contact " />
             <div className={Styles.contact}>
                 <Container>
@@ -37,17 +36,17 @@ const contact = () => {
                                 </ul>
                             </div>
                             <div className={Styles.contact__page__wrap__info2}>
-                                <h2>contact page With Us</h2>
+                                <h2>contact With Us</h2>
                                 <div className={Styles.contact__page__wrap__info2__formSection}>
-                                    <form>
-                                        <div className={Styles.contact__page__wrap__info2__formSection__name}>
+                                    <form style={Styles.contact__page__wrap__info2__formSection__fill}>
+                                        <div className={Styles.contact__page__wrap__info2__formSection__fill__name}>
                                             <input type="text" placeholder="Name*" />
                                         </div>
-                                        <div className={Styles.contact__page__wrap__info2__formSection__name}>
+                                        <div className={Styles.contact__page__wrap__info2__formSection__fill__name}>
                                             <input type="text" placeholder="Email*" />
                                         </div>
-                                        <div className={Styles.contact__page__wrap__info2__formSection__textArea}>
-                                            <textarea>Messege*</textarea>
+                                        <div className={Styles.contact__page__wrap__info2__formSection__fill__textArea}>
+                                            <textarea placeholder='Message*'></textarea>
                                         </div>
                                     </form>
                                 </div>
@@ -60,7 +59,6 @@ const contact = () => {
                     </div>
                 </Container>
             </div>
-            <Footer />
 
 
         </>

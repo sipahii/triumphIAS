@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Styles from "./index.module.scss";
 import Container from "../component/Container";
 import Image from "../Assets/graphic.jpg";
@@ -10,21 +10,10 @@ import ApplyNow from "./SideBarApplyNow";
 import CourseReview from "./CourseReview";
 import CourseCrousel from "./CourseCrousel";
 
-import Footer from "../Footer";
-import Header from "../Header";
-import Navigation from "../Navigation";
 
 const CoursesDetails = () => {
-  const [show, setShow] = useState("Features");
-  const [active, setActive] = useState("Features");
-  const menuChangeHandler = (name) => {
-    setShow(name);
-    setActive(name);
-  };
   return (
     <>
-      <Header />
-      <Navigation />
       <CommanBanner section="Courses Details" />
       <div className={Styles.courcesPage}>
         <Container>
@@ -39,7 +28,7 @@ const CoursesDetails = () => {
                   and scrambled it to make a type specime book. It has survived
                   not only five centuries.
                 </p>
-                <img src={Image} alt="" />
+                <img src={Image} alt="image" />
                 <TabArea />
               </div>
               <div className={Styles.courcesPage__rowflex__couresDetails__crousalArea}>
@@ -55,7 +44,6 @@ const CoursesDetails = () => {
             </div>
           </div>
         </Container>
-        <Footer />
       </div>
     </>
   );

@@ -44,8 +44,10 @@ import PersonalityTest from "./PersonalityTest";
 import Header from "./Header";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
-import CoursesDetails from "./Home/CourceDetails";
+import CoursesDetails from "./CourceDetails";
 import Gallary from "./Gallary";
+import Contact from "./Contact";
+
 
 function App() {
   return (
@@ -97,6 +99,7 @@ function App() {
           <Route path="/important-articles" element={<ImportantArticles />} />
           <Route path="/personality-test" element={<PersonalityTest />} />
           <Route path="/gallery" element={<Gallary />} />
+          <Route path="/contact-us" element={<Contact />} />
         </Routes>
         <Footer />
       </div>

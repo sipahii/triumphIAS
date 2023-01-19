@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import Styles from './index.module.scss'
 import Image1 from "../../Assets/one.jpg";
 import Image2 from "../../Assets/img2.jpg";
-
 import CommonTitle from "../CommonTitle";
 import CommonReview from "../CommonReview";
 import CommonLactures from "../CommmanLacturers";
-// import Image3 from "../../Assets/sideBar.jpg";
+import Feature from "../../Feature";
+import FeaturesArea from "../CommanFeatures";
 
 const TabArea = () => {
     const [show, setShow] = useState("Features");
@@ -20,11 +20,7 @@ const TabArea = () => {
             <div className={Styles.courcesPage}>
                 <div className={Styles.courcesPage__tabArea}>
                     <div className={Styles.courcesPage__tabArea__wrap}>
-                        <ul
-                            className={
-                                Styles.courcesPage__tabArea__wrap__tabNav
-                            }
-                        >
+                        <ul className={Styles.courcesPage__tabArea__wrap__tabNav}>
                             <li
                                 className={`${Styles.list} ${active === "Features" ? Styles.active : ""
                                     }`}
@@ -52,16 +48,16 @@ const TabArea = () => {
                 <div className={Styles.courcesPage__tabContant}>
                     {show === "Features" && (
                         <div className={Styles.courcesPage__tabContant__item1}>
-                            <ul className={Styles.courcesPage__tabContant__item1__courceFeatures}>
-                                <li>Start: 01 January, 2017</li>
-                                <li>Total Credits: 150</li>
-                                <li>Total Classes : 100</li>
-                                <li>Class: Sunday - Monday</li>
-                                <li>Course Duration: 3 Month</li>
-                                <li>Seats Available: 200</li>
-                                <li>Lecturer: 03</li>
-                                <li>Class Time: 10 am - 11.00 am</li>
-                            </ul>
+                            <FeaturesArea
+                                heading="Course Features"
+                                para="Daily 2 hours Classes. At the End of the Lecture Assignment related to the Topic is given based on Previous Year Question."
+                                para1="Daily After Attending the Online Lec. do Telephonic Doubt discussion with Vikash Sir."
+                                para2="Duration of the Class is Four months but Your Direct Contact with Sir and Mentorship of Vikash Sir will remain till your Final Success."
+                                para3="Classn begins with Basics & Equal Focus on Fundamentals & #Applied #Sociology along with Coverage of CURRENT Sociology. APPLIED UNDERSTANDING OF SYLLABUS help you retain the Concepts and Theories"
+                                para4="Previous Years Questions are well Integrated in Foundation Course itself."
+                                para5="15 Quick Revision & CONTEMPORARY/ CURRENT ISSUES UPDATION CLASS After Your Prelims Test. In this class We do INTELLIGENT GUESSWORK for CSE Mains of that Particular Year. (Exclusively for Triumph IAS Students)"
+
+                            />
                         </div>
                     )}
                     {show === "Lecturers" && (
