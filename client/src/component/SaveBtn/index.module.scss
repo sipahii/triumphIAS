@@ -1,0 +1,21 @@
+.button{
+    text-align: left;
+    
+    &__save{
+        color: #FFFFFF;
+        padding: 12px 34px;
+        background: #002147;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 500;
+        border: none;
+        transition: all 0.5s ease-out;
+        font-family: 'Roboto', sans-serif;
+        cursor: pointer;
+
+        &:active{
+            background: #fdc800;
+            color: #212121;
+        }
+    }
+}

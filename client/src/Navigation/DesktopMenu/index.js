@@ -53,7 +53,7 @@ const DesktopMenu = () => {
           <Link to="/sociology-plannar">Sociology Plannar</Link>
         </li>
         <li className={`${Styles.subList} ${path === "11" ? Styles.hoverSubActive : ""}`}>
-          <a href="https://triumphias.com/file-download.php?file-id=Sociology-Brochure.pdf" target="_blank">
+          <a href="https://triumphias.com/file-download.php?file-id=Sociology-Brochure.pdf" rel="noreferrer" target="_blank">
             Sociology Brouchure
           </a>
         </li>
@@ -76,7 +76,7 @@ const DesktopMenu = () => {
           <Link to="/essay-planner">Essay Plannar</Link>
         </li>
         <li className={`${Styles.subList} ${path === "17" ? Styles.hoverSubActive : ""}`}>
-          <a href="https://triumphias.com/file-download.php?file-id=Essay-Brochure-Web.pdf" target="_blank">
+          <a href="https://triumphias.com/file-download.php?file-id=Essay-Brochure-Web.pdf" rel="noreferrer" target="_blank">
             Essay Brouchure
           </a>
         </li>
@@ -108,12 +108,12 @@ const DesktopMenu = () => {
           <Link to="/download-results">Results</Link>
         </li>
         <li className={`${Styles.subList} ${path === "25" ? Styles.hoverSubActive : ""}`}>
-          <a href="https://drive.google.com/file/d/1KAFeNOHv-GNkGW8lsBQt7gw8Sfpt-aJC/view" target="_blank">
+          <a href="https://drive.google.com/file/d/1KAFeNOHv-GNkGW8lsBQt7gw8Sfpt-aJC/view" rel="noreferrer" target="_blank">
             Union Budget 2022-23
           </a>
         </li>
         <li className={`${Styles.subList} ${path === "26" ? Styles.hoverSubActive : ""}`}>
-          <a href="https://triumphias.com/resources/uploads/budget.pdf" target="_blank">
+          <a href="https://triumphias.com/resources/uploads/budget.pdf" rel="noreferrer" target="_blank">
             Interim Budget 2019-20
           </a>
         </li>
