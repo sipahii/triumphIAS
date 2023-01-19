@@ -1,10 +1,12 @@
 import React from "react";
 import style from "./index.module.scss";
 
-const SaveBtn = () => {
+const SaveBtn = (props) => {
   return (
     <div className={style.button}>
-      <button className={style.button__save}>Save</button>
+      <button onClick={props.onClick} className={style.button__save}>
+        Save
+      </button>
     </div>
   );
 };

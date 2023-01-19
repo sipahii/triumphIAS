@@ -40,10 +40,10 @@ const Banner = () => {
                 </h1>
 
                 <p className={Styles.mainBanner__desc} id="desc1">
-                  Emply dummy text of the printing and typesetting industry orem
-                  Ipsum has been the industry's standard dummy text ever
-                  sinceprinting and typesetting industry.
+                  Emply dummy text of the printing and typesetting industry orem Ipsum has been the industry's standard dummy text ever sinceprinting and typesetting industry.
                 </p>
+
+                <p className={Styles.mainBanner__desc}>Start Data : 12/10/2023</p>
 
                 <button id="button1" className={Styles.mainBanner__startBtn}>
                   start a course
@@ -61,9 +61,7 @@ const Banner = () => {
                 </h1>
 
                 <p className={Styles.mainBanner__desc} id="desc2">
-                  Emply dummy text of the printing and typesetting industry orem
-                  Ipsum has been the industry's standard dummy text ever
-                  sinceprinting and typesetting industry.
+                  Emply dummy text of the printing and typesetting industry orem Ipsum has been the industry's standard dummy text ever sinceprinting and typesetting industry.
                 </p>
 
                 <button id="button2" className={Styles.mainBanner__startBtn}>
@@ -81,9 +79,7 @@ const Banner = () => {
                 </h1>
 
                 <p className={Styles.mainBanner__desc} id="desc3">
-                  Emply dummy text of the printing and typesetting industry orem
-                  Ipsum has been the industry's standard dummy text ever
-                  sinceprinting and typesetting industry.
+                  Emply dummy text of the printing and typesetting industry orem Ipsum has been the industry's standard dummy text ever sinceprinting and typesetting industry.
                 </p>
 
                 <button id="button3" className={Styles.mainBanner__startBtn}>
@@ -102,9 +98,7 @@ const Banner = () => {
                 </h1>
 
                 <p className={Styles.mainBanner__desc} id="desc4">
-                  Emply dummy text of the printing and typesetting industry orem
-                  Ipsum has been the industry's standard dummy text ever
-                  sinceprinting and typesetting industry.
+                  Emply dummy text of the printing and typesetting industry orem Ipsum has been the industry's standard dummy text ever sinceprinting and typesetting industry.
                 </p>
 
                 <button id="button4" className={Styles.mainBanner__startBtn}>
@@ -123,9 +117,7 @@ const Banner = () => {
                 </h1>
 
                 <p className={Styles.mainBanner__desc} id="desc5">
-                  Emply dummy text of the printing and typesetting industry orem
-                  Ipsum has been the industry's standard dummy text ever
-                  sinceprinting and typesetting industry.
+                  Emply dummy text of the printing and typesetting industry orem Ipsum has been the industry's standard dummy text ever sinceprinting and typesetting industry.
                 </p>
 
                 <button id="button5" className={Styles.mainBanner__startBtn}>
