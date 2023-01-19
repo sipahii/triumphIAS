@@ -6,10 +6,12 @@ import FooterFlickerImg from "./FooterFlickerImg";
 import FooterInformation from "./FooterInformation";
 import FooterNewsletter from "./FooterNewsletter";
 import Styles from "./index.module.scss";
+import Map from "./Map";
 
 const Footer = () => {
   return (
     <>
+      <Map />
       <div className={Styles.footer}>
         <div className={Styles.footer__container}>
           <div className={Styles.footer__container__body}>

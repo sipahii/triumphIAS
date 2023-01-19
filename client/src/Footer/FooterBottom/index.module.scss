@@ -36,7 +36,7 @@
             display: flex;
             align-items: center;
             
-            p{
+            &>p{
                 color: #999999;
                 margin-bottom: 20px;
                 text-transform: capitalize;
@@ -44,9 +44,14 @@
                 font-family: 'Roboto', sans-serif;
                 font-weight: 400;
 
-                span{
+                &>span{
                     color: #FFFFFF;
                     transition: all 0.3s ease-out;
+                    cursor: pointer;
+
+                    &:hover{
+                      color: #fdc800;
+                    }
                 }
             }
         }
