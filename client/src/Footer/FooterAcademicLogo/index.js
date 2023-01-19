@@ -1,20 +1,16 @@
 import React from "react";
 import Styles from "./index.module.scss";
-import FooterLogo from "../../Assets/logo-footer.png";
+import FooterLogo from "../../Assets/logo.png";
 import FooterAcademicIcon from "./FooterAcademicIcon";
 
 const FooterAcademicLogo = () => {
   return (
     <div className={Styles.footerAcademicLogo}>
       <div className={Styles.footerAcademicLogo__top}>
-        <img src={FooterLogo} alt="" />
+        <img src={FooterLogo} alt="triumphias logo" />
       </div>
       <div className={Styles.footerAcademicLogo__middle}>
-        <p className={Styles.footerAcademicLogo__middle__para}>
-          Praesent vel rutrum purus. Nam vel dui eu sus duis dignissim
-          dignissim. Suspenetey disse at ros tecongueconsequat.Fusce sit amet
-          rna feugiat.
-        </p>
+        <p className={Styles.footerAcademicLogo__middle__para}>Praesent vel rutrum purus. Nam vel dui eu sus duis dignissim dignissim. Suspenetey disse at ros tecongueconsequat.Fusce sit amet rna feugiat.</p>
       </div>
       <div className={Styles.footerAcademicLogo__bottom}>
         <ul className={Styles.footerAcademicLogo__bottom__ul}>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Styles from "./index.module.scss";
 import { Link, useLocation } from "react-router-dom";
 
-const MobileMenu = (props) => {
+const MobileMenu = () => {
   const [subMenu, setSubMenu] = useState(false);
 
   const location = useLocation();
