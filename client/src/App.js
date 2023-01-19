@@ -45,7 +45,7 @@ import PersonalityTest from "./PersonalityTest";
 import Header from "./Header";
 import Navigation from "./Navigation";
 import Footer from "./Footer";
-import CoursesDetails from "./Home/CourceDetails";
+import CoursesDetails from "./CourceDetails";
 import Gallary from "./Gallary";
 
 function App() {
