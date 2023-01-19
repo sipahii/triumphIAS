@@ -18,12 +18,7 @@ const EventComponent = (props) => {
       <div className={Styles.eventComponent__right}>
         <div className={Styles.eventComponent__right__top}>
           <h4>{props.heading}</h4>
-          <p>
-            Pellentese turpis dignissim amet area ducation process facilitating
-            Knowledge. Pellentese turpis dignissim amet area ducation process
-            facilitating Knowledge. Pellentese turpis dignissim amet area
-            ducation.
-          </p>
+          <p>Pellentese turpis dignissim amet area ducation process facilitating Knowledge. Pellentese turpis dignissim amet area ducation process facilitating Knowledge. Pellentese turpis dignissim amet area ducation.</p>
         </div>
         <div className={Styles.eventComponent__right__bottom}>
           <h3>04:00 PM - 06:00 PM</h3>
