@@ -7,7 +7,7 @@ import CampusVideo from "./CampusVideo";
 import NewsEventSection from "./NewsEventSection";
 import CounterShow from "./CounterShow";
 import BookSection from "./BookSection";
-import Feature from "../Feature";
+import Feature from "./Feature";
 
 const Home = () => {
   const [list, setList] = useState([]);
