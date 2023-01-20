@@ -14,6 +14,8 @@ import CourseCrousel from "./CourseCrousel";
 const CoursesDetails = () => {
   return (
     <>
+      <Header />
+      <Navigation />
       <CommanBanner section="Courses Details" />
       <div className={Styles.courcesPage}>
         <Container>

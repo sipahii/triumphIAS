@@ -5,7 +5,6 @@ import Image2 from "../../Assets/img2.jpg";
 import CommonTitle from "../CommonTitle";
 import CommonReview from "../CommonReview";
 import CommonLactures from "../CommmanLacturers";
-import Feature from "../../Feature";
 import FeaturesArea from "../CommanFeatures";
 
 const TabArea = () => {
