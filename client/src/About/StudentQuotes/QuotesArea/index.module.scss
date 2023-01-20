@@ -8,7 +8,6 @@
         transition: all 0.5s ease-out;
         font-family: 'Roboto', sans-serif;
         text-align: left;
-        width: 150px;
         cursor: pointer;
 
         &:hover{
@@ -28,6 +27,8 @@
     &__quotesWrapper{
         position: relative;
         text-align: left;
+        min-height: 186px;
+        background: #f8f8f8;
 
         &::after{
             content: "";

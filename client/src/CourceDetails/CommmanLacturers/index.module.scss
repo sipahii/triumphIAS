@@ -1,0 +1,178 @@
+@import "../../../public/Style/breakpoints";
+
+.lacturers {
+    box-sizing: border-box;
+
+    &__line {
+        list-style: none;
+        list-style: outside none none;
+        margin: 0;
+        padding: 0;
+
+        &__wrap {
+            display: flex;
+            // align-items: center;
+            margin-bottom: 10px;
+            width: 100%;
+
+            @include if-device(smallPhone) {
+                display: block;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            @include if-device(phone) {
+                display: block;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            @include if-device(largephone) {
+                display: block;
+                text-align: center;
+                clear: both;
+                margin-bottom: 30px;
+            }
+
+            @include if-device(tablet) {
+                display: block;
+                text-align: center;
+                clear: both;
+                margin-bottom: 30px;
+            }
+
+
+
+            &__image {
+                flex: 3;
+
+                @include if-device(largephone) {
+                    display: block;
+                    text-align: center;
+                }
+
+                &>img {
+                    max-width: 100%;
+                    height: auto;
+
+                }
+
+            }
+
+            &__contact {
+                flex: 6;
+                margin-right: 10px;
+
+                @include if-device(largephone) {
+                    display: block;
+                    text-align: center;
+                }
+
+                &>h4 {
+                    color: #002147;
+                    font-weight: 400;
+                    margin-bottom: 0;
+                    font-size: 18px;
+                }
+
+                &>p {
+                    color: #002147;
+                    line-height: 1.5;
+                    margin: 0 0 20px 0;
+                }
+            }
+
+            &__shedule {
+                flex: 7;
+
+                &__flex {
+                    margin-bottom: 0;
+
+                    @include if-device(smallPhone) {
+                        margin-bottom: 30px;
+                    }
+
+                    @include if-device(phone) {
+                        margin-bottom: 30px;
+                    }
+
+                    @include if-device(largephone) {
+                        margin-bottom: 30px;
+                    }
+
+                    @include if-device(tablet) {
+                        margin-bottom: 30px;
+                    }
+
+
+
+                    &__day {
+                        width: 100px;
+                        display: inline-block;
+                        border-right: 1px solid #cdcdcd;
+                        margin-right: 15px;
+                        height: 58px;
+
+                        &>h4 {
+                            font-size: 16px;
+                            color: #002147;
+                            margin-bottom: 5px;
+                            font-weight: 500;
+
+                        }
+
+                        &>p {
+                            color: #444444;
+                            line-height: 1.5;
+                            margin: 0 0 20px 0;
+                        }
+                    }
+
+                    &__time {
+                        width: 100px;
+                        display: inline-block;
+                        margin-right: 15px;
+                        height: 58px;
+
+                        &>h4 {
+                            font-size: 16px;
+                            color: #002147;
+                            margin-bottom: 5px;
+                            font-weight: 500;
+
+                        }
+
+                        &>p {
+                            color: #444444;
+                            line-height: 1.5;
+                            margin: 0 0 20px 0;
+                        }
+                    }
+                }
+            }
+
+            &__details {
+                flex: 2;
+
+                &>button {
+                    text-align: center;
+                    color: #002147;
+                    background-color: white;
+                    padding: 10px 30px;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    display: inline-block;
+                    font-weight: 500;
+                    border: 2px solid #fdc800;
+                    transition: all 0.5s ease-out;
+
+                    &:hover {
+                        background-color: #fdc800;
+                        color: white;
+                    }
+                }
+            }
+
+        }
+    }
+}
