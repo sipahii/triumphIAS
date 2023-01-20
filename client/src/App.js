@@ -43,11 +43,8 @@ import Navigation from "./Navigation";
 import Footer from "./Footer";
 import CoursesDetails from "./CourceDetails";
 import Gallary from "./Gallary";
-<<<<<<< HEAD
 import Registration from "./Registation";
-=======
 import Error from "./404_Error";
->>>>>>> f3c8d1effbd17537d2af92878f995f2b10cbd7ab
 
 function App() {
   return (
@@ -97,11 +94,8 @@ function App() {
           <Route path="/download-important-articles" element={<ImportantArticles />} />
           <Route path="/personality-test" element={<PersonalityTest />} />
           <Route path="/gallery" element={<Gallary />} />
-<<<<<<< HEAD
           <Route path="/registration" element={<Registration />} />
-=======
           <Route path="/404-error" element={<Error />} />
->>>>>>> f3c8d1effbd17537d2af92878f995f2b10cbd7ab
         </Routes>
         <Footer />
       </div>
