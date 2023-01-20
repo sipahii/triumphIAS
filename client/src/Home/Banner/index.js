@@ -2,11 +2,11 @@ import React from "react";
 import Styles from "./index.module.scss";
 import ReactOwlCrousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
-import Image from "../../Assets/videoBg.webp";
-import Image1 from "../../Assets/videoBg.webp";
-import Image2 from "../../Assets/videoBg.webp";
-import Image3 from "../../Assets/videoBg.webp";
-import Image4 from "../../Assets/videoBg.webp";
+import Image from "../../Assets/ban.webp";
+import Image1 from "../../Assets/ban.webp";
+import Image2 from "../../Assets/ban.webp";
+import Image3 from "../../Assets/ban.webp";
+import Image4 from "../../Assets/ban.webp";
 
 const Banner = () => {
   const options = {
@@ -70,6 +70,7 @@ const Banner = () => {
               </div>
             </div>
           </div>
+
           <div className="item">
             <div className={Styles.mainBanner__bannerImages}>
               <img src={Image2} alt="" />

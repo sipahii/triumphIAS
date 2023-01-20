@@ -1,4 +1,4 @@
-@import "../../../public/Style/breakpoints";
+@import "../../../../public/Style/breakpoints";
 .seprateSubjectArea {
   width: 48%;
   @include if-device(smallPhone) {
