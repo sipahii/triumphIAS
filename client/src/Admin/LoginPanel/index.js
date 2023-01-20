@@ -22,8 +22,8 @@ const LoginPanel = (props) => {
   };
 
   const rememberHandler = (event) => {
-    if (event.target.checked) {
-    }
+    // if (event.target.checked) {
+    // }
   };
 
   const loginHandler = () => {

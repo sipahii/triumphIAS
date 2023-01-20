@@ -21,7 +21,7 @@ const Admin = () => {
   useEffect(() => {
     const userLoggedIn = localStorage.getItem("mustafa@gmail.com");
 
-    if (userLoggedIn === "1234567") {
+    if (userLoggedIn === "123456") {
       setLogIn(true);
     }
   }, []);
