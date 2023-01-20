@@ -46,6 +46,7 @@ import Navigation from "./Navigation";
 import Footer from "./Footer";
 import CoursesDetails from "./Home/CourceDetails";
 import Gallary from "./Gallary";
+import Registration from "./Registation";
 
 function App() {
   return (
@@ -97,6 +98,7 @@ function App() {
           <Route path="/important-articles" element={<ImportantArticles />} />
           <Route path="/personality-test" element={<PersonalityTest />} />
           <Route path="/gallery" element={<Gallary />} />
+          <Route path="/registration" element={<Registration />} />
         </Routes>
         <Footer />
       </div>
