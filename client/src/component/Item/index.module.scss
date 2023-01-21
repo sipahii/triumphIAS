@@ -1,3 +1,5 @@
+@import "../../../public/Style/breakpoints";
+
 .list {
 
     &__li {
@@ -5,6 +7,10 @@
         padding-left: 30px;
         position: relative;
         margin-bottom: 10px;
+
+        @include if-device(phone) {
+            font-size: 14px;
+        }
 
         &::before {
             content: "\f058";
