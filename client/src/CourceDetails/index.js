@@ -14,8 +14,6 @@ import CourseCrousel from "./CourseCrousel";
 const CoursesDetails = () => {
   return (
     <>
-      <Header />
-      <Navigation />
       <CommanBanner section="Courses Details" />
       <div className={Styles.courcesPage}>
         <Container>
@@ -33,10 +31,7 @@ const CoursesDetails = () => {
                 <img src={Image} alt="image" />
                 <TabArea />
               </div>
-              <div className={Styles.courcesPage__rowflex__couresDetails__crousalArea}>
-                <h3>Related Courses</h3>
-              </div>
-              <CourseCrousel />
+
             </div>
             <div className={Styles.courcesPage__rowflex__sidebar}>
               <CourcePrice />
@@ -45,6 +40,10 @@ const CoursesDetails = () => {
               <ApplyNow />
             </div>
           </div>
+          <div className={Styles.courcesPage__rowflex__couresDetails__crousalArea}>
+            <h3>Related Courses</h3>
+          </div>
+          <CourseCrousel />
         </Container>
       </div>
     </>

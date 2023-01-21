@@ -1,9 +1,10 @@
 import React from "react";
+import CoursesDetails from "../CourceDetails";
 
 const SociologyOffline = () => {
   return (
     <div>
-      <div></div>
+      <CoursesDetails />
     </div>
   );
 };

@@ -22,12 +22,12 @@ const CourseReview = () => {
 
                         <img src={Image} alt="barcode" />
                         <h4>Terms and Conditions</h4>
-                        <p>1. Fees once paid are not returnable/refundable or transferrable.</p>
-                        <p>2. Study material given to students is a proprietary material. It should not be shared or copied or circulated, disclose, reproduce, duplicate and distribute in any form. Strict action will be taken against violation. In case a student is found involved in any violation of copyrights of Triumph IAS material, the admission will be cancelled.</p>
-                        <p>3. Study material will be issued only once. Students are advised to keep them safe. No duplicate or copy of the material will be issued.</p>
-                        <p>4. The right to cancelled, the admission any student for indiscipline or violation of terms and conditions rests with the management.</p>
-                        <p>5. Students shall submit his/her recent passport size photograph & one ID Proof at the time of admission.</p>
-                        <p>6. By taking enrollment, the student submits to the above said terms and conditions.</p>
+                        <p><span>1.</span> Fees once paid are not returnable/refundable or transferrable.</p>
+                        <p><span>2.</span> Study material given to students is a proprietary material. It should not be shared or copied or circulated, disclose, reproduce, duplicate and distribute in any form. Strict action will be taken against violation. In case a student is found involved in any violation of copyrights of Triumph IAS material, the admission will be cancelled.</p>
+                        <p><span>3.</span> Study material will be issued only once. Students are advised to keep them safe. No duplicate or copy of the material will be issued.</p>
+                        <p><span>4.</span> The right to cancelled, the admission any student for indiscipline or violation of terms and conditions rests with the management.</p>
+                        <p><span>5.</span> Students shall submit his/her recent passport size photograph & one ID Proof at the time of admission.</p>
+                        <p><span>6.</span> By taking enrollment, the student submits to the above said terms and conditions.</p>
                     </div>
                 </div>
             </div>

@@ -28,7 +28,7 @@
         }
 
         &__couresDetails {
-            width: 74%;
+            width: 60%;
 
             @include if-device(phone) {
                 width: 100%;

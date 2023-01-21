@@ -142,7 +142,7 @@
                                 box-shadow: none;
                                 border: 1px solid #BDBDBD;
                                 width: 100%;
-                                height: 187px;
+                                height: 355px;
                                 padding: 0.375rem 0.75rem;
                                 font-size: 1rem;
                                 font-weight: 400;
@@ -170,6 +170,7 @@
                         width: 162px;
                         text-align: center;
                         transition: all 0.5s ease-out;
+                        margin-top: 10px;
 
                         &:hover {
                             background-color: #fdc800;

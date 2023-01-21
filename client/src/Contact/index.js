@@ -5,6 +5,7 @@ import CommonInfoLi from './CommonInfo1'
 import FollowUs from './followUs'
 import Styles from "./index.module.scss"
 const contact = () => {
+    const numbers = <p>7678628820 (R.Dawar),<br /> 7840888102 (R. Bisht),<br />7303203981 (Bhawna)</p>
     return (
         <>
             <CommanBanner section="Contact " />
@@ -20,14 +21,23 @@ const contact = () => {
                                         para="+61 3 8376 6284"
                                     />
                                     <CommonInfoLi
+                                        icon="fa fa-whatsapp"
+                                        name="Whatsapp"
+                                        para={numbers}
+                                    />
+                                    <CommonInfoLi
                                         icon="fa-solid fa-location-dot"
                                         name="Address"
-                                        para="PO Box 1212, California, US."
-                                    /><CommonInfoLi
+                                        para="23-B,3rd Floor,Pusa Road,
+                                        Metro Pillor No. 114Above Suri Lab,Old Rajender Nagar,New Delhi-110060."
+                                    />
+                                    <CommonInfoLi
                                         icon="fa fa-envelope-o"
                                         name="E-Mail"
-                                        para="academics@gmail.com"
+                                        para="info@triumphias.com"
                                     />
+
+
                                     <FollowUs name="Follow Us" />
                                 </ul>
                             </div>
