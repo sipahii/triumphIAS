@@ -7,10 +7,10 @@ import TabArea from "../CourceDetails/TabArea";
 import CommanHeading from "../component/CommanHeading";
 import Item from "../component/Item";
 import CourcePrice from "../CourceDetails/CoursePrice";
-import CourseReview from "../CourceDetails/CourseReview";
 import AskQuestion from "../CourceDetails/AskQuestion";
 import ApplyNow from "../CourceDetails/SideBarApplyNow";
 import CourseCrousel from "../CourceDetails/CourseCrousel";
+import PaymentDetails from "../component/PaymentDetails";
 
 const SociologyOffline = () => {
   return (
@@ -121,7 +121,7 @@ const SociologyOffline = () => {
             </div>
             <div className={Styles.courcesPage__rowflex__sidebar}>
               <CourcePrice />
-              <CourseReview />
+              <PaymentDetails />
               <AskQuestion />
               <ApplyNow />
             </div>

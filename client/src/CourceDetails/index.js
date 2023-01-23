@@ -7,7 +7,7 @@ import TabArea from "./TabArea";
 import CourcePrice from "./CoursePrice";
 import AskQuestion from "./AskQuestion";
 import ApplyNow from "./SideBarApplyNow";
-import CourseReview from "./CourseReview";
+import PaymentDetails from "../component/PaymentDetails";
 import CourseCrousel from "./CourseCrousel";
 import CommanHeading from "../component/CommanHeading";
 import Item from "../component/Item";
@@ -144,7 +144,7 @@ const CoursesDetails = (props) => {
             </div>
             <div className={Styles.courcesPage__rowflex__sidebar}>
               <CourcePrice />
-              <CourseReview />
+              <PaymentDetails />
               <AskQuestion />
               <ApplyNow />
             </div>

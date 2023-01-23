@@ -1,9 +1,10 @@
 import React from "react";
-import CommonTitle from "../CommonTitle";
+
 import Styles from "./index.module.scss"
 import Image from "../../../src/Assets/qr-code.jpeg"
+import CommonTitle from "../../CourceDetails/CommonTitle";
 
-const CourseReview = () => {
+const PaymentDetails = () => {
     return (
         <div className={Styles.courcesPage}>
             <div className={Styles.courcesPage__inner}>
@@ -35,4 +36,4 @@ const CourseReview = () => {
 
     )
 }
-export default CourseReview
+export default PaymentDetails

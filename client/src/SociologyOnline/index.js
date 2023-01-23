@@ -7,7 +7,7 @@ import Image from "../Assets/graphic.jpg";
 import Item from "../component/Item";
 import CourseCrousel from "../CourceDetails/CourseCrousel";
 import CourcePrice from "../CourceDetails/CoursePrice";
-import CourseReview from "../CourceDetails/CourseReview";
+import PaymentDetails from "../component/PaymentDetails";
 import ApplyNow from "../CourceDetails/SideBarApplyNow";
 import TabArea from "../CourceDetails/TabArea";
 import AskQuestion from "../CourceDetails/AskQuestion/";
@@ -142,7 +142,7 @@ const SociologyOnline = () => {
             </div>
             <div className={Styles.courcesPage__rowflex__sidebar}>
               <CourcePrice />
-              <CourseReview />
+              <PaymentDetails />
               <AskQuestion />
               <ApplyNow />
             </div>
