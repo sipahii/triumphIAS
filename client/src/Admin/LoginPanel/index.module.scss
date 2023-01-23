@@ -17,16 +17,6 @@
         font-family: "Roboto",sans-serif;
     }
 
-    &__lost{
-        width: 100%;
-        font-size: 16px;
-        font-weight: 500;
-        margin-bottom: 20px;
-        color: #002147;
-        font-family: "Roboto",sans-serif;
-        cursor: pointer;
-    }
-
     &__bottom{
         display: flex;
         align-items: center;
@@ -67,6 +57,10 @@
                 &:hover{
                     background: #fdc800;
                     color: #212121;
+                }
+
+                &:disabled{
+                    opacity: .5;
                 }
             }
         }
