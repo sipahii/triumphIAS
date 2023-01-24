@@ -5,7 +5,8 @@ import Container from "../component/Container";
 import Item from "../component/Item";
 import CourseCrousel from "../CourceDetails/CourseCrousel";
 import Image from "../Assets/graphic.jpg";
-import Styles from "../CourceDetails/index.module.scss"
+import Styles from "./index.module.scss"
+
 
 const SociologyPapper_2 = () => {
   return (

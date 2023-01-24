@@ -4,14 +4,14 @@ import CommanHeading from "../component/CommanHeading";
 import Container from "../component/Container";
 import Item from "../component/Item";
 import CourseCrousel from "../CourceDetails/CourseCrousel";
-import Styles from "../CourceDetails/index.module.scss"
+import Styles from "./index.module.scss"
 import Image from "../Assets/graphic.jpg";
 
 const SuggestBooks = () => {
-  const para = <p>Indian Social System<strong>-Ram Ahuja.</strong></p>
-  const para1 = <p>Makers of Indian Constitution <strong>– Ram Chander Guha</strong></p>
-  const para2 = <p>Modernization of Indian Tradition <strong>– Yogendra Singh.</strong></p>
-  const para3 = <p>Social Structure & Change in India <strong>– M.N. Sriniwas.</strong></p>
+  const para = <p>7. Indian Social System<strong>-Ram Ahuja.</strong></p>
+  const para1 = <p>8. Makers of Indian Constitution <strong>– Ram Chander Guha</strong></p>
+  const para2 = <p>9. Modernization of Indian Tradition <strong>– Yogendra Singh.</strong></p>
+  const para3 = <p>10. Social Structure & Change in India <strong>– M.N. Sriniwas.</strong></p>
   return (
     <>
       <CommanBanner section="IGNOU BOOKS" />
@@ -36,7 +36,7 @@ const SuggestBooks = () => {
                 <Item para={para1} />
                 <Item para={para2} />
                 <Item para={para3} />
-                <Item para="Select booklet of IGNOU Sociology." />
+                <Item para="11. Select booklet of IGNOU Sociology." />
 
 
 

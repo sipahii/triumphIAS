@@ -3,13 +3,10 @@ import CommanBanner from "../component/CommanBanner";
 import CommanHeading from "../component/CommanHeading";
 import Container from "../component/Container";
 import Item from "../component/Item";
-import PaymentDetails from "../component/PaymentDetails";
-import CourcePrice from "../CourceDetails/CoursePrice";
-import Styles from "../CourceDetails/index.module.scss"
+import Styles from "./index.module.scss"
 import Image from "../Assets/graphic.jpg";
-import AskQuestion from "../CourceDetails/AskQuestion";
-import ApplyNow from "../CourceDetails/SideBarApplyNow";
 import CourseCrousel from "../CourceDetails/CourseCrousel";
+
 
 const SociologyPapper_1 = () => {
   return (
@@ -60,18 +57,8 @@ const SociologyPapper_1 = () => {
                 <Item para="8. (a) Discuss the changing nature of kinship relations in the contemporary world." />
                 <Item para="(b) Describe the role of Science and Technology in enabling us to face the challenges triggered by the COVID-19 pandemic." />
                 <Item para="(c) Highlight the roles and functions of civil society in a democratic system." />
-
-
-
               </div>
-
             </div>
-            {/* <div className={Styles.courcesPage__rowflex__sidebar}>
-              <CourcePrice />
-              <PaymentDetails />
-              <AskQuestion />
-              <ApplyNow />
-            </div> */}
           </div>
           <div className={Styles.courcesPage__rowflex__couresDetails__crousalArea}>
             <h3>Related Courses</h3>

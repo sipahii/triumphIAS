@@ -46,10 +46,10 @@ const contact = () => {
                                 <div className={Styles.contact__page__wrap__info2__formSection}>
                                     <form style={Styles.contact__page__wrap__info2__formSection__fill}>
                                         <div className={Styles.contact__page__wrap__info2__formSection__fill__name}>
-                                            <input type="text" placeholder="Name*" />
+                                            <input type="text" placeholder="Name is Required*" />
                                         </div>
                                         <div className={Styles.contact__page__wrap__info2__formSection__fill__name}>
-                                            <input type="text" placeholder="Email*" />
+                                            <input type="text" placeholder="Email is Required*" />
                                         </div>
                                         <div className={Styles.contact__page__wrap__info2__formSection__fill__textArea}>
                                             <textarea placeholder='Message*'></textarea>

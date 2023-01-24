@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "../CourceDetails/index.module.scss"
+import Styles from "./index.module.scss"
 import Image from "../Assets/graphic.jpg";
 import CommanBanner from "../component/CommanBanner";
 import Container from "../component/Container";
@@ -245,10 +245,6 @@ const SociologySyllabus = () => {
                 <Item para="Caste conflicts." />
                 <Item para="Ethnic conflicts, communalism, religious revivalism." />
                 <Item para="Illiteracy and disparities in education." />
-
-
-
-
               </div>
 
             </div>

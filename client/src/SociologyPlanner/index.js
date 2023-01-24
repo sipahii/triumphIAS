@@ -4,7 +4,7 @@ import CommanHeading from "../component/CommanHeading";
 import Container from "../component/Container";
 import Item from "../component/Item";
 import CourseCrousel from "../CourceDetails/CourseCrousel";
-import Styles from "../CourceDetails/index.module.scss"
+import Styles from "./index.module.scss"
 // import Image from "../Assets/graphic.jpg";
 
 const SociologyPlanner = () => {
