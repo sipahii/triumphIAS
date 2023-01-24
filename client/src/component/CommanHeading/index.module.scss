@@ -11,6 +11,7 @@
         border-left: 24px solid #fdc800;
         border-right: 24px solid #fdc800;
         margin-bottom: 20px;
+        font-size: 16px;
 
         @include if-device(phone) {
             font-size: 14px;
