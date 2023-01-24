@@ -9,7 +9,7 @@ const AskQuestion = () => {
                 <div className={Styles.courcesPage__askQuestoin__form}>
                     <input type="text" name="arshad" placeholder="Name*" />
                     <input type="text" name="arshad" placeholder="Email*" />
-                    <textarea>Messege*</textarea>
+                    <textarea placeholder="Message*"></textarea>
                     <button>Send</button>
                 </div>
             </div>

@@ -43,6 +43,7 @@ import Navigation from "./Navigation";
 import Footer from "./Footer";
 import CoursesDetails from "./CourceDetails";
 import Gallary from "./Gallary";
+import Contact from "./Contact";
 import Error from "./404_Error";
 
 function App() {
@@ -93,6 +94,7 @@ function App() {
           <Route path="/download-important-articles" element={<ImportantArticles />} />
           <Route path="/personality-test" element={<PersonalityTest />} />
           <Route path="/gallery" element={<Gallary />} />
+          <Route path="/contact-us" element={<Contact />} />
           <Route path="/404-error" element={<Error />} />
         </Routes>
         <Footer />
