@@ -4,6 +4,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Home from "./Home";
 import About from "./About";
+import Admin from "./Admin";
 import CoursePage from "./CoursePage";
 import AboutCivilServices from "./AboutCivilServices";
 import AboutUPSC from "./AboutUPSC";
@@ -54,6 +55,7 @@ function App() {
         <Navigation />
 
         <Routes>
+          <Route path="/admin" element={<Admin />} />
           <Route path="/" element={<Home />} />
           <Route path="/course-details" element={<CoursesDetails />} />
           <Route path="/home" element={<Home />} />

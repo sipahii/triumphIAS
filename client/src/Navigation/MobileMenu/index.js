@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Styles from "./index.module.scss";
 import { Link, useLocation } from "react-router-dom";
 
-const MobileMenu = (props) => {
+const MobileMenu = () => {
   const [subMenu, setSubMenu] = useState(false);
 
   const location = useLocation();
@@ -80,7 +80,7 @@ const MobileMenu = (props) => {
               <Link to="/sociology-plannar">Sociology Plannar</Link>
             </li>
             <li className={`${Styles.menuList__ul__li__dropdown__subli} ${path === "11" ? Styles.hoverSubActive : ""}`}>
-              <a href="https://triumphias.com/file-download.php?file-id=Sociology-Brochure.pdf" target="_blank">
+              <a href="https://triumphias.com/file-download.php?file-id=Sociology-Brochure.pdf" target="_blank" rel="noreferrer">
                 Sociology Brouchure
               </a>
             </li>
@@ -111,7 +111,7 @@ const MobileMenu = (props) => {
               <Link to="/essay-planner">Essay Plannar</Link>
             </li>
             <li className={`${Styles.menuList__ul__li__dropdown__subli} ${path === "17" ? Styles.hoverSubActive : ""}`}>
-              <a href="https://triumphias.com/file-download.php?file-id=Essay-Brochure-Web.pdf" target="_blank">
+              <a href="https://triumphias.com/file-download.php?file-id=Essay-Brochure-Web.pdf" target="_blank" rel="noreferrer">
                 Essay Brouchure
               </a>
             </li>
@@ -159,12 +159,12 @@ const MobileMenu = (props) => {
               <Link to="/download-results">Results</Link>
             </li>
             <li className={`${Styles.menuList__ul__li__dropdown__subli} ${path === "25" ? Styles.hoverSubActive : ""}`}>
-              <a href="https://drive.google.com/file/d/1KAFeNOHv-GNkGW8lsBQt7gw8Sfpt-aJC/view" target="_blank">
+              <a href="https://drive.google.com/file/d/1KAFeNOHv-GNkGW8lsBQt7gw8Sfpt-aJC/view" rel="noreferrer" target="_blank">
                 Union Budget 2022-23
               </a>
             </li>
             <li className={`${Styles.menuList__ul__li__dropdown__subli} ${path === "26" ? Styles.hoverSubActive : ""}`}>
-              <a href="https://triumphias.com/resources/uploads/budget.pdf" target="_blank">
+              <a href="https://triumphias.com/resources/uploads/budget.pdf" rel="noreferrer" target="_blank">
                 Interim Budget 2019-20
               </a>
             </li>

@@ -1,0 +1,68 @@
+.loginPanel{
+    width: 540px;
+    height: 444px;
+    text-align: left;
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    padding: 40px;
+    margin: auto;
+
+    &__title{
+        font-size: 30px;
+        text-transform: capitalize;
+        text-align: left;
+        font-weight: 500;
+        margin-bottom: 45px;
+        color: #002147;
+        font-family: "Roboto",sans-serif;
+    }
+
+    &__bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__checkbox{
+            display: flex;
+            align-items: center;
+            column-gap: 5px;
+
+            &__remember{
+                color: #002147;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                font-size: 14px;
+            }
+        }
+
+        &__buttons{
+            display: flex;
+            align-items: center;
+            column-gap: 19px;
+
+            &>button{
+                padding: 15px 0;
+                background: #002147;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 700;
+                border: none;
+                width: 150px;
+                text-align: center;
+                color: #FFFFFF;
+                transition: all 0.5s ease-out;
+                font-family: 'Roboto', sans-serif;
+                cursor: pointer;
+
+                &:hover{
+                    background: #fdc800;
+                    color: #212121;
+                }
+
+                &:disabled{
+                    opacity: .5;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.tabs{
+    border-right: 1px solid #002147;
+    border-left: 1px solid #002147;
+    border-top: 1px solid #002147;
+   
+    &__ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+
+        &__li{
+            padding: 15px 30px;
+            text-transform: capitalize;
+            font-weight: 600;
+            width: 25%;
+            font-size: 20px;
+            background-color: #FFFFFF;
+            color: #002147;
+            cursor: pointer;
+
+            &:hover{
+                background: #002147;
+                color: #FFFFFF;
+            }
+
+            &:nth-child(odd){
+                border-right: 1px solid #002147;
+            }
+
+            &:nth-child(2){
+                border-right: 1px solid #002147;
+            }
+        }
+    }
+}
+
+.logoutBtn{
+    text-align: right;
+
+    &__logout{
+        padding: 14px 0;
+        background: red;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 700;
+        border: none;
+        width: 149px;
+        text-align: center;
+        color: #FFFFFF;
+        transition: all 0.5s ease-out;
+        font-family: 'Roboto', sans-serif;
+        border: 1px solid red;
+        cursor: pointer;
+        margin-bottom: 20px;
+    
+        &:hover{
+            background: #FFFFFF;
+            color: red;
+            border: 1px solid red;
+        }
+    
+        &:disabled{
+            opacity: .5;
+        }
+    }
+
+}

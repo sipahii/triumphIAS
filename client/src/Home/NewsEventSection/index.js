@@ -16,25 +16,11 @@ const NewsEventSection = () => {
           <div className={Styles.newsEventSection__container__left}>
             <h2>latest news</h2>
             <div className={Styles.newsEventSection__container__left__child}>
-              <div
-                className={
-                  Styles.newsEventSection__container__left__child__component
-                }
-              >
-                <NewsComponent
-                  src={n1}
-                  newsHeading="Easy English Learning Way"
-                />
+              <div className={Styles.newsEventSection__container__left__child__component}>
+                <NewsComponent src={n1} newsHeading="Easy English Learning Way" />
               </div>
-              <div
-                className={
-                  Styles.newsEventSection__container__left__child__component
-                }
-              >
-                <NewsComponent
-                  src={n2}
-                  newsHeading="Guest Interview will Occur Soon"
-                />
+              <div className={Styles.newsEventSection__container__left__child__component}>
+                <NewsComponent src={n2} newsHeading="Guest Interview will Occur Soon" />
               </div>
               <NewsComponent src={n3} newsHeading="Easy English Learning Way" />
             </div>

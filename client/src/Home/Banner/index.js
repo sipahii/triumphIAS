@@ -2,11 +2,11 @@ import React from "react";
 import Styles from "./index.module.scss";
 import ReactOwlCrousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
-import Image from "../../Assets/videoBg.webp";
-import Image1 from "../../Assets/videoBg.webp";
-import Image2 from "../../Assets/videoBg.webp";
-import Image3 from "../../Assets/videoBg.webp";
-import Image4 from "../../Assets/videoBg.webp";
+import Image from "../../Assets/ban.webp";
+import Image1 from "../../Assets/ban.webp";
+import Image2 from "../../Assets/ban.webp";
+import Image3 from "../../Assets/ban.webp";
+import Image4 from "../../Assets/ban.webp";
 
 const Banner = () => {
   const options = {
@@ -40,10 +40,10 @@ const Banner = () => {
                 </h1>
 
                 <p className={Styles.mainBanner__desc} id="desc1">
-                  Emply dummy text of the printing and typesetting industry orem
-                  Ipsum has been the industry's standard dummy text ever
-                  sinceprinting and typesetting industry.
+                  Emply dummy text of the printing and typesetting industry orem Ipsum has been the industry's standard dummy text ever sinceprinting and typesetting industry.
                 </p>
+
+                <p className={Styles.mainBanner__desc}>Start Data : 12/10/2023</p>
 
                 <button id="button1" className={Styles.mainBanner__startBtn}>
                   start a course
@@ -61,9 +61,7 @@ const Banner = () => {
                 </h1>
 
                 <p className={Styles.mainBanner__desc} id="desc2">
-                  Emply dummy text of the printing and typesetting industry orem
-                  Ipsum has been the industry's standard dummy text ever
-                  sinceprinting and typesetting industry.
+                  Emply dummy text of the printing and typesetting industry orem Ipsum has been the industry's standard dummy text ever sinceprinting and typesetting industry.
                 </p>
 
                 <button id="button2" className={Styles.mainBanner__startBtn}>
@@ -72,6 +70,7 @@ const Banner = () => {
               </div>
             </div>
           </div>
+
           <div className="item">
             <div className={Styles.mainBanner__bannerImages}>
               <img src={Image2} alt="" />
@@ -81,9 +80,7 @@ const Banner = () => {
                 </h1>
 
                 <p className={Styles.mainBanner__desc} id="desc3">
-                  Emply dummy text of the printing and typesetting industry orem
-                  Ipsum has been the industry's standard dummy text ever
-                  sinceprinting and typesetting industry.
+                  Emply dummy text of the printing and typesetting industry orem Ipsum has been the industry's standard dummy text ever sinceprinting and typesetting industry.
                 </p>
 
                 <button id="button3" className={Styles.mainBanner__startBtn}>
@@ -102,9 +99,7 @@ const Banner = () => {
                 </h1>
 
                 <p className={Styles.mainBanner__desc} id="desc4">
-                  Emply dummy text of the printing and typesetting industry orem
-                  Ipsum has been the industry's standard dummy text ever
-                  sinceprinting and typesetting industry.
+                  Emply dummy text of the printing and typesetting industry orem Ipsum has been the industry's standard dummy text ever sinceprinting and typesetting industry.
                 </p>
 
                 <button id="button4" className={Styles.mainBanner__startBtn}>
@@ -123,9 +118,7 @@ const Banner = () => {
                 </h1>
 
                 <p className={Styles.mainBanner__desc} id="desc5">
-                  Emply dummy text of the printing and typesetting industry orem
-                  Ipsum has been the industry's standard dummy text ever
-                  sinceprinting and typesetting industry.
+                  Emply dummy text of the printing and typesetting industry orem Ipsum has been the industry's standard dummy text ever sinceprinting and typesetting industry.
                 </p>
 
                 <button id="button5" className={Styles.mainBanner__startBtn}>
