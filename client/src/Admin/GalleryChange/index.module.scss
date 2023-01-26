@@ -1,0 +1,31 @@
+.galleryChange{
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #002147;
+    display: flex;
+    column-gap: 20px;
+
+    &__imagePreview{
+        width: 40%;
+        height: auto;
+        border: 1px solid #cdcdcd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &>img{
+            width: 100%;
+            height: 100%;
+        }
+
+        &__para{
+            color: #444444;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+        }
+    }
+
+    &__bottom{
+        width: 58%;
+    }
+}
