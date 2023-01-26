@@ -41,6 +41,7 @@ import ImportantArticles from "./ImportantArticles";
 import PersonalityTest from "./PersonalityTest";
 import CoursesDetails from "./CourceDetails";
 import Gallary from "./Gallary";
+import Contact from "./Contact";
 import Error from "./404_Error";
 import RootLayout from "./RootLayout";
 
@@ -88,6 +89,7 @@ const routes = createBrowserRouter([
       { path: "/gallery", element: <Gallary /> },
       { path: "/*", element: <Error /> },
       { path: "/home", element: <Home /> },
+      { path: "/contact-us", element: <Contact /> },
     ],
   },
   {
