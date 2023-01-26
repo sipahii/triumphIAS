@@ -25,7 +25,8 @@
     &__btn{
         border: none;
         color: #002147;
-        padding: 15px 30px;
+        height: 50px;
+        width: 182px;
         background: #FFFFFF;
         text-transform: uppercase;
         font-size: 14px;
@@ -34,6 +35,15 @@
         font-family: 'Roboto', sans-serif;
         cursor: pointer;
 
+        &>a{
+            text-decoration: none;
+            color: #002147;
+            padding: 15px 30px;
+        }
+
+        &:hover a{
+            color:#FFFFFF ;
+        }
         &:hover{
             color:#FFFFFF ;
             background: #002147;
