@@ -4,9 +4,12 @@ import Container from "../component/Container";
 import Tabs from "./Tabs";
 import BannerChange from "./BannerChange";
 import LoginPanel from "./LoginPanel";
+import CourseChange from "./CourseChange";
+import GalleryChange from "./GalleryChange";
 
 const Admin = () => {
   const [login, setLogIn] = useState(false);
+  const [tab, setTab] = useState("banner");
 
   const onLoggedIn = (username, password) => {
     localStorage.setItem(username, password);
@@ -25,6 +28,10 @@ const Admin = () => {
       setLogIn(true);
     }
   }, []);
+
+  const tabClicked = (tabName) => {
+    setTab(tabName);
+  };
   return (
     <div className={Style.admin}>
       <Container>
@@ -32,8 +39,10 @@ const Admin = () => {
           <LoginPanel onLoggedIn={onLoggedIn} />
         ) : (
           <>
-            <Tabs onClick={logoutHandler} />
-            <BannerChange />
+            <Tabs onClick={logoutHandler} tabClicked={tabClicked} />
+            {tab === "banner" && <BannerChange />}
+            {tab === "course" && <CourseChange />}
+            {tab === "gallery" && <GalleryChange />}
           </>
         )}
       </Container>
