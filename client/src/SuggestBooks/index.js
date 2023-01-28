@@ -43,12 +43,6 @@ const SuggestBooks = () => {
               </div>
 
             </div>
-            {/* <div className={Styles.courcesPage__rowflex__sidebar}>
-              <CourcePrice />
-              <PaymentDetails />
-              <AskQuestion />
-              <ApplyNow />
-            </div> */}
           </div>
           <div className={Styles.courcesPage__rowflex__couresDetails__crousalArea}>
             <h3>Related Courses</h3>
