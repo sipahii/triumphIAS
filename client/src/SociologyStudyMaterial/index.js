@@ -10,7 +10,7 @@ import Styles from "./index.module.scss"
 const SociologyStudyMaterial = () => {
   return (
     <>
-      <CommanBanner section="IGNOU TEXT BOOKS" />
+      <CommanBanner section="Sociology Study Material" />
       <div className={Styles.courcesPage}>
         <Container>
           <div className={Styles.courcesPage__rowflex}>
