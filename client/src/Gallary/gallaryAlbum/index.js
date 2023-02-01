@@ -4,25 +4,14 @@ import Container from "../../component/Container";
 import GallaryImage from "./gallaryImage";
 
 const GallaryAlbume = () => {
-  const images = [
-    "course1.jpg",
-    "course2.jpg",
-    "course3.jpg",
-    "course4.jpg",
-    "course5.jpg",
-    "course6.jpg",
-    "course7.jpg",
-    "course8.jpg",
-    "course4.jpg",
-    "course1.jpg",
-  ];
+  const images = ["course1.jpg", "course2.jpg", "course3.jpg", "course4.jpg", "course5.jpg", "course6.jpg", "course7.jpg", "course8.jpg", "course4.jpg", "course1.jpg"];
 
   return (
     <Container>
       <div className={Styles.gallaryAlbumArea}>
         <div className={Styles.gallaryAlbumArea__gallaryCard}>
-          {images.map((img) => {
-            return <GallaryImage imageSrc={img} />;
+          {images.map((img, index) => {
+            return <GallaryImage key={index} imageSrc={img} />;
           })}
         </div>
       </div>

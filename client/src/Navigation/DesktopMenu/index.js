@@ -137,9 +137,20 @@ const DesktopMenu = () => {
         </li>
       </Item>
 
-      <li className={`${Styles.menu__list} ${path === "/gallery" ? Styles.hoverActive : ""}`}>
-        <Link to="/gallery">gallery</Link>
-      </li>
+      <Item name="More" class={path.includes("more") ? Styles.hoverActive : ""}>
+        <li className={`${Styles.subList} ${path === "/more-blog" ? Styles.hoverSubActive : ""}`}>
+          <Link to="/more-blog">Blog</Link>
+        </li>
+        <li className={`${Styles.subList} ${path === "/more-career" ? Styles.hoverSubActive : ""}`}>
+          <Link to="/more-career">Career</Link>
+        </li>
+        <li className={`${Styles.subList} ${path === "/more-gallery" ? Styles.hoverSubActive : ""}`}>
+          <Link to="/more-gallery">gallery</Link>
+        </li>
+        <li className={`${Styles.subList} ${path === "/more-personality-test" ? Styles.hoverSubActive : ""}`}>
+          <Link to="/more-personality-test">Personality Test</Link>
+        </li>
+      </Item>
 
       <li className={`${Styles.menu__list} ${path === "/contact-us" ? Styles.hoverActive : ""}`}>
         <Link to="/contact-us">contact us</Link>
