@@ -45,6 +45,7 @@ import CoursesDetails from "./CourceDetails";
 import Gallary from "./Gallary";
 import Registration from "./Registation";
 import Error from "./404_Error";
+import NextRegistrationPage from "./NextRegistrationPage";
 
 function App() {
   return (
@@ -96,6 +97,7 @@ function App() {
           <Route path="/gallery" element={<Gallary />} />
           <Route path="/registration" element={<Registration />} />
           <Route path="/404-error" element={<Error />} />
+          <Route path="/nextRegistrationPage" element={<NextRegistrationPage />} />
         </Routes>
         <Footer />
       </div>

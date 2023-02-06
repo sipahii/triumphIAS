@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Styles from "./index.module.scss";
 import CommanBanner from "../component/CommanBanner";
 import RegistationForm from "./registrationForm";
@@ -40,7 +40,8 @@ const Registration = () => {
     setDisabled(isNotEmpty);
   };
 
-  const submitHandler = () => {
+  const submitHandler = (event) => {
+    event.preventDefault();
     let newData = {
       name: formData.name,
       email: formData.email,
@@ -64,9 +65,9 @@ const Registration = () => {
     <>
       <CommanBanner section="Registration" />
       <Container>
-        <RegistrationHeading />
+        <RegistrationHeading hedding="FIRST FILL ADMISSION FORM THEN PROCEED NEXT" />
         <RegistrationTittle titlleHead="Course Details" />
-        <form>
+        <form onSubmit={submitHandler}>
           <div className={Styles.registrationSection}>
             <div className={Styles.registrationSection__regitrationFormArea}>
               <RegistationForm errClass={userdata.courseName === "" ? Styles.err : ""} id="courseName" labelText="Course Name*" inputType="text" onChange={onChangeHandler} />
@@ -78,7 +79,7 @@ const Registration = () => {
           <RegistrationTittle titlleHead="Registration Details" />
           <div className={Styles.registrationSection}>
             <div className={Styles.registrationSection__regitrationFormArea}>
-              <RegistationForm errClass={userdata.name === "" ? Styles.err : ""} id="name" labelText="Name *" inputType="text" onChange={onChangeHandler} errorMessage={userdata.name == "" ? "message" : ""} />
+              <RegistationForm errClass={userdata.name === "" ? Styles.err : ""} id="name" labelText="Name *" inputType="text" onChange={onChangeHandler} errorMessage={userdata.name === "" ? "message" : ""} />
               <RegistationForm errClass={userdata.email === "" ? Styles.err : ""} id="email" labelText="Email-ID *" inputType="email" onChange={onChangeHandler} />
               <RegistationForm errClass={userdata.FatherName === "" ? Styles.err : ""} id="FatherName" labelText="Father Name*" inputType="text" onChange={onChangeHandler} />
               <RadioButton id="gender" errClass={userdata.gender === "" ? Styles.err : ""} onChange={onChangeHandler} />
@@ -111,7 +112,7 @@ const Registration = () => {
           </div>
           <RegistrationTittle titlleHead="Additional Information Details" />
           <TextArea lable="Additional Information" labelText="Additional Information*" textareaPlace="Additional Information" />
-          <CommonButton onClick={submitHandler} buttonText="Next" />
+          <CommonButton buttonText="Next" />
         </form>
       </Container>
     </>
