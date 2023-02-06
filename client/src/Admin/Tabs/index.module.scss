@@ -17,6 +17,9 @@
             font-size: 20px;
             background-color: #FFFFFF;
             color: #002147;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             cursor: pointer;
 
             &:hover{
@@ -65,4 +68,9 @@
         }
     }
 
+}
+
+.active{
+    background: #002147;
+    color: #FFFFFF; 
 }

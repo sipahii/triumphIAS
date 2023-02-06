@@ -1,22 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import style from "./index.module.scss";
+import useImage from "../../../hooks/useImage";
 
 const UploadBanner = (props) => {
-  const [showError, setShowError] = useState(false);
-  const bannerUploadHandler = (event) => {
-    if (event.target.files[0].size >= 100000) {
-      setShowError(true);
-      return;
-    }
-    setShowError(false);
-    let banner = URL.createObjectURL(event.target.files[0]);
-    props.bannerShowHandler(banner);
-  };
+  const { showError, imageUploadHandler } = useImage(props);
+
   return (
     <>
       <div className={style.uploadBanner}>
-        <input onChange={bannerUploadHandler} type="file" />
-        {showError && <p>Please Upload Image Less Than Equal To 100KB.</p>}
+        <input onChange={imageUploadHandler} type="file" />
+        {showError === true ? <p className={style.uploadBanner__error}>Please Upload Image Less Than Equal To 100KB.</p> : <p className={style.uploadBanner__note}>NOTE:- Supports Only (.webp) Images</p>}
       </div>
     </>
   );

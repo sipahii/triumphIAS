@@ -191,10 +191,28 @@ const MobileMenu = () => {
       </li>
 
       <li className={Styles.menuList__ul__li}>
-        <p className={`${Styles.menuList__ul__li__name} ${path === "/gallery" ? Styles.hoverActive : ""}`}>
-          <Link to="/gallery">gallery</Link>
+        <p className={`${Styles.menuList__ul__li__name}  ${path.includes("more") ? Styles.hoverActive : ""}`}>
+          more
+          {subMenu !== "more" ? <i onClick={() => subMenuOpen("more")} className="fa-solid fa-square-plus"></i> : <i onClick={() => subMenuClose("more")} className="fa-solid fa-square-minus"></i>}
         </p>
+        {subMenu === "more" && (
+          <ul className={Styles.menuList__ul__li__dropdown}>
+            <li className={`${Styles.menuList__ul__li__dropdown__subli} ${path === "/more-blog" ? Styles.hoverSubActive : ""}`}>
+              <Link to="/more-blog">Blog</Link>
+            </li>
+            <li className={`${Styles.menuList__ul__li__dropdown__subli} ${path === "/more-career" ? Styles.hoverSubActive : ""}`}>
+              <Link to="/more-career">Career</Link>
+            </li>
+            <li className={`${Styles.menuList__ul__li__dropdown__subli} ${path === "/more-gallery" ? Styles.hoverSubActive : ""}`}>
+              <Link to="/more-gallery">gallery</Link>
+            </li>
+            <li className={`${Styles.menuList__ul__li__dropdown__subli} ${path === "/more-personality-test" ? Styles.hoverSubActive : ""}`}>
+              <Link to="/more-personality-test">Personality Test</Link>
+            </li>
+          </ul>
+        )}
       </li>
+
       <li className={Styles.menuList__ul__li}>
         <p className={`${Styles.menuList__ul__li__name} ${path === "/contact-us" ? Styles.hoverActive : ""}`}>
           <Link to="/contact-us">contact us</Link>
