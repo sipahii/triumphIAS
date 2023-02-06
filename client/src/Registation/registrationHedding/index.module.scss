@@ -1,0 +1,26 @@
+@import "../../../public/Style/breakpoints";
+.mainHedding {
+  text-align: center;
+  background-color: #002147;
+  & > h1 {
+    font-size: 35px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    position: relative;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    @include if-device(phone) {
+      font-size: 20px;
+    }
+    @include if-device(tablet) {
+      font-size: 30px;
+    }
+    @include if-device(largephone) {
+      font-size: 26px;
+    }
+    @include if-device(smallPhone) {
+      font-size: 20px;
+    }
+  }
+}

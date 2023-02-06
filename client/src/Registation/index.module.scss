@@ -1,0 +1,39 @@
+@import "../../public/Style/breakpoints";
+.registrationSection {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  &__regitrationFormArea {
+    @include if-device(phone) {
+      width: 100%;
+    }
+    @include if-device(tablet) {
+      width: 100%;
+    }
+    @include if-device(largephone) {
+      width: 100%;
+    }
+    @include if-device(smallPhone) {
+      width: 100%;
+    }
+    width: 48%;
+  }
+}
+
+.err {
+  width: 100%;
+  display: block;
+  height: 40px;
+  border: 1px solid red !important;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 10px;
+  padding: 6px 12px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: red !important;
+  outline: none;
+}

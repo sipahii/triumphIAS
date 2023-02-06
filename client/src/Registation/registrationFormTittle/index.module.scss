@@ -1,0 +1,23 @@
+.formTittle {
+  width: 100%;
+  display: block;
+  margin-bottom: 45px;
+  font-family: "Roboto", sans-serif;
+  & > h2 {
+    font-size: 30px;
+    color: #002147;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+    font-weight: 500;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -49%;
+      left: 0%;
+      width: 60px;
+      height: 3px;
+      background-color: #fdc800;
+    }
+  }
+}
