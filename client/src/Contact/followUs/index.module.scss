@@ -4,11 +4,16 @@
     padding: 15px 0 8px 30px;
     position: relative;
 
+    @include if-device(tablet) {
+        padding: 15px 0 6px 12px;
+    }
+
     &>h3 {
         text-transform: capitalize;
         color: #111111;
         font-size: 20px;
         margin-bottom: 5px;
+        font-weight: 500;
     }
 
     &__social {
@@ -19,16 +24,57 @@
         display: flex;
         column-gap: 18px;
 
+        @include if-device(phone) {
+            column-gap: 4px;
+        }
+
+        @include if-device(largephone) {
+            column-gap: 4px;
+        }
+
+        @include if-device(tablet) {
+            column-gap: 4px;
+        }
+
+        @include if-device(desktop) {
+            column-gap: 4px;
+        }
+
+
         &>li {
             background: transparent;
             border: 1px solid #002147;
             height: 35px;
             width: 35px;
             line-height: 35px;
-            display: inline-block;
             text-align: center;
             transition: all 0.5s ease-out;
             color: #0d6efd;
+
+            @include if-device(phone) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 28px;
+                width: 28px;
+            }
+
+            @include if-device(largephone) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 28px;
+                width: 28px;
+            }
+
+            @include if-device(tablet) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 28px;
+                width: 28px;
+            }
+
 
             &:hover {
                 background-color: #002147;
@@ -45,6 +91,20 @@
                 position: inherit;
                 color: #002147;
                 transition: all 0.5s ease-out;
+
+                @include if-device(phone) {
+                    font-size: 16px;
+                }
+
+                @include if-device(largephone) {
+                    font-size: 16px;
+                }
+
+                @include if-device(tablet) {
+                    font-size: 16px;
+                }
+
+
             }
         }
     }

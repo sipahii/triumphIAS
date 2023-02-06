@@ -39,27 +39,37 @@
         display: flex;
         align-items: center;
         column-gap: 30px;
+        margin: 0 auto;
+        width: 1164px;
+
         @include if-device(desktop){
           flex-wrap: wrap;
           row-gap: 30px;
           height: auto;
           justify-content: space-between;
+          width: 100%;
+          padding: 0 50px;
         }
-
-       
           @include if-device(tablet){
             row-gap: 30px;
             height: auto;
+            width: 100%;
+            padding: 0 50px;
+            justify-content: space-between;
           }
           @include if-device(largephone){
             flex-wrap: wrap;
             height: auto;
             row-gap: 30px;
+            width: 100%;
+            padding: 0 50px;
           }
           @include if-device(phone){
             flex-wrap: wrap;
             height: auto;
             row-gap: 30px;
+            width: 100%;
+            padding: 0 20px;
           }
 
           &__left,&__right{
@@ -88,4 +98,12 @@
             }
           }
     }
+}
+
+.wrapper{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 88px 0 100px 0;
 }

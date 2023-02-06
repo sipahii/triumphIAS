@@ -1,5 +1,6 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Home from "./Home";
@@ -38,68 +39,75 @@ import SuggestBooks from "./SuggestBooks";
 import ToppersAnswerSheet from "./ToppersAnswerSheet";
 import ImportantArticles from "./ImportantArticles";
 import PersonalityTest from "./PersonalityTest";
-import Header from "./Header";
-import Navigation from "./Navigation";
-import Footer from "./Footer";
 import CoursesDetails from "./CourceDetails";
 import Gallary from "./Gallary";
-import Registration from "./Registation";
+import Contact from "./Contact";
 import Error from "./404_Error";
+import RootLayout from "./RootLayout";
+
+const routes = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootLayout />,
+    children: [
+      { path: "/", element: <Home /> },
+      { path: "/about", element: <About /> },
+      { path: "/course-details", element: <CoursesDetails /> },
+      { path: "/course-page", element: <CoursePage /> },
+      { path: "/about-upsc", element: <AboutUPSC /> },
+      { path: "/about-civil-services", element: <AboutCivilServices /> },
+      { path: "/download-general-studies-material", element: <BasicGSMaterial /> },
+      { path: "/more-career", element: <Career /> },
+      { path: "/download-results", element: <Result /> },
+      { path: "/download-current-affair", element: <CurrentAffairsNewsPlus /> },
+      { path: "/download-epw-yojana-kurushetra", element: <EPWYojnaKurushetra /> },
+      { path: "/course-details-essay-foundation-plus-test-2019", element: <EssayFoundationCourse /> },
+      { path: "/essay-planner", element: <EssayPlanner /> },
+      { path: "/essay-study-material", element: <EssayStudyMaterial /> },
+      { path: "/essay-test-series", element: <EssayTestSeries /> },
+      { path: "/essay-exams-topics", element: <EssayTopics /> },
+      { path: "/gs-prelims-success-general-series", element: <GSPracticeSeries /> },
+      { path: "/gs-paper1", element: <GSPaper_1 /> },
+      { path: "/gs-paper2", element: <GSPaper_2 /> },
+      { path: "/gs-paper3", element: <GSPaper_3 /> },
+      { path: "/gs-paper4", element: <GSPaper_4 /> },
+      { path: "/sociology-offline", element: <SociologyOffline /> },
+      { path: "/download-sociology-notes", element: <SociologyNotes /> },
+      { path: "/sociology-foundation-test", element: <SociologyFoundationTest /> },
+      { path: "/sociology-online", element: <SociologyOnline /> },
+      { path: "/sociology-paper-1", element: <SociologyPapper_1 /> },
+      { path: "/sociology-paper-2", element: <SociologyPapper_2 /> },
+      { path: "/sociology-plannar", element: <SociologyPlanner /> },
+      { path: "/sociology-test-plus-study", element: <SociologyStudyPlusTest /> },
+      { path: "/sociology-study-material", element: <SociologyStudyMaterial /> },
+      { path: "/sociology-ias-syllabus", element: <SociologySyllabus /> },
+      { path: "/course-details-sociology-freshers-test", element: <SociologyTestSeries /> },
+      { path: "/best-sociology-books-ias-optional-preparation-india", element: <SuggestBooks /> },
+      { path: "/download-toppers-answer-sheet", element: <ToppersAnswerSheet /> },
+      { path: "/download-important-articles", element: <ImportantArticles /> },
+      { path: "/more-personality-test", element: <PersonalityTest /> },
+      { path: "/more-gallery", element: <Gallary /> },
+      { path: "/*", element: <Error /> },
+      { path: "/home", element: <Home /> },
+      { path: "/contact-us", element: <Contact /> },
+    ],
+  },
+  {
+    path: "/admin",
+    element: <Admin />,
+  },
+]);
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <ToastContainer position="top-left" />
-        <Header />
-        <Navigation />
-
-        <Routes>
-          <Route path="/admin" element={<Admin />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/course-details" element={<CoursesDetails />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/course-page" element={<CoursePage />} />
-          <Route path="/about-upsc" element={<AboutUPSC />} />
-          <Route path="/about-civil-services" element={<AboutCivilServices />} />
-          <Route path="/download-general-studies-material" element={<BasicGSMaterial />} />
-          <Route path="/career" element={<Career />} />
-          <Route path="/download-results" element={<Result />} />
-          <Route path="/download-current-affair" element={<CurrentAffairsNewsPlus />} />
-          <Route path="/download-epw-yojana-kurushetra" element={<EPWYojnaKurushetra />} />
-          <Route path="/course-details-essay-foundation-plus-test-2019" element={<EssayFoundationCourse />} />
-          <Route path="/essay-planner" element={<EssayPlanner />} />
-          <Route path="/essay-study-material" element={<EssayStudyMaterial />} />
-          <Route path="/essay-test-series" element={<EssayTestSeries />} />
-          <Route path="/essay-exams-topics" element={<EssayTopics />} />
-          <Route path="/gs-prelims-success-general-series" element={<GSPracticeSeries />} />
-          <Route path="/gs-paper1" element={<GSPaper_1 />} />
-          <Route path="/gs-paper2" element={<GSPaper_2 />} />
-          <Route path="/gs-paper3" element={<GSPaper_3 />} />
-          <Route path="/gs-paper4" element={<GSPaper_4 />} />
-          <Route path="/sociology-offline" element={<SociologyOffline />} />
-          <Route path="/download-sociology-notes" element={<SociologyNotes />} />
-          <Route path="/sociology-foundation-test" element={<SociologyFoundationTest />} />
-          <Route path="/sociology-online" element={<SociologyOnline />} />
-          <Route path="/sociology-paper-1" element={<SociologyPapper_1 />} />
-          <Route path="/sociology-paper-2" element={<SociologyPapper_2 />} />
-          <Route path="/sociology-plannar" element={<SociologyPlanner />} />
-          <Route path="/sociology-test-plus-study" element={<SociologyStudyPlusTest />} />
-          <Route path="/sociology-study-material" element={<SociologyStudyMaterial />} />
-          <Route path="/sociology-ias-syllabus" element={<SociologySyllabus />} />
-          <Route path="/course-details-sociology-freshers-test" element={<SociologyTestSeries />} />
-          <Route path="/best-sociology-books-ias-optional-preparation-india" element={<SuggestBooks />} />
-          <Route path="/download-toppers-answer-sheet" element={<ToppersAnswerSheet />} />
-          <Route path="/download-important-articles" element={<ImportantArticles />} />
-          <Route path="/personality-test" element={<PersonalityTest />} />
-          <Route path="/gallery" element={<Gallary />} />
-          <Route path="/registration" element={<Registration />} />
-          <Route path="/404-error" element={<Error />} />
-        </Routes>
-        <Footer />
-      </div>
-    </BrowserRouter>
+    <>
+      <RouterProvider router={routes} />
+      <BrowserRouter>
+        <div className="App">
+          <ToastContainer position="top-left" />
+        </div>
+      </BrowserRouter>
+    </>
   );
 }
 
