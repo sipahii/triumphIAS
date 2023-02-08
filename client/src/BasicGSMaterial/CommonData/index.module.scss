@@ -1,0 +1,24 @@
+.tr {
+    border: 1px solid #ddd;
+
+    &__class,
+    &__link {
+        width: 120px;
+        border: 1px solid #ddd;
+        padding: 8px;
+        color: #002147;
+        text-align: center;
+
+        &>a {
+            text-decoration: none;
+        }
+    }
+
+    &__bookTitle {
+        border: 1px solid #ddd;
+        padding: 8px;
+        color: #002147;
+        width: 75%;
+        text-align: center;
+    }
+}

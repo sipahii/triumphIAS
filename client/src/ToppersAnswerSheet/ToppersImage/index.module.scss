@@ -1,0 +1,30 @@
+@import "../../../public/Style/breakpoints";
+
+.toppers {
+    width: 165px;
+
+    @include if-device(smallPhone) {
+        width: 100%;
+    }
+
+    @include if-device(phone) {
+        width: 100%;
+    }
+
+    @include if-device(largephone) {
+        width: 100%;
+    }
+
+    @include if-device(tablet) {
+        width: 100%;
+    }
+
+    @include if-device(desktop) {
+        width: 100%;
+    }
+
+
+    &>img {
+        width: 100%;
+    }
+}
