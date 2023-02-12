@@ -14,24 +14,24 @@ const CourseCrousel = () => {
         autoplayTimeout: 4000,
         smartSpeed: 1500,
         responsive: {
-            0: {
+            180: {
+                items: 1,
+            },
+            320: {
+                items: 1,
+            },
+            480: {
+                items: 1,
+            },
+            767: {
+                items: 2,
+            },
+            1025: {
                 items: 3,
             },
-            180: {
-                items: 2,
-            },
-            280: {
-                items: 2,
-            },
-            380: {
-                items: 2,
-            },
-            768: {
+            1280: {
                 items: 4,
-            },
-            1000: {
-                items: 4,
-            },
+            }
         },
     };
 
