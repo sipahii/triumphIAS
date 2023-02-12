@@ -45,28 +45,28 @@ const LecturerSection = () => {
           <div className={Styles.lecturerSection__container__body}>
             <ReactOwlCarousel className="owl-theme" {...options}>
               <div className="item">
-                <LecturerCard src={l1} profName="Kazi Fahim" />
+                <LecturerCard src={l1} profName="Kazi Fahim" icon1="fa-regular fa-envelope" icon2="fa-brands fa-linkedin-in" icon3="fa-brands fa-twitter" icon4="fa-brands fa-facebook-f" />
               </div>
               <div className="item">
-                <LecturerCard src={l2} profName="Rosy Jane" />
+                <LecturerCard src={l2} profName="Rosy Jane" icon1="fa-regular fa-envelope" icon2="fa-brands fa-linkedin-in" icon3="fa-brands fa-twitter" icon4="fa-brands fa-facebook-f" />
               </div>
               <div className="item">
-                <LecturerCard src={l3} profName="Mike Hussy" />
+                <LecturerCard src={l3} profName="Mike Hussy" icon1="fa-regular fa-envelope" icon2="fa-brands fa-linkedin-in" icon3="fa-brands fa-twitter" icon4="fa-brands fa-facebook-f" />
               </div>
               <div className="item">
-                <LecturerCard src={l4} profName="Daziy Miller" />
+                <LecturerCard src={l4} profName="Daziy Miller" icon1="fa-regular fa-envelope" icon2="fa-brands fa-linkedin-in" icon3="fa-brands fa-twitter" icon4="fa-brands fa-facebook-f" />
               </div>
               <div className="item">
-                <LecturerCard src={l1} profName="Kazi Fahim" />
+                <LecturerCard src={l1} profName="Kazi Fahim" icon1="fa-regular fa-envelope" icon2="fa-brands fa-linkedin-in" icon3="fa-brands fa-twitter" icon4="fa-brands fa-facebook-f" />
               </div>
               <div className="item">
-                <LecturerCard src={l2} profName="Rosy Jane" />
+                <LecturerCard src={l2} profName="Rosy Jane" icon1="fa-regular fa-envelope" icon2="fa-brands fa-linkedin-in" icon3="fa-brands fa-twitter" icon4="fa-brands fa-facebook-f" />
               </div>
               <div className="item">
-                <LecturerCard src={l3} profName="Mike Hussy" />
+                <LecturerCard src={l3} profName="Mike Hussy" icon1="fa-regular fa-envelope" icon2="fa-brands fa-linkedin-in" icon3="fa-brands fa-twitter" icon4="fa-brands fa-facebook-f" />
               </div>
               <div className="item">
-                <LecturerCard src={l4} profName="Daziy Miller" />
+                <LecturerCard src={l4} profName="Daziy Miller" icon1="fa-regular fa-envelope" icon2="fa-brands fa-linkedin-in" icon3="fa-brands fa-twitter" icon4="fa-brands fa-facebook-f" />
               </div>
             </ReactOwlCarousel>
           </div>
