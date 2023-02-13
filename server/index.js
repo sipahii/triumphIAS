@@ -43,17 +43,52 @@ app.get("/api/v1/getDetails",(req,res)=>{
 
 });
 
-app.post("/api/getCourseDetails",(req,res)=>{
+app.get("/api/getAllCourses",(req,res)=>{
    const courseId = req.body.courseId
-    const sqlGet = "SELECT * FROM MS_COURSE_TBL WHERE COURSE_ID ="+ courseId;
+    const sqlGet = "SELECT * FROM MS_COURSE_TBL";
     db.query(sqlGet,(error,result)=>{
-        res.send(result);
+        if(result){
+            res.send(result);
+        }else{
+            res.send(error)
+        }
     })
    // const request = req;
     //console.dir(req.body.courseId);
    
 
     
+})
+
+app.post("/api/getSingleCoursesDetails",(req,res)=>{
+    const courseId = req.body.courseId
+     const sqlGet = "SELECT * FROM MS_COURSE_TBL WHERE COURSE_ID =" +courseId;
+     db.query(sqlGet,(error,result)=>{
+         if(result){
+             res.send(result);
+         }else{
+             res.send(error)
+         }
+     })
+    // const request = req;
+     //console.dir(req.body.courseId);
+ 
+     
+ })
+
+app.post("/api/v1/login",(req,res)=>{
+    var email = req.body.email;
+    var password = req.body.password
+   // const sqlPost = "SELECT * FROM MS_USER_TBL WHERE EMAIL_ID =" + email +" AND "+ "PASSWORD=" +password
+    const sqlPost = "SELECT * FROM MS_USER_TBL WHERE EMAIL_ID = ? and PASSWORD = ?";
+    db.query(sqlPost,[email,password],(error,result,fields)=>{
+        console.log(result)
+        if(result){
+            res.send(result)
+        }else{
+            res.send(error)
+        }
+    })
 })
 app.listen(500,()=>{
     console.log("Server is running on Port 500")
