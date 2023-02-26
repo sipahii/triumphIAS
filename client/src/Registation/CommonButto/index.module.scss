@@ -1,0 +1,27 @@
+.buttonArea {
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin-top: 25px;
+  & > button {
+    border: 2px solid #002147;
+    color: #ffffff;
+    padding: 12px 30px;
+    background: transparent;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #002147;
+    transition: 0.3s ease-in;
+    &:active {
+      border-color: #fdc800;
+      background-color: #fdc800;
+      color: #002147;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+  }
+}

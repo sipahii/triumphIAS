@@ -1,10 +1,9 @@
 import React from "react";
+import SociologyStudyMaterial from "../SociologyStudyMaterial";
 
 const SociologyNotes = () => {
   return (
-    <div>
-      <div></div>
-    </div>
+    <SociologyStudyMaterial />
   );
 };
 
