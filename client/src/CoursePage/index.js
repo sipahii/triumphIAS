@@ -8,11 +8,8 @@ import CommanBanner from "../component/CommanBanner";
 const CoursePage = () => {
   return (
     <>
-      <Header />
-      <Navigation />
-      <CommanBanner section="Courses_03" />
+      <CommanBanner section="All Courses" />
       <CoursesPage />
-      <Footer />
     </>
   );
 };

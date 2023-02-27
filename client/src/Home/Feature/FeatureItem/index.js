@@ -12,10 +12,10 @@ const Item = (props) => {
             </div>
           </div>
         </div>
-        <div className={Styles.seprateSubjectArea__contant}>
+        {/* <div className={Styles.seprateSubjectArea__contant}>
           <h3>{props.hedding}</h3>
           <p>{props.para}</p>
-        </div>
+        </div> */}
       </div>
     </>
   );

@@ -3,7 +3,12 @@ import Styles from "./index.module.scss";
 import Item from "./FeatureItem";
 import BigFeatureCard from "./BigFeatureCard";
 import Container from "../../../src/component/Container";
+import { useNavigate } from "react-router-dom";
 const Feature = () => {
+  const navigate = useNavigate();
+  const navigateToAllCourses = () => {
+    navigate("/all-course");
+  };
   return (
     <div className={Styles.featureSection}>
       <Container>
@@ -16,14 +21,14 @@ const Feature = () => {
               <BigFeatureCard />
             </div>
             <div className={Styles.featureSection__featureArea__subjectArea__mainSubject}>
-              <Item imageSrc="subj1.jpg" hedding="GMET" para="Rmply dummy printing ypesetting industry it’s free" />
-              <Item imageSrc="subj2.jpg" hedding="Regular MBA" para="Rmply dummy printing ypesetting industry it’s free" />
-              <Item imageSrc="subj3.jpg" hedding="CSE Science" para="Rmply dummy printing ypesetting industry it’s free" />
-              <Item imageSrc="subj4.jpg" hedding="Graphic Design" para="Rmply dummy printing ypesetting industry it’s free" />
+              <Item imageSrc="/images/course2.jpg" hedding="GMET" para="Rmply dummy printing ypesetting industry it’s free" />
+              <Item imageSrc="/images/course3.jpg" hedding="Regular MBA" para="Rmply dummy printing ypesetting industry it’s free" />
+              <Item imageSrc="/images/course4.jpg" hedding="CSE Science" para="Rmply dummy printing ypesetting industry it’s free" />
+              <Item imageSrc="/images/course5.png" hedding="Graphic Design" para="Rmply dummy printing ypesetting industry it’s free" />
             </div>
           </div>
           <div className={Styles.featureSection__featureArea__buttonArea}>
-            <button>VIEW ALL CORSES</button>
+            <button onClick={navigateToAllCourses}>VIEW ALL CORSES</button>
           </div>
         </div>
       </Container>
