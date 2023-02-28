@@ -5,7 +5,6 @@ import Container from "../component/Container";
 import Item from "../component/Item";
 import CourseCrousel from "../CourceDetails/CourseCrousel";
 import Styles from "./index.module.scss"
-// import Image from "../Assets/graphic.jpg";
 
 const SociologyStudyMaterial = () => {
   return (
@@ -26,7 +25,6 @@ const SociologyStudyMaterial = () => {
                   <strong> All the Best !</strong><br />
                   <strong> Vikash Ranjan.</strong><br />
                 </p>
-                {/* <img src={Image} alt="image" /> */}
 
                 <CommanHeading
                   heading="SUBJECT NAME"
@@ -70,12 +68,6 @@ const SociologyStudyMaterial = () => {
               </div>
 
             </div>
-            {/* <div className={Styles.courcesPage__rowflex__sidebar}>
-              <CourcePrice />
-              <PaymentDetails />
-              <AskQuestion />
-              <ApplyNow />
-            </div> */}
           </div>
           <div className={Styles.courcesPage__rowflex__couresDetails__crousalArea}>
             <h3>Related Courses</h3>

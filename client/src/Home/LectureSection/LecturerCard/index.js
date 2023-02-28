@@ -14,16 +14,16 @@ const LecturerCard = (props) => {
       <div className={Styles.lecturerCard__bottom}>
         <ul>
           <li>
-            <i className="fa-regular fa-envelope"></i>
+            <i className={props.icon1}></i>
           </li>
           <li>
-            <i className="fa-brands fa-linkedin-in"></i>
+            <i className={props.icon2}></i>
           </li>
           <li>
-            <i className="fa-brands fa-twitter"></i>
+            <i className={props.icon3}></i>
           </li>
           <li>
-            <i className="fa-brands fa-facebook-f"></i>
+            <i className={props.icon4}></i>
           </li>
         </ul>
       </div>

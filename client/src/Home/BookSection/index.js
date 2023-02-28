@@ -38,28 +38,28 @@ const BookSection = () => {
           <div className={Styles.bookSection__container__body}>
             <ReactOwlCarousel className="owl-theme" {...options}>
               <div className="item">
-                <BookCard src={b1} bookName="GMAT" price="$250" />
+                <BookCard src={b1} bookName="GMAT" price="$250" type="BUY NOW" />
               </div>
               <div className="item">
-                <BookCard src={b2} bookName="Finance Book" price="$430" />
+                <BookCard src={b2} bookName="Finance Book" price="$430" type="BUY NOW" />
               </div>
               <div className="item">
-                <BookCard src={b3} bookName="Service Marketing" price="$190" />
+                <BookCard src={b3} bookName="Service Marketing" price="$190" type="BUY NOW" />
               </div>
               <div className="item">
-                <BookCard src={b4} bookName="Robert-Philosphy" price="$330" />
+                <BookCard src={b4} bookName="Robert-Philosphy" price="$330" type="BUY NOW" />
               </div>
               <div className="item">
-                <BookCard src={b1} bookName="GMAT" price="$250" />
+                <BookCard src={b1} bookName="GMAT" price="$250" type="BUY NOW" />
               </div>
               <div className="item">
-                <BookCard src={b2} bookName="Finance Book" price="$430" />
+                <BookCard src={b2} bookName="Finance Book" price="$430" type="BUY NOW" />
               </div>
               <div className="item">
-                <BookCard src={b3} bookName="Service Marketing" price="$190" />
+                <BookCard src={b3} bookName="Service Marketing" price="$190" type="BUY NOW" />
               </div>
               <div className="item">
-                <BookCard src={b4} bookName="Robert-Philosphy" price="$330" />
+                <BookCard src={b4} bookName="Robert-Philosphy" price="$330" type="BUY NOW" />
               </div>
             </ReactOwlCarousel>
           </div>
