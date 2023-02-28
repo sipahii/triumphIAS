@@ -1,0 +1,11 @@
+.messageArea {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  background-color: lightgreen;
+  padding: 5px;
+  margin-bottom: 10px;
+  & > h3 {
+    font-size: 17px;
+    color: darkgreen;
+  }
+}

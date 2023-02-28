@@ -24,6 +24,18 @@
     height: 170px;
     position: relative;
     overflow: hidden;
+    @include if-device(smallPhone) {
+      height: 314px;
+    }
+    @include if-device(phone) {
+      height: 314px;
+    }
+    @include if-device(largephone) {
+      height: 314px;
+    }
+    @include if-device(tablet) {
+      height: 214px;
+    }
     &__layer {
       width: 100%;
       height: 100%;

@@ -1,0 +1,112 @@
+@import "../../public/Style/breakpoints";
+.paymentSection {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  &__paymentArea {
+    width: 48%;
+    @include if-device(phone) {
+      width: 100%;
+    }
+    @include if-device(tablet) {
+      width: 100%;
+    }
+    @include if-device(largephone) {
+      width: 100%;
+    }
+    @include if-device(smallPhone) {
+      width: 100%;
+    }
+    & > p {
+      font-size: 16px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 26px;
+      margin: 10px 0;
+      @include if-device(phone) {
+        line-height: 20px;
+      }
+      @include if-device(largephone) {
+        line-height: 20px;
+      }
+      @include if-device(smallPhone) {
+        line-height: 20px;
+      }
+    }
+    & > button {
+      background-color: rgb(5, 78, 5);
+      color: #fff;
+      padding: 8px 13px;
+      font-size: 14px;
+      border: 1px solid lightgreen;
+      margin-bottom: 15px;
+      &:hover {
+        background-color: green;
+      }
+    }
+  }
+}
+.paymentform {
+  border-top: 2px solid gray;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include if-device(phone) {
+    justify-content: left;
+  }
+  @include if-device(tablet) {
+    justify-content: left;
+  }
+  @include if-device(largephone) {
+    justify-content: left;
+  }
+  @include if-device(smallPhone) {
+    justify-content: left;
+  }
+  &__formArea {
+    width: 60%;
+    @include if-device(phone) {
+      width: 100%;
+    }
+    @include if-device(tablet) {
+      width: 100%;
+    }
+    @include if-device(largephone) {
+      width: 100%;
+    }
+    @include if-device(smallPhone) {
+      width: 100%;
+    }
+    margin-top: 15px;
+    & > h5 {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      color: maroon;
+    }
+    & > p {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 17px;
+      font-weight: 500;
+      color: #010342;
+    }
+    &__paymentmode {
+      display: flex;
+      align-items: center;
+      & > input {
+        width: 20px;
+        height: 20px;
+      }
+      & > label {
+        font-size: 17px;
+        color: #333333;
+        margin: 0 7px;
+      }
+    }
+  }
+}

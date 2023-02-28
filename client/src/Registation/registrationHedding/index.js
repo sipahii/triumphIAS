@@ -1,10 +1,10 @@
 import React from "react";
 import Styles from "./index.module.scss";
 
-const RegistrationHeading = () => {
+const RegistrationHeading = (props) => {
   return (
     <div className={Styles.mainHedding}>
-      <h1>FIRST FILL ADMISSION FORM THEN PROCEED NEXT</h1>
+      <h1>{props.hedding}</h1>
     </div>
   );
 };

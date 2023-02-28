@@ -1,15 +1,14 @@
-.formSection {
+.inputArea {
+  margin-bottom: 5px;
   font-family: "Roboto", sans-serif;
-  margin-bottom: 15px;
   & > label {
     display: block;
-    letter-spacing: 1px;
-    color: #333333;
-    font-weight: 400;
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #010342;
   }
-  &__input {
+  & > input {
     width: 100%;
     display: block;
     height: 40px;
