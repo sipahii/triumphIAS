@@ -8,7 +8,7 @@ const BookCard = (props) => {
         <img src={props.src} alt="" />
         <div className={Styles.bookCard__top__button}>
           <button className={Styles.bookCard__top__button__buyBtn}>
-            BUY NOW
+            {props.type}
           </button>
         </div>
       </div>

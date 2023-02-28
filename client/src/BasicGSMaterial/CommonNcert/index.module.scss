@@ -1,0 +1,39 @@
+.ncertTextBook {
+
+
+
+    &>h3 {
+        font-size: 25px;
+    }
+
+    &__table {
+        width: 100%;
+        margin-bottom: 50px;
+
+
+
+        &__tr {
+            border: 1px solid #ddd;
+            background-color: #002147;
+            color: white;
+            text-align: center;
+
+
+
+
+            &__class,
+            &__link {
+                width: 120px;
+                padding: 8px;
+            }
+
+            &__bookTitle {
+                padding: 8px;
+                width: 75%;
+            }
+
+        }
+
+
+    }
+}
