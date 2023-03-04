@@ -4,7 +4,7 @@ import Styles from "./index.module.scss";
 const PagesItem = (props) => {
   return (
     <>
-      <div className={Styles.coursepageArea}>
+      <div onClick={props.onClick} className={Styles.coursepageArea}>
         <div className={Styles.coursepageArea__coursespage}>
           <div className={Styles.coursepageArea__coursespage__courseImage}>
             <img src={props.imageSrc} alt="error"></img>
@@ -16,7 +16,7 @@ const PagesItem = (props) => {
           </div>
           <div className={Styles.coursepageArea__coursespage__courseDetail}>
             <h3>{props.subjectName}</h3>
-            <p>Rmply dummy text printing setting industry it’s free demo.</p>
+            <p>{props.desc}</p>
             <ul>
               <li>
                 <h5>{props.month}</h5>

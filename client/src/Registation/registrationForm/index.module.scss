@@ -8,6 +8,10 @@
     font-weight: 400;
     margin-bottom: 10px;
     font-size: 15px;
+
+    & > span {
+      color: #d70026;
+    }
   }
   &__input {
     width: 100%;

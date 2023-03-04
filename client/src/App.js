@@ -44,6 +44,7 @@ import Gallary from "./Gallary";
 import Contact from "./Contact";
 import Error from "./404_Error";
 import RootLayout from "./RootLayout";
+import Registration from "./Registation";
 
 const routes = createBrowserRouter([
   {
@@ -53,7 +54,7 @@ const routes = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/about", element: <About /> },
       { path: "/course-details", element: <CoursesDetails /> },
-      { path: "/course-page", element: <CoursePage /> },
+      { path: "/all-course", element: <CoursePage /> },
       { path: "/about-upsc", element: <AboutUPSC /> },
       { path: "/about-civil-services", element: <AboutCivilServices /> },
       { path: "/download-general-studies-material", element: <BasicGSMaterial /> },
@@ -83,13 +84,14 @@ const routes = createBrowserRouter([
       { path: "/sociology-ias-syllabus", element: <SociologySyllabus /> },
       { path: "/course-details-sociology-freshers-test", element: <SociologyTestSeries /> },
       { path: "/best-sociology-books-ias-optional-preparation-india", element: <SuggestBooks /> },
-      { path: "/download-toppers-answer-sheet", element: <ToppersAnswerSheet /> },
+      // { path: "/download-toppers-answer-sheet", element: <ToppersAnswerSheet /> },
       { path: "/download-important-articles", element: <ImportantArticles /> },
       { path: "/more-personality-test", element: <PersonalityTest /> },
       { path: "/more-gallery", element: <Gallary /> },
       { path: "/*", element: <Error /> },
       { path: "/home", element: <Home /> },
       { path: "/contact-us", element: <Contact /> },
+      { path: "/registration", element: <Registration /> },
     ],
   },
   {

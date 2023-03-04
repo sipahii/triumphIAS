@@ -7,7 +7,7 @@ const LecturerCard = (props) => {
       <div className={Styles.lecturerCard__top}>
         <img src={props.src} alt="" />
       </div>
-      <div className={Styles.lecturerCard__middle}>
+      {/* <div className={Styles.lecturerCard__middle}>
         <h3>{props.profName}</h3>
         <p>Senior Finance Lecturer</p>
       </div>
@@ -26,7 +26,7 @@ const LecturerCard = (props) => {
             <i className={props.icon4}></i>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   );
 };

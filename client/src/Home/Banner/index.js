@@ -2,11 +2,6 @@ import React from "react";
 import Styles from "./index.module.scss";
 import ReactOwlCrousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
-import Image from "../../Assets/ban.webp";
-import Image1 from "../../Assets/ban.webp";
-import Image2 from "../../Assets/ban.webp";
-import Image3 from "../../Assets/ban.webp";
-import Image4 from "../../Assets/ban.webp";
 
 const Banner = () => {
   const options = {
@@ -33,8 +28,8 @@ const Banner = () => {
         <ReactOwlCrousel className="owl-theme slider" {...options}>
           <div className="item">
             <div className={Styles.mainBanner__bannerImages}>
-              <img src={Image} alt="" />
-              <div className={Styles.mainBanner__bannerImages__content}>
+              <img src="/images/sociology.jpeg" alt="" />
+              {/* <div className={Styles.mainBanner__bannerImages__content}>
                 <h1 className={Styles.mainBanner__title} id="title1">
                   Best Education For UI Design
                 </h1>
@@ -48,14 +43,14 @@ const Banner = () => {
                 <button id="button1" className={Styles.mainBanner__startBtn}>
                   start a course
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div className="item">
             <div className={Styles.mainBanner__bannerImages}>
-              <img src={Image1} alt="" />
-              <div className={Styles.mainBanner__bannerImages__content}>
+              <img src="/images/ban2.png" alt="" />
+              {/* <div className={Styles.mainBanner__bannerImages__content}>
                 <h1 className={Styles.mainBanner__title} id="title2">
                   Best Education For HTML Templates
                 </h1>
@@ -67,14 +62,14 @@ const Banner = () => {
                 <button id="button2" className={Styles.mainBanner__startBtn}>
                   start a course
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div className="item">
             <div className={Styles.mainBanner__bannerImages}>
-              <img src={Image2} alt="" />
-              <div className={Styles.mainBanner__bannerImages__content}>
+              <img src="/images/ban3.jpg" alt="" />
+              {/* <div className={Styles.mainBanner__bannerImages__content}>
                 <h1 className={Styles.mainBanner__title} id="title3">
                   Best Education For PHP
                 </h1>
@@ -86,14 +81,14 @@ const Banner = () => {
                 <button id="button3" className={Styles.mainBanner__startBtn}>
                   start a course
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div className="item">
             <div className={Styles.mainBanner__bannerImages}>
-              <img src={Image3} alt="" />
-              <div className={Styles.mainBanner__bannerImages__content}>
+              <img src="/images/ban4.jpeg" alt="" />
+              {/* <div className={Styles.mainBanner__bannerImages__content}>
                 <h1 className={Styles.mainBanner__title} id="title4">
                   Best Education For PHP
                 </h1>
@@ -105,14 +100,14 @@ const Banner = () => {
                 <button id="button4" className={Styles.mainBanner__startBtn}>
                   start a course
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div className="item">
             <div className={Styles.mainBanner__bannerImages}>
-              <img src={Image4} alt="" />
-              <div className={Styles.mainBanner__bannerImages__content}>
+              <img src="/images/ban5.jpg" alt="" />
+              {/* <div className={Styles.mainBanner__bannerImages__content}>
                 <h1 className={Styles.mainBanner__title} id="title5">
                   Best Education For PHP
                 </h1>
@@ -124,7 +119,7 @@ const Banner = () => {
                 <button id="button5" className={Styles.mainBanner__startBtn}>
                   start a course
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </ReactOwlCrousel>
