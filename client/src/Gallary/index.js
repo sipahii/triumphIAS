@@ -4,9 +4,7 @@ import GallaryAlbume from "./gallaryAlbum";
 const Gallary = () => {
   return (
     <>
-      <CommanBanner
-        section="Gallery"
-      />
+      <CommanBanner section="Gallery" />
       <GallaryAlbume />
     </>
   );
