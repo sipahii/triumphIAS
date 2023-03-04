@@ -40,7 +40,8 @@ const Registration = (props) => {
     setDisabled(isNotEmpty);
   };
 
-  const submitHandler = () => {
+  const submitHandler = (event) => {
+    event.preventDefault();
     let newData = {
       name: formData.name,
       email: formData.email,
@@ -64,9 +65,9 @@ const Registration = (props) => {
     <>
       <CommanBanner section="Registration" />
       <Container>
-        <RegistrationHeading />
+        <RegistrationHeading hedding="FIRST FILL ADMISSION FORM THEN PROCEED NEXT" />
         <RegistrationTittle titlleHead="Course Details" />
-        <form>
+        <form onSubmit={submitHandler}>
           <div className={Styles.registrationSection}>
             <div className={Styles.registrationSection__regitrationFormArea}>
               <RegistationForm value={props.course} disabled="disabled" errClass={userdata.courseName === "" ? Styles.err : ""} id="courseName" labelText="Course Name" inputType="text" onChange={onChangeHandler} />

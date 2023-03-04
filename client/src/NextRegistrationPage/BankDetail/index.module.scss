@@ -1,0 +1,15 @@
+.listsection {
+  padding: 0px 20px;
+  font-family: "Roboto", sans-serif;
+  & > ul {
+    & > li {
+      margin-top: 5px;
+      font-size: 17px;
+      font-weight: 500;
+      color: #333333;
+      & > span {
+        color: #777777;
+      }
+    }
+  }
+}

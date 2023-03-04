@@ -1,0 +1,28 @@
+@import "../../../public/Style/breakpoints";
+
+.contantArea {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #002147;
+  padding: 6px;
+  text-align: center;
+  border-left: 25px solid #fdc800;
+  border-right: 25px solid #fdc800;
+
+  & > h3 {
+    color: #fff;
+    font-size: 17px;
+    @include if-device(phone) {
+      font-size: 14px;
+    }
+
+    @include if-device(largephone) {
+      font-size: 15px;
+    }
+    @include if-device(smallPhone) {
+      font-size: 14px;
+    }
+  }
+}
