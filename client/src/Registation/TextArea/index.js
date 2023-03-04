@@ -5,7 +5,9 @@ const TextArea = (props) => {
   return (
     <>
       <div className={Styles.textAreaSection}>
-        <label form={props.lable}>{props.labelText}</label>
+        <label form={props.lable}>
+          {props.labelText} <span>*</span>
+        </label>
         <textarea placeholder={props.textareaPlace}></textarea>
       </div>
     </>

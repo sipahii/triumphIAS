@@ -1,55 +1,53 @@
 @import "../../../public/Style/breakpoints";
 
 .courcesPage {
-    margin-bottom: 30px;
-    background: #FFFFFF;
-    border: 1px solid #e0e0e0;
+  margin-bottom: 30px;
+  background: #ffffff;
 
-    &__inner {
-        padding: 30px 25px;
+  &__inner {
+    padding: 30px 25px;
 
-        @include if-device(tablet) {
-            padding: 30px 15px;
-        }
-
-        &__review {
-            &>p {
-                color: #002147;
-
-                &>span {
-                    color: black;
-                    font-weight: 500;
-                }
-            }
-
-            &__barcode {
-                &>h5 {
-                    text-align: center;
-                    background-color: #002147;
-                    color: #FFFFFF;
-                    margin: 20px 0px;
-                    padding: 10px;
-                }
-
-                &>img {
-                    width: 100%;
-                }
-
-                &>h4 {
-                    background-color: #002147;
-                    color: #FFFFFF;
-                    padding: 8px;
-                    margin: 20px 0px;
-                }
-
-                &>p {
-
-                    &>span {
-                        color: black;
-                        font-weight: 500;
-                    }
-                }
-            }
-        }
+    @include if-device(tablet) {
+      padding: 30px 15px;
     }
+
+    &__review {
+      & > p {
+        color: #002147;
+
+        & > span {
+          color: black;
+          font-weight: 500;
+        }
+      }
+
+      &__barcode {
+        & > h5 {
+          text-align: center;
+          background-color: #002147;
+          color: #ffffff;
+          margin: 20px 0px;
+          padding: 10px;
+        }
+
+        & > img {
+          width: 100%;
+        }
+
+        & > h4 {
+          background-color: #002147;
+          color: #ffffff;
+          padding: 8px;
+          margin: 20px 0px;
+        }
+
+        & > p {
+          & > span {
+            color: black;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
 }

@@ -15,6 +15,7 @@ const LecturerSection = () => {
     loop: true,
     autoplay: true,
     autoplayTimeout: 6000,
+    smartSpeed: 1500,
     responsive: {
       0: {
         items: 2,
@@ -47,16 +48,16 @@ const LecturerSection = () => {
                 <LecturerCard src="/images/tas3.jpg" profName="Mike Hussy" icon1="fa-regular fa-envelope" icon2="fa-brands fa-linkedin-in" icon3="fa-brands fa-twitter" icon4="fa-brands fa-facebook-f" />
               </div>
               <div className="item">
-                <LecturerCard src="/images/tas4.jpg" profName="Daziy Miller" icon1="fa-regular fa-envelope" icon2="fa-brands fa-linkedin-in" icon3="fa-brands fa-twitter" icon4="fa-brands fa-facebook-f" />
+                <LecturerCard src="/images/tas5.jpg" profName="Daziy Miller" icon1="fa-regular fa-envelope" icon2="fa-brands fa-linkedin-in" icon3="fa-brands fa-twitter" icon4="fa-brands fa-facebook-f" />
               </div>
               <div className="item">
-                <LecturerCard src="/images/tas5.jpg" profName="Kazi Fahim" icon1="fa-regular fa-envelope" icon2="fa-brands fa-linkedin-in" icon3="fa-brands fa-twitter" icon4="fa-brands fa-facebook-f" />
+                <LecturerCard src="/images/tas6.jpg" profName="Kazi Fahim" icon1="fa-regular fa-envelope" icon2="fa-brands fa-linkedin-in" icon3="fa-brands fa-twitter" icon4="fa-brands fa-facebook-f" />
               </div>
               <div className="item">
-                <LecturerCard src="/images/tas6.jpg" profName="Rosy Jane" icon1="fa-regular fa-envelope" icon2="fa-brands fa-linkedin-in" icon3="fa-brands fa-twitter" icon4="fa-brands fa-facebook-f" />
+                <LecturerCard src="/images/tas7.jpg" profName="Rosy Jane" icon1="fa-regular fa-envelope" icon2="fa-brands fa-linkedin-in" icon3="fa-brands fa-twitter" icon4="fa-brands fa-facebook-f" />
               </div>
               <div className="item">
-                <LecturerCard src="/images/tas7.jpg" profName="Mike Hussy" icon1="fa-regular fa-envelope" icon2="fa-brands fa-linkedin-in" icon3="fa-brands fa-twitter" icon4="fa-brands fa-facebook-f" />
+                <LecturerCard src="/images/tas4.jpg" profName="Mike Hussy" icon1="fa-regular fa-envelope" icon2="fa-brands fa-linkedin-in" icon3="fa-brands fa-twitter" icon4="fa-brands fa-facebook-f" />
               </div>
             </ReactOwlCarousel>
           </div>

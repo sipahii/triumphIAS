@@ -5,30 +5,21 @@ import Container from "../component/Container";
 import Item from "../component/Item";
 import CourseCrousel from "../CourceDetails/CourseCrousel";
 import Image from "../Assets/graphic.jpg";
-import Styles from "./index.module.scss"
-
+import Styles from "./index.module.scss";
 
 const SociologyPapper_2 = () => {
   return (
     <>
-      <CommanBanner section="SOCIOLOGY QUESTIONS PAPER-2 - UPSC CIVIL SERVICES IAS EXAM 2021 QUESTION PAPER" />
+      <CommanBanner section="Sociology Question Paper-2" />
       <div className={Styles.courcesPage}>
         <Container>
           <div className={Styles.courcesPage__rowflex}>
             <div className={Styles.courcesPage__rowflex__couresDetails}>
               <div className={Styles.courcesPage__rowflex__couresDetails__inner}>
                 <h2>Advance WordPress Development Class</h2>
-                <p>
-                  Bimply dummy text of the printing and typesetting industry.
-                  Lorem Ipsum has been the industry's standard dummy text ever
-                  since the 1500s, when an unknown printer took a galley of type
-                  and scrambled it to make a type specime book. It has survived
-                  not only five centuries.
-                </p>
+                <p>Bimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specime book. It has survived not only five centuries.</p>
                 <img src={Image} alt="image" />
-                <CommanHeading
-                  heading="SOCIOLOGY QUESTIONS PAPER-2 - UPSC CIVIL SERVICES IAS EXAM 2021 QUESTION PAPER"
-                />
+                <CommanHeading heading="SOCIOLOGY QUESTIONS PAPER-2 - UPSC CIVIL SERVICES IAS EXAM 2021 QUESTION PAPER" />
                 <Item para='1. (a) Caste system studies in India have been dominated by the " book-view" initially. How did the entry of "field-view" bring about a balance in the study of Indian caste system ? Discuss.' />
 
                 <Item para='(b) What does Dr. B. R. Ambedkar mean by the concept of " Annihilation of caste"?' />
@@ -59,12 +50,7 @@ const SociologyPapper_2 = () => {
                 <Item para="8." />
                 <Item para="(a) Discuss the role of social media in communal polarisation. Suggest ways to combat it.Urban settlements in India tend to replicate its rural caste-kinship imprints. Discuss the main reasons." />
                 <Item para='(b) Does " economic empowerment automatically bring about "substantive empowerment" for women? Briefly describe the main issues in women empowerment in India.' />
-
-
-
-
               </div>
-
             </div>
             {/* <div className={Styles.courcesPage__rowflex__sidebar}>
               <CourcePrice />

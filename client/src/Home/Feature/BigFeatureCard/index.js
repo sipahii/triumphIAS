@@ -1,11 +1,11 @@
 import React from "react";
 import Styles from "./index.module.scss";
 
-const BigFeatureCard = () => {
+const BigFeatureCard = (props) => {
   return (
-    <div className={Styles.basicSubject}>
+    <div onClick={props.onClick} className={Styles.basicSubject}>
       <div className={Styles.basicSubject__image}>
-        <img src="/images/course1.png" alt="error"></img>
+        <img src={props.src} alt="error"></img>
         <div className={Styles.basicSubject__image__imageLayer}>
           <div className={Styles.basicSubject__image__imageLayer__icon}>
             <i className="fa-solid fa-share-nodes"></i>

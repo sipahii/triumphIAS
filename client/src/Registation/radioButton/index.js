@@ -4,7 +4,9 @@ import Styles from "./index.module.scss";
 const RadioButton = (props) => {
   return (
     <div className={Styles.radiobuttonArea}>
-      <label htmlFor="">Gender*</label>
+      <label htmlFor="">
+        Gender <span>*</span>
+      </label>
       <div className={Styles.radiobuttonArea__inputField}>
         <input type="radio" name="Gender" id={props.id} required></input>
         <span>Male</span>

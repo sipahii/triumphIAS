@@ -2,19 +2,23 @@
 .radiobuttonArea {
   font-family: "Roboto", sans-serif;
   margin-bottom: 15px;
+  & > label {
+    display: block;
+    letter-spacing: 1px;
+    color: #333333;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 15px;
+
+    & > span {
+      color: #d70026;
+    }
+  }
   &__inputField {
     display: flex;
     align-items: center;
     margin-top: 15px;
 
-    & > label {
-      display: block;
-      letter-spacing: 1px;
-      color: #333333;
-      font-weight: 400;
-      margin-bottom: 10px;
-      font-size: 15px;
-    }
     & > input {
       width: 25px;
       height: 25px;

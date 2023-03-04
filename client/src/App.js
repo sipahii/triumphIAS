@@ -44,6 +44,7 @@ import Gallary from "./Gallary";
 import Contact from "./Contact";
 import Error from "./404_Error";
 import RootLayout from "./RootLayout";
+import Registration from "./Registation";
 
 const routes = createBrowserRouter([
   {
@@ -90,6 +91,7 @@ const routes = createBrowserRouter([
       { path: "/*", element: <Error /> },
       { path: "/home", element: <Home /> },
       { path: "/contact-us", element: <Contact /> },
+      { path: "/registration", element: <Registration /> },
     ],
   },
   {

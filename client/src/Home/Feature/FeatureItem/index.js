@@ -3,7 +3,7 @@ import Styles from "./index.module.scss";
 const Item = (props) => {
   return (
     <>
-      <div className={Styles.seprateSubjectArea}>
+      <div onClick={props.onClick} className={Styles.seprateSubjectArea}>
         <div className={Styles.seprateSubjectArea__image}>
           <img src={props.imageSrc} alt="error"></img>
           <div className={Styles.seprateSubjectArea__image__layer}>
