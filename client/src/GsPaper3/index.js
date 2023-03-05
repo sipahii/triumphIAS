@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "../EssayTopics/index.module.scss"
+import Styles from "../EssayTopics/index.module.scss";
 import Image from "../Assets/graphic.jpg";
 import CommanBanner from "../component/CommanBanner";
 import Container from "../component/Container";
@@ -7,7 +7,7 @@ import CommanHeading from "../component/CommanHeading";
 import Item from "../component/Item";
 import CourseCrousel from "../CourceDetails/CourseCrousel";
 
-const GSPaper_3 = () => {
+const GsPaper3 = () => {
   return (
     <>
       <CommanBanner section="GENERAL STUDIES PAPER 3 - UPSC CIVIL SERVICES IAS EXAM 2021 QUESTION PAPER" />
@@ -17,11 +17,9 @@ const GSPaper_3 = () => {
             <div className={Styles.courcesPage__rowflex__couresDetails}>
               <div className={Styles.courcesPage__rowflex__couresDetails__inner}>
                 <h2>GENERAL STUDIES PAPER 3 - UPSC CIVIL SERVICES IAS EXAM 2021 QUESTION PAPER</h2>
-                <img src={Image} alt="image" />
+                <img src={Image} alt="banner" />
 
-                <CommanHeading
-                  heading="GENERAL STUDIES PAPER 3 - UPSC CIVIL SERVICES IAS EXAM 2021 QUESTION PAPER"
-                />
+                <CommanHeading heading="GENERAL STUDIES PAPER 3 - UPSC CIVIL SERVICES IAS EXAM 2021 QUESTION PAPER" />
                 <Item para="1. Explain the difference between computing methodology of India’s Gross Domestic Product (GDP) before the year 2015 and after the year 2015. (Answer in 150 words)" />
                 <Item para="2. Distinguish between Capital Budget and Revenue Budget. Explain the components of both these Budgets. (Answer in 150 words)" />
                 <Item para="3. How did land reforms in some parts of the country help to improve the socio-economic conditions of marginal and small farmers? (Answer in 150 words)" />
@@ -45,7 +43,6 @@ const GSPaper_3 = () => {
 
                 <h3>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Download UPSC CIVIL SERVICES IAS EXAM 2021 GENERAL STUDIES PAPER 3</h3>
               </div>
-
             </div>
           </div>
           <div className={Styles.courcesPage__rowflex__couresDetails__crousalArea}>
@@ -58,4 +55,4 @@ const GSPaper_3 = () => {
   );
 };
 
-export default GSPaper_3;
+export default GsPaper3;

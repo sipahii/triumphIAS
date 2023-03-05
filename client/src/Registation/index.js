@@ -8,8 +8,10 @@ import RegistrationHeading from "./registrationHedding";
 import TextArea from "./TextArea";
 import RadioButton from "./radioButton";
 import CommonButton from "./CommonButto";
+import ScrollToTop from "../component/ScrollToTop";
 
 const Registration = (props) => {
+  const { course, price, onlineOffline } = props;
   const [userdata, setUserdata] = useState({});
   const [disabled, setDisabled] = useState(false);
   const [formData, setFormData] = useState({
@@ -20,6 +22,7 @@ const Registration = (props) => {
     Phone: "",
     FatherMobileNumber: "",
     courseName: "",
+    price: "",
     ONLINE_OFFLINE: "",
     Street: "",
     City: "",
@@ -35,7 +38,7 @@ const Registration = (props) => {
     const newFormData = { ...formData };
 
     newFormData[fieldName] = fieldValue;
-    const isNotEmpty = newFormData.name !== "" && newFormData.email.includes("@") && newFormData.DOB !== "" && newFormData.FatherName !== "" && newFormData.Phone.length === 10 && newFormData.FatherMobileNumber.length === 10 && newFormData.courseName !== "" && newFormData.ONLINE_OFFLINE !== "" && newFormData.Street !== "" && newFormData.City !== "" && newFormData.State !== "" && newFormData.PinCode.length === 6 && newFormData.gender !== "";
+    const isNotEmpty = newFormData.name !== "" && newFormData !== "" && newFormData.email.includes("@") && newFormData.DOB !== "" && newFormData.FatherName !== "" && newFormData.Phone.length === 10 && newFormData.FatherMobileNumber.length === 10 && newFormData.courseName !== "" && newFormData.ONLINE_OFFLINE !== "" && newFormData.Street !== "" && newFormData.City !== "" && newFormData.State !== "" && newFormData.PinCode.length === 6 && newFormData.gender !== "";
     setFormData(newFormData);
     setDisabled(isNotEmpty);
   };
@@ -46,6 +49,7 @@ const Registration = (props) => {
       name: formData.name,
       email: formData.email,
       DOB: formData.DOB,
+      price: formData.price,
       FatherName: formData.FatherName,
       Phone: formData.Phone,
       FatherMobileNumber: formData.FatherMobileNumber,
@@ -63,6 +67,7 @@ const Registration = (props) => {
 
   return (
     <>
+      <ScrollToTop />
       <CommanBanner section="Registration" />
       <Container>
         <RegistrationHeading hedding="FIRST FILL ADMISSION FORM THEN PROCEED NEXT" />
@@ -70,16 +75,19 @@ const Registration = (props) => {
         <form onSubmit={submitHandler}>
           <div className={Styles.registrationSection}>
             <div className={Styles.registrationSection__regitrationFormArea}>
-              <RegistationForm value={props.course} disabled="disabled" errClass={userdata.courseName === "" ? Styles.err : ""} id="courseName" labelText="Course Name" inputType="text" onChange={onChangeHandler} />
+              <RegistationForm value={course} disabled="disabled" errClass={userdata.courseName === "" ? Styles.err : ""} id="courseName" labelText="Course Name" inputType="text" onChange={onChangeHandler} />
             </div>
             <div className={Styles.registrationSection__regitrationFormArea}>
-              <RegistationForm errClass={userdata.ONLINE_OFFLINE === "" ? Styles.err : ""} id="ONLINE_OFFLINE" labelText="ONLINE/OFFLINE" inputType="text" onChange={onChangeHandler} />
+              <RegistationForm value={price} disabled="disabled" errClass={userdata.price === "" ? Styles.err : ""} id="price" labelText="Course Price" inputType="text" onChange={onChangeHandler} />
+            </div>
+            <div className={Styles.registrationSection__regitrationFormArea}>
+              <RegistationForm value={onlineOffline} disabled="disabled" errClass={userdata.ONLINE_OFFLINE === "" ? Styles.err : ""} id="ONLINE_OFFLINE" labelText="ONLINE/OFFLINE" inputType="text" onChange={onChangeHandler} />
             </div>
           </div>
           <RegistrationTittle titlleHead="Registration Details" />
           <div className={Styles.registrationSection}>
             <div className={Styles.registrationSection__regitrationFormArea}>
-              <RegistationForm errClass={userdata.name === "" ? Styles.err : ""} id="name" labelText="Name" inputType="text" onChange={onChangeHandler} errorMessage={userdata.name == "" ? "message" : ""} />
+              <RegistationForm errClass={userdata.name === "" ? Styles.err : ""} id="name" labelText="Name" inputType="text" onChange={onChangeHandler} errorMessage={userdata.name === "" ? "message" : ""} />
               <RegistationForm errClass={userdata.email === "" ? Styles.err : ""} id="email" labelText="Email-ID" inputType="email" onChange={onChangeHandler} />
               <RegistationForm errClass={userdata.FatherName === "" ? Styles.err : ""} id="FatherName" labelText="Father Name" inputType="text" onChange={onChangeHandler} />
               <RadioButton id="gender" errClass={userdata.gender === "" ? Styles.err : ""} onChange={onChangeHandler} />

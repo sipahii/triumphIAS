@@ -8,9 +8,9 @@ import Navigation from "../Navigation";
 const RootLayout = () => {
   return (
     <>
+      <ScrollToTop />
       <Header />
       <Navigation />
-      <ScrollToTop />
       <Outlet />
       <Footer />
     </>

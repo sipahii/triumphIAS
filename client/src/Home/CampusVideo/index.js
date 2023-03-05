@@ -17,16 +17,10 @@ const CampusVideo = () => {
       <VideoModal closeVideo={clickedCloseVideo} isOpen={videoModal} />
       <div className={Styles.campusVideo}>
         <div className={Styles.campusVideo__container}>
-          <h3>Watch Campus Life Video Tour</h3>
-          <p>
-            Vmply dummy text of the printing and typesetting industryorem Ipsum
-            industry's standard dum an unknowramble.
-          </p>
+          <h3>Watch Lecture</h3>
+          <p>Vmply dummy text of the printing and typesetting industryorem Ipsum industry's standard dum an unknowramble.</p>
 
-          <div
-            onClick={videoPlay}
-            className={Styles.campusVideo__container__videoPlayBtn}
-          >
+          <div onClick={videoPlay} className={Styles.campusVideo__container__videoPlayBtn}>
             <i className="fa-solid fa-play"></i>
           </div>
         </div>

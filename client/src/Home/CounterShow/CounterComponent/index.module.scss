@@ -1,47 +1,49 @@
+@import "../../../../public/Style/breakpoints";
 
-.counterComponent{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+.counterComponent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 
-    &__left{
+  &__left {
+    &__h2 {
+      color: #ffffff;
+      font-size: 72px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      position: relative;
+      margin-bottom: 20px;
 
-        &__h2{
-            color: #FFFFFF;
-            font-size: 72px;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-            position: relative;
-            margin-bottom: 20px;
-
-            &::before{
-                content: "";
-                height: 2px;
-                width: 70px;
-                background: #fdc800;
-                position: absolute;
-                left: 0;
-                margin: 0 auto;
-                right: 0;
-                bottom: 0;
-                z-index: 3;
-            }
-        }
+      @include if-device(phone) {
+        font-size: 50px;
+      }
+      &::before {
+        content: "";
+        height: 2px;
+        width: 100%;
+        background: #fdc800;
+        position: absolute;
+        left: 0;
+        margin: 0 auto;
+        right: 0;
+        bottom: 0;
+        z-index: 3;
+      }
     }
+  }
 
-    &__right{
-
-        &__para{
-            color: #FFFFFF;
-            font-size: 18px;
-            padding-top: 15px;
-            padding-left: 15px;
-            text-transform: uppercase;
-            text-align: left;
-            z-index: 1;
-            margin: 0 0 20px 0;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-        }
+  &__right {
+    &__para {
+      color: #ffffff;
+      font-size: 18px;
+      padding-top: 15px;
+      padding-left: 15px;
+      text-transform: uppercase;
+      text-align: left;
+      z-index: 1;
+      margin: 0 0 20px 0;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
     }
+  }
 }

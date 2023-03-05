@@ -7,7 +7,7 @@ import Styles from "./index.module.scss";
 import Image from "../Assets/graphic.jpg";
 import CourseCrousel from "../CourceDetails/CourseCrousel";
 
-const SociologyPapper_1 = () => {
+const SociologyPapper1 = () => {
   return (
     <>
       <CommanBanner section="Sociology Question Paper-1" />
@@ -18,7 +18,7 @@ const SociologyPapper_1 = () => {
               <div className={Styles.courcesPage__rowflex__couresDetails__inner}>
                 <h2>Advance WordPress Development Class</h2>
                 <p>Bimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specime book. It has survived not only five centuries.</p>
-                <img src={Image} alt="image" />
+                <img src={Image} alt="banner" />
                 <CommanHeading heading="SOCIOLOGY QUESTIONS PAPER-1 - UPSC CIVIL SERVICES IAS EXAM 2021 QUESTION PAPER" />
                 <Item para="1. (a) Europe was the first and the only place where modernity emerged. Comment." />
                 <Item para="(b) Do you think ethnomethodology helps us in getting reliable and valid data? Justify your answer." />
@@ -61,4 +61,4 @@ const SociologyPapper_1 = () => {
   );
 };
 
-export default SociologyPapper_1;
+export default SociologyPapper1;

@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "../EssayTopics/index.module.scss"
+import Styles from "../EssayTopics/index.module.scss";
 import Image from "../Assets/graphic.jpg";
 import CommanBanner from "../component/CommanBanner";
 import Container from "../component/Container";
@@ -7,7 +7,7 @@ import CommanHeading from "../component/CommanHeading";
 import Item from "../component/Item";
 import CourseCrousel from "../CourceDetails/CourseCrousel";
 
-const GSPaper_1 = () => {
+const GsPaper1 = () => {
   return (
     <>
       <CommanBanner section="GENERAL STUDIES PAPER 1 - UPSC CIVIL SERVICES IAS EXAM 2021 QUESTION PAPER" />
@@ -17,11 +17,9 @@ const GSPaper_1 = () => {
             <div className={Styles.courcesPage__rowflex__couresDetails}>
               <div className={Styles.courcesPage__rowflex__couresDetails__inner}>
                 <h2>GENERAL STUDIES PAPER 1 - UPSC CIVIL SERVICES IAS EXAM 2021 QUESTION PAPER</h2>
-                <img src={Image} alt="image" />
+                <img src={Image} alt="banner" />
 
-                <CommanHeading
-                  heading="GENERAL STUDIES PAPER 1 - UPSC CIVIL SERVICES IAS EXAM 2021 QUESTION PAPER"
-                />
+                <CommanHeading heading="GENERAL STUDIES PAPER 1 - UPSC CIVIL SERVICES IAS EXAM 2021 QUESTION PAPER" />
                 <Item para="1. Evaluate the nature of the Bhakti Literature and its contribution to  Indian culture. (Answer in 150 words) 10" />
                 <Item para="2. Trace the rise and growth of socio-religious reform movements with special reference to Young Bengal and Brahmo Samaj. (Answer in 150 words) 10" />
                 <Item para="3. Assess the main administrative issues and socio-cultural problems in the integration process of Indian Princely States. (Answer in 150 words) 10" />
@@ -45,7 +43,6 @@ const GSPaper_1 = () => {
 
                 <h3>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Download UPSC CIVIL SERVICES IAS EXAM 2021 GENERAL STUDIES PAPER 1</h3>
               </div>
-
             </div>
           </div>
           <div className={Styles.courcesPage__rowflex__couresDetails__crousalArea}>
@@ -58,4 +55,4 @@ const GSPaper_1 = () => {
   );
 };
 
-export default GSPaper_1;
+export default GsPaper1;

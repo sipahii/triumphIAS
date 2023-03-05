@@ -2,12 +2,10 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Banner from "./Banner";
 import AboutArea from "./AboutArea";
-import LecturerSection from "./LectureSection";
 import CampusVideo from "./CampusVideo";
-import NewsEventSection from "./NewsEventSection";
 import CounterShow from "./CounterShow";
-import BookSection from "./BookSection";
 import Feature from "./Feature";
+import ToppersCrousel from "./ToppersCrousel";
 
 const Home = () => {
   const [list, setList] = useState([]);
@@ -46,11 +44,10 @@ const Home = () => {
       <Banner />
       <AboutArea />
       <Feature />
-      <LecturerSection />
+      <ToppersCrousel title="Our Toppers: Sociology" src1="/images/tas1.jpg" src2="/images/tas2.jpg" src3="/images/tas3.jpg" src4="/images/tas5.jpg" src5="/images/tas6.jpg" src6="/images/tas7.jpg" src7="/images/tas4.jpg" />
       <CampusVideo />
-      <NewsEventSection />
+      <ToppersCrousel title="Our Toppers: Essay" src1="/images/tae1.jpg" src2="/images/tae2.jpg" src3="/images/tae3.jpg" src7="/images/tae5.jpg" src5="/images/tae6.jpg" src6="/images/tae7.jpg" src4="/images/tae4.jpg" />
       <CounterShow />
-      <BookSection />
     </div>
   );
 };

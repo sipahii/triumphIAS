@@ -3,7 +3,7 @@ import style from "./index.module.scss";
 
 const Tab = (props) => {
   return (
-    <button className={`${style.tab} ${props.class}`} onClick={() => props.onClick(props.price)}>
+    <button className={`${style.tab} ${props.class}`} onClick={() => props.onClick(props.price, props.onlineOffline)}>
       {props.btnName}
     </button>
   );

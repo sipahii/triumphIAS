@@ -12,12 +12,16 @@ const Navigation = () => {
     setToggle(!toggle);
   };
 
+  const hideToggleMenu = () => {
+    setToggle(false);
+  };
+
   return (
     <>
       <nav>
         <div className={Styles.container}>
           <div className={Styles.container__leftSide}>
-            <div className={Styles.container__leftSide__logo}>
+            <div onClick={hideToggleMenu} className={Styles.container__leftSide__logo}>
               <Link to="/home">
                 <img src={Logo} alt="logo" />
               </Link>
@@ -35,7 +39,7 @@ const Navigation = () => {
             </div>
           </div>
         </div>
-        <div className={Styles.menuList}>{toggle && <MobileMenu />}</div>
+        <div className={Styles.menuList}>{toggle && <MobileMenu onClick={hideToggleMenu} />}</div>
       </nav>
     </>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "../EssayTopics/index.module.scss"
+import Styles from "../EssayTopics/index.module.scss";
 import Image from "../Assets/graphic.jpg";
 import CommanBanner from "../component/CommanBanner";
 import Container from "../component/Container";
@@ -7,8 +7,7 @@ import CommanHeading from "../component/CommanHeading";
 import Item from "../component/Item";
 import CourseCrousel from "../CourceDetails/CourseCrousel";
 
-
-const GSPaper_2 = () => {
+const GsPaper2 = () => {
   return (
     <>
       <CommanBanner section="GENERAL STUDIES PAPER 2 - UPSC CIVIL SERVICES IAS EXAM 2021 QUESTION PAPER" />
@@ -18,11 +17,9 @@ const GSPaper_2 = () => {
             <div className={Styles.courcesPage__rowflex__couresDetails}>
               <div className={Styles.courcesPage__rowflex__couresDetails__inner}>
                 <h2>GENERAL STUDIES PAPER 2 - UPSC CIVIL SERVICES IAS EXAM 2021 QUESTION PAPER</h2>
-                <img src={Image} alt="image" />
+                <img src={Image} alt="banner" />
 
-                <CommanHeading
-                  heading="GENERAL STUDIES PAPER 2 - UPSC CIVIL SERVICES IAS EXAM 2021 QUESTION PAPER"
-                />
+                <CommanHeading heading="GENERAL STUDIES PAPER 2 - UPSC CIVIL SERVICES IAS EXAM 2021 QUESTION PAPER" />
                 <Item para="1. Constitutional Morality’ is rooted in the Constitution itself and is founded on its essential facets. Explain the doctrine of ‘Constitutional Morality’ with the help of relevant judicial decisions. (Answer in  150 words) 10" />
                 <Item para="2. Discuss the desirability of greater representation to women in the higher judiciary to ensure diversity, equity and inclusiveness. (Answer in  150 words) 10" />
                 <Item para="3. How have the recommendations of the 14th Finance Commission of India enabled the states to improve their fiscal position?(Answer in  150 words) 10" />
@@ -45,9 +42,7 @@ const GSPaper_2 = () => {
                 <Item para="20. The newly tri-nation partnership AUKUS is aimed at countering China’s ambitions in the Indo-Pacific region. Is it going to supersede the existing partnerships in the region? Discuss the strenght and impact of AUKUS in the present scenario. (Answer in  250 words) 15" />
 
                 <h3>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Download UPSC CIVIL SERVICES IAS EXAM 2021 GENERAL STUDIES PAPER 2</h3>
-
               </div>
-
             </div>
           </div>
           <div className={Styles.courcesPage__rowflex__couresDetails__crousalArea}>
@@ -60,4 +55,4 @@ const GSPaper_2 = () => {
   );
 };
 
-export default GSPaper_2;
+export default GsPaper2;

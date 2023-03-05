@@ -26,6 +26,22 @@
     margin: 0 auto;
     padding: 0 15px;
 
+    @include if-device(phone) {
+      padding: 0 20px;
+    }
+
+    @include if-device(tablet) {
+      padding: 0 50px;
+    }
+
+    @include if-device(largephone) {
+      padding: 0 50px;
+    }
+
+    @include if-device(desktop) {
+      padding: 0 50px;
+    }
+
     &__body {
       position: absolute;
       top: 50%;

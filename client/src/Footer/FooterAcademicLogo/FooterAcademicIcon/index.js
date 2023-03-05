@@ -4,7 +4,9 @@ import Styles from "./index.module.scss";
 const FooterAcademicIcon = (props) => {
   return (
     <li className={Styles.li}>
-      <i className={props.className}></i>
+      <a className={Styles.li__a} target="_blank" href={props.link} rel="noreferrer">
+        <i className={props.className}></i>
+      </a>
     </li>
   );
 };

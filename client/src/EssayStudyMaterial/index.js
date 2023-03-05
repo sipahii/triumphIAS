@@ -1,11 +1,8 @@
 import React from "react";
+import EssayFoundationCourse from "../EssayFoundationCourse";
 
 const EssayStudyMaterial = () => {
-  return (
-    <div>
-      <div></div>
-    </div>
-  );
+  return <EssayFoundationCourse />;
 };
 
 export default EssayStudyMaterial;

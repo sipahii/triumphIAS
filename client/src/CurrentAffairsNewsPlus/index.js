@@ -18,10 +18,10 @@ const CurrentAffairsNewsPlus = () => {
                 <h2>current affairs news plus</h2>
                 <div className={Styles.courcesPage__rowflex__couresDetails__inner__artical}>
                   <a href="https://triumphias.com/oss/file-download.php?file-id=20180918_124238_1019768794_533194255.pdf">
-                    <img src={Img1} />
+                    <img src={Img1} alt="pdf" />
                   </a>
                   <a href="https://triumphias.com/oss/file-download.php?file-id=20180918_124239_565045923_198573500.pdf">
-                    <img src={Img2} />
+                    <img src={Img2} alt="pdf" />
                   </a>
                 </div>
               </div>

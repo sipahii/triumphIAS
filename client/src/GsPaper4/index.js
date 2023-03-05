@@ -7,7 +7,7 @@ import CommanHeading from "../component/CommanHeading";
 import Item from "../component/Item";
 import CourseCrousel from "../CourceDetails/CourseCrousel";
 
-const GSPaper_4 = () => {
+const GsPaper4 = () => {
   return (
     <>
       <CommanBanner section="GENERAL STUDIES PAPER 4 - UPSC CIVIL SERVICES IAS EXAM 2021 QUESTION PAPER" />
@@ -17,7 +17,7 @@ const GSPaper_4 = () => {
             <div className={Styles.courcesPage__rowflex__couresDetails}>
               <div className={Styles.courcesPage__rowflex__couresDetails__inner}>
                 <h2>GENERAL STUDIES PAPER 4 - UPSC CIVIL SERVICES IAS EXAM 2021 QUESTION PAPER</h2>
-                <img src={Image} alt="image" />
+                <img src={Image} alt="banner" />
 
                 <CommanHeading heading="GENERAL STUDIES PAPER 4 - UPSC CIVIL SERVICES IAS EXAM 2021 QUESTION PAPER" />
                 <Item para="1. (a) Identify five ethical traits on which one can plot the performance of a civil servant. Justify their inclusion in the matrix. (Answer in 150 words) " />
@@ -58,4 +58,4 @@ const GSPaper_4 = () => {
   );
 };
 
-export default GSPaper_4;
+export default GsPaper4;
