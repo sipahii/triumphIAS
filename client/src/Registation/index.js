@@ -38,7 +38,7 @@ const Registration = (props) => {
     const newFormData = { ...formData };
 
     newFormData[fieldName] = fieldValue;
-    const isNotEmpty = newFormData.name !== "" && newFormData !== "" && newFormData.email.includes("@") && newFormData.DOB !== "" && newFormData.FatherName !== "" && newFormData.Phone.length === 10 && newFormData.FatherMobileNumber.length === 10 && newFormData.courseName !== "" && newFormData.ONLINE_OFFLINE !== "" && newFormData.Street !== "" && newFormData.City !== "" && newFormData.State !== "" && newFormData.PinCode.length === 6 && newFormData.gender !== "";
+    const isNotEmpty = newFormData.name !== "" && newFormData.price !== "" && newFormData.email.includes("@") && newFormData.DOB !== "" && newFormData.FatherName !== "" && newFormData.Phone.length === 10 && newFormData.FatherMobileNumber.length === 10 && newFormData.courseName !== "" && newFormData.ONLINE_OFFLINE !== "" && newFormData.Street !== "" && newFormData.City !== "" && newFormData.State !== "" && newFormData.PinCode.length === 6 && newFormData.gender !== "";
     setFormData(newFormData);
     setDisabled(isNotEmpty);
   };

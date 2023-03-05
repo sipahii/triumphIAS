@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Styles from "../CourceDetails/index.module.scss";
 import Container from "../component/Container";
 import CommanBanner from "../component/CommanBanner";

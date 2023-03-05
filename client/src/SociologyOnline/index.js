@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Styles from "../CourceDetails/index.module.scss";
 import CommanBanner from "../component/CommanBanner";
 import CommanHeading from "../component/CommanHeading";
@@ -11,16 +11,10 @@ import ApplyNow from "../CourceDetails/SideBarApplyNow";
 import TabArea from "../CourceDetails/TabArea";
 import AskQuestion from "../CourceDetails/AskQuestion/";
 import Registration from "../Registation";
+import useCourse from "../hooks/useCourse";
 
 const SociologyOnline = () => {
-  const [enroll, setEnroll] = useState(false);
-  const [courseName, setCourseName] = useState();
-  const [coursePrice, setCoursePrice] = useState();
-  const onRegistrationHandler = (course, price) => {
-    setEnroll(true);
-    setCourseName(course);
-    setCoursePrice(price);
-  };
+  const { onRegistrationHandler, courseName, coursePrice, enroll } = useCourse();
   return (
     <>
       {!enroll ? (

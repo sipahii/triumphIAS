@@ -11,6 +11,7 @@ const RootLayout = () => {
       <ScrollToTop />
       <Header />
       <Navigation />
+      <ScrollToTop />
       <Outlet />
       <Footer />
     </>
