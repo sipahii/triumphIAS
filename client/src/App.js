@@ -1,5 +1,5 @@
 import "./App.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -46,7 +46,7 @@ import Error from "./404_Error";
 import RootLayout from "./RootLayout";
 import Registration from "./Registation";
 
-const routes = createBrowserRouter([
+const routes = createHashRouter([
   {
     
     path: "/",
@@ -99,9 +99,7 @@ const routes = createBrowserRouter([
     path: "/admin",
     element: <Admin />,
   },
-],{
-  basename:"http://thecodingboat.com/"
-});
+]);
 
 function App() {
   return (
