@@ -104,11 +104,11 @@ function App() {
   return (
     <>
       <RouterProvider router={routes} />
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <div className="App">
           <ToastContainer position="top-left" />
         </div>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </>
   );
 }
