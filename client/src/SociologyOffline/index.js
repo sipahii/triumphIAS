@@ -11,14 +11,10 @@ import ApplyNow from "../CourceDetails/SideBarApplyNow";
 import CourseCrousel from "../CourceDetails/CourseCrousel";
 import PaymentDetails from "../component/PaymentDetails";
 import Registration from "../Registation";
+import useCourse from "../hooks/useCourse";
 
 const SociologyOffline = () => {
-  const [enroll, setEnroll] = useState(false);
-  const [courseName, setCourseName] = useState();
-  const onRegistrationHandler = (course) => {
-    setEnroll(true);
-    setCourseName(course);
-  };
+  const { onRegistrationHandler, courseName, coursePrice, enroll } = useCourse();
   return (
     <>
       {!enroll ? (
@@ -31,7 +27,7 @@ const SociologyOffline = () => {
                   <div className={Styles.courcesPage__rowflex__couresDetails__inner}>
                     <h2>Sociology Foundation With Answer Writing</h2>
                     <p>Bimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specime book. It has survived not only five centuries.</p>
-                    <img src="/images/sociologyoff.jpeg" alt="image" />
+                    <img src="/images/sociologyoff.jpeg" alt="banner" />
                     <TabArea />
 
                     <CommanHeading heading="SPECIALIST GUIDANCE OF VIKASH RANJAN SIR :" />
@@ -112,7 +108,7 @@ const SociologyOffline = () => {
           </div>
         </>
       ) : (
-        <Registration course={courseName} />
+        <Registration course={courseName} price={coursePrice} onlineOffline="Offline" />
       )}
     </>
   );

@@ -1,4 +1,6 @@
-.li{
+.li {
+  &__a {
+    text-decoration: none;
     color: #b3b3b3;
     font-size: 13px;
     width: 30px;
@@ -10,9 +12,10 @@
     transition: all 0.3s ease-out;
     cursor: pointer;
 
-    &:hover{
-        background-color: #fdc800;
-        color: #002147;
-        border: 1px solid #fdc800;
+    &:hover {
+      background-color: #fdc800;
+      color: #002147;
+      border: 1px solid #fdc800;
     }
+  }
 }

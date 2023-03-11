@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import CommanBanner from "../component/CommanBanner";
 import CommanHeading from "../component/CommanHeading";
 import Container from "../component/Container";
@@ -11,18 +11,10 @@ import ApplyNow from "../CourceDetails/SideBarApplyNow";
 import Styles from "../CourceDetails/index.module.scss";
 import Tab from "../widget/Tab";
 import Registration from "../Registation";
+import useCourse from "../hooks/useCourse";
 
 const SociologyTestSeries = () => {
-  const [coursePrice, setCoursePrice] = useState("19,000");
-  const [enroll, setEnroll] = useState(false);
-  const [courseName, setCourseName] = useState();
-  const onRegistrationHandler = (course) => {
-    setEnroll(true);
-    setCourseName(course);
-  };
-  const onCourseHandler = (price) => {
-    setCoursePrice(price);
-  };
+  const { onRegistrationHandler, onCourseHandler, courseName, coursePrice, enroll, courseType } = useCourse("19,000", "Online");
   return (
     <>
       {!enroll ? (
@@ -31,15 +23,15 @@ const SociologyTestSeries = () => {
           <div className={Styles.courcesPage}>
             <Container>
               <div className={Styles.courcesPage__top}>
-                <Tab onClick={onCourseHandler} btnName="Online Course Fee" price="19,000" class={coursePrice === "19,000" ? Styles.active : ""} />
-                <Tab onClick={onCourseHandler} btnName="Offline Course Fee" price="20,000" class={coursePrice === "20,000" ? Styles.active : ""} />
+                <Tab onClick={onCourseHandler} onlineOffline="Online" btnName="Online Course Fee" price="19,000" class={coursePrice === "19,000" ? Styles.active : ""} />
+                <Tab onClick={onCourseHandler} onlineOffline="Offline" btnName="Offline Course Fee" price="20,000" class={coursePrice === "20,000" ? Styles.active : ""} />
               </div>
               <div className={Styles.courcesPage__rowflex}>
                 <div className={Styles.courcesPage__rowflex__couresDetails}>
                   <div className={Styles.courcesPage__rowflex__couresDetails__inner}>
                     <h2>Sociology Test Series</h2>
                     <p>Bimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specime book. It has survived not only five centuries.</p>
-                    <img src="/images/ban3.jpg" alt="image" />
+                    <img src="/images/ban3.jpg" alt="banner" />
                     <CommanHeading heading="What We Offer in Test Series?Admission Open" />
                     <Item para="Admission Open" />
                     <Item para="Total Number of Tests - 30" />
@@ -132,7 +124,7 @@ const SociologyTestSeries = () => {
           </div>
         </>
       ) : (
-        <Registration course={courseName} />
+        <Registration course={courseName} price={coursePrice} onlineOffline={courseType} />
       )}
     </>
   );

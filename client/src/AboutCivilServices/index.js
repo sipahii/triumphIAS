@@ -17,7 +17,7 @@ const AboutCivilServices = () => {
             <div className={Styles.courcesPage__rowflex__couresDetails}>
               <div className={Styles.courcesPage__rowflex__couresDetails__inner}>
                 <h2>about civil services</h2>
-                <img src={Image} alt="image" />
+                <img src={Image} alt="banner" />
                 <h3>ABOUT CIVIL SERVICES</h3>
                 <p>
                   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Various Civil Servants of the Government of India, including the Indian Administrative Service (IAS), Indian Foreign Service (IFS), Indian Police Service (IPS) among others are recruited through the Civil Services Examination (CSE), which is a nationwide competitive examination in India conducted by the Union Public Service Commission. Civil Services constitute all non-military departments of the government machinery, which

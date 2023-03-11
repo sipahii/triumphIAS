@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Styles from "../CourceDetails/index.module.scss";
 import CommanBanner from "../component/CommanBanner";
 import Container from "../component/Container";
@@ -11,14 +11,11 @@ import AskQuestion from "../CourceDetails/AskQuestion";
 import ApplyNow from "../CourceDetails/SideBarApplyNow";
 import CourseCrousel from "../CourceDetails/CourseCrousel";
 import Registration from "../Registation";
+import Tab from "../widget/Tab";
+import useCourse from "../hooks/useCourse";
 
 const EssayFoundationCourse = () => {
-  const [enroll, setEnroll] = useState(false);
-  const [courseName, setCourseName] = useState();
-  const onRegistrationHandler = (course) => {
-    setEnroll(true);
-    setCourseName(course);
-  };
+  const { onRegistrationHandler, onCourseHandler, courseName, coursePrice, enroll, courseType } = useCourse("20,000", "Online");
   return (
     <>
       {!enroll ? (
@@ -26,12 +23,16 @@ const EssayFoundationCourse = () => {
           <CommanBanner section="essay class & test series" />
           <div className={Styles.courcesPage}>
             <Container>
+              <div className={Styles.courcesPage__top}>
+                <Tab onClick={onCourseHandler} onlineOffline="Online" btnName="Online Course Fee" price="20,000" class={courseType === "Online" ? Styles.active : ""} />
+                <Tab onClick={onCourseHandler} onlineOffline="Offline" btnName="Offline Course Fee" price="20,000" class={courseType === "Offline" ? Styles.active : ""} />
+              </div>
               <div className={Styles.courcesPage__rowflex}>
                 <div className={Styles.courcesPage__rowflex__couresDetails}>
                   <div className={Styles.courcesPage__rowflex__couresDetails__inner}>
                     <h2>Essay Class & Test Series</h2>
                     <p>Bimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specime book. It has survived not only five centuries.</p>
-                    <img src="/images/ban2.png" alt="image" />
+                    <img src="/images/ban2.png" alt="banner" />
                     <TabArea />
 
                     <CommanHeading heading="COURSE FEATURES" />
@@ -78,7 +79,7 @@ const EssayFoundationCourse = () => {
                   </div>
                 </div>
                 <div className={Styles.courcesPage__rowflex__sidebar}>
-                  <CourcePrice price="20,000" onClick={onRegistrationHandler} courseName="Essay Class & Test Series" />
+                  <CourcePrice price={coursePrice} onClick={onRegistrationHandler} courseName="Essay Class & Test Series" />
                   <PaymentDetails />
                   <AskQuestion />
                   <ApplyNow />
@@ -93,7 +94,7 @@ const EssayFoundationCourse = () => {
           </div>
         </>
       ) : (
-        <Registration course={courseName} />
+        <Registration course={courseName} price={coursePrice} onlineOffline={courseType} />
       )}
     </>
   );

@@ -19,24 +19,24 @@ import EssayPlanner from "./EssayPlanner";
 import EssayStudyMaterial from "./EssayStudyMaterial";
 import EssayTestSeries from "./EssayTestSeries";
 import EssayTopics from "./EssayTopics";
-import GSPracticeSeries from "./GSPracticeSeries";
-import GSPaper_1 from "./GSPaper_1";
-import GSPaper_2 from "./GSPaper_2";
-import GSPaper_3 from "./GSPaper_3";
-import GSPaper_4 from "./GSPaper_4";
+import GsPracticeSeries from "./GsPracticeSeries";
+import GsPaper1 from "./GsPaper1";
+import GsPaper2 from "./GsPaper2";
+import GsPaper3 from "./GsPaper3";
+import GsPaper4 from "./GsPaper4";
 import SociologyFoundationTest from "./SociologyFoundationTest";
 import SociologyNotes from "./SociologyNotes";
 import SociologyOffline from "./SociologyOffline";
 import SociologyOnline from "./SociologyOnline";
-import SociologyPapper_1 from "./SociologyPaper_1";
-import SociologyPapper_2 from "./SociologyPaper_2";
+import SociologyPapper1 from "./SociologyPaper1";
+import SociologyPapper2 from "./SociologyPaper2";
 import SociologyPlanner from "./SociologyPlanner";
 import SociologyStudyPlusTest from "./SociologyStudyPlusTest";
 import SociologyStudyMaterial from "./SociologyStudyMaterial";
 import SociologySyllabus from "./SociologySyllabus";
 import SociologyTestSeries from "./SociologyTestSeries";
 import SuggestBooks from "./SuggestBooks";
-import ToppersAnswerSheet from "./ToppersAnswerSheet";
+// import ToppersAnswerSheet from "./ToppersAnswerSheet";
 import ImportantArticles from "./ImportantArticles";
 import PersonalityTest from "./PersonalityTest";
 import CoursesDetails from "./CourceDetails";
@@ -67,17 +67,17 @@ const routes = createBrowserRouter([
       { path: "/essay-study-material", element: <EssayStudyMaterial /> },
       { path: "/essay-test-series", element: <EssayTestSeries /> },
       { path: "/essay-exams-topics", element: <EssayTopics /> },
-      { path: "/gs-prelims-success-general-series", element: <GSPracticeSeries /> },
-      { path: "/gs-paper1", element: <GSPaper_1 /> },
-      { path: "/gs-paper2", element: <GSPaper_2 /> },
-      { path: "/gs-paper3", element: <GSPaper_3 /> },
-      { path: "/gs-paper4", element: <GSPaper_4 /> },
+      { path: "/gs-prelims-success-general-series", element: <GsPracticeSeries /> },
+      { path: "/gs-paper1", element: <GsPaper1 /> },
+      { path: "/gs-paper2", element: <GsPaper2 /> },
+      { path: "/gs-paper3", element: <GsPaper3 /> },
+      { path: "/gs-paper4", element: <GsPaper4 /> },
       { path: "/sociology-offline", element: <SociologyOffline /> },
       { path: "/download-sociology-notes", element: <SociologyNotes /> },
       { path: "/sociology-foundation-test", element: <SociologyFoundationTest /> },
       { path: "/sociology-online", element: <SociologyOnline /> },
-      { path: "/sociology-paper-1", element: <SociologyPapper_1 /> },
-      { path: "/sociology-paper-2", element: <SociologyPapper_2 /> },
+      { path: "/sociology-paper-1", element: <SociologyPapper1 /> },
+      { path: "/sociology-paper-2", element: <SociologyPapper2 /> },
       { path: "/sociology-plannar", element: <SociologyPlanner /> },
       { path: "/sociology-test-plus-study", element: <SociologyStudyPlusTest /> },
       { path: "/sociology-study-material", element: <SociologyStudyMaterial /> },

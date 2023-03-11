@@ -2,7 +2,6 @@ import React from "react";
 import FooterAcademicLogo from "./FooterAcademicLogo";
 import FooterBottom from "./FooterBottom";
 import FooterFeatured from "./FooterFeatured";
-import FooterFlickerImg from "./FooterFlickerImg";
 import FooterInformation from "./FooterInformation";
 import FooterNewsletter from "./FooterNewsletter";
 import Styles from "./index.module.scss";
@@ -24,9 +23,6 @@ const Footer = () => {
             <div className={Styles.footer__container__body__child}>
               <FooterInformation />
               <FooterNewsletter />
-            </div>
-            <div className={Styles.footer__container__body__child}>
-              <FooterFlickerImg />
             </div>
           </div>
         </div>

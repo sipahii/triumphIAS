@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Styles from "../CourceDetails/index.module.scss";
 import CommanBanner from "../component/CommanBanner";
 import CommanHeading from "../component/CommanHeading";
 import Container from "../component/Container";
-import Image from "../Assets/graphic.jpg";
 import Item from "../component/Item";
 import CourseCrousel from "../CourceDetails/CourseCrousel";
 import CourcePrice from "../CourceDetails/CoursePrice";
@@ -12,14 +11,10 @@ import ApplyNow from "../CourceDetails/SideBarApplyNow";
 import TabArea from "../CourceDetails/TabArea";
 import AskQuestion from "../CourceDetails/AskQuestion/";
 import Registration from "../Registation";
+import useCourse from "../hooks/useCourse";
 
 const SociologyOnline = () => {
-  const [enroll, setEnroll] = useState(false);
-  const [courseName, setCourseName] = useState();
-  const onRegistrationHandler = (course) => {
-    setEnroll(true);
-    setCourseName(course);
-  };
+  const { onRegistrationHandler, courseName, coursePrice, enroll } = useCourse();
   return (
     <>
       {!enroll ? (
@@ -32,7 +27,7 @@ const SociologyOnline = () => {
                   <div className={Styles.courcesPage__rowflex__couresDetails__inner}>
                     <h2>Sociology Foundation With Answer Writing</h2>
                     <p>Bimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specime book. It has survived not only five centuries.</p>
-                    <img src="/images/sociology.jpeg" alt="image" />
+                    <img src="/images/sociology.jpeg" alt="banner" />
                     <TabArea />
 
                     <CommanHeading heading="STUDY MATERIAL / NOTES :" />
@@ -126,7 +121,7 @@ const SociologyOnline = () => {
           </div>
         </>
       ) : (
-        <Registration course={courseName} />
+        <Registration course={courseName} price={coursePrice} onlineOffline="Online" />
       )}
     </>
   );

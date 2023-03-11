@@ -10,16 +10,17 @@ const FooterAcademicLogo = () => {
         <img src={FooterLogo} alt="triumphias logo" />
       </div>
       <div className={Styles.footerAcademicLogo__middle}>
-        <p className={Styles.footerAcademicLogo__middle__para}>Praesent vel rutrum purus. Nam vel dui eu sus duis dignissim dignissim. Suspenetey disse at ros tecongueconsequat.Fusce sit amet rna feugiat.</p>
+        <p className={Styles.footerAcademicLogo__middle__para}>We, at Triumph IAS, believe that each Individual Aspirant is unique and requires Individual Guidance and Care.</p>
       </div>
       <div className={Styles.footerAcademicLogo__bottom}>
         <ul className={Styles.footerAcademicLogo__bottom__ul}>
-          <FooterAcademicIcon className="fa-brands fa-facebook-f" />
-          <FooterAcademicIcon className="fa-brands fa-twitter" />
-          <FooterAcademicIcon className="fa-brands fa-linkedin-in" />
-          <FooterAcademicIcon className="fa-brands fa-pinterest" />
-          <FooterAcademicIcon className="fa-solid fa-rss" />
-          <FooterAcademicIcon className="fa-brands fa-google-plus-g" />
+          <FooterAcademicIcon link="https://www.facebook.com/triumphias.vrc/" className="fa-brands fa-facebook-f" />
+
+          <FooterAcademicIcon link="https://instagram.com/triumphias?igshid=YmMyMTA2M2Y=" className="fa-brands fa-instagram" />
+
+          <FooterAcademicIcon link="https://www.linkedin.com/company/triumph-education-and-publishing/mycompany/" className="fa-brands fa-linkedin-in" />
+
+          <FooterAcademicIcon link="https://www.youtube.com/channel/UCsv76U-4y0dAIiHT92oYUgA?view_as=subscriber" className="fa-brands fa-youtube" />
         </ul>
       </div>
     </div>
