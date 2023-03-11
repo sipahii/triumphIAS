@@ -48,6 +48,7 @@ import Registration from "./Registation";
 
 const routes = createBrowserRouter([
   {
+    
     path: "/",
     element: <RootLayout />,
     children: [
@@ -98,7 +99,9 @@ const routes = createBrowserRouter([
     path: "/admin",
     element: <Admin />,
   },
-]);
+],{
+  basename:"http://thecodingboat.com/"
+});
 
 function App() {
   return (
