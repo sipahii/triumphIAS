@@ -1,5 +1,7 @@
 import "./App.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserHistory } from "history";
+
 import { BrowserRouter } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -19,7 +21,7 @@ import EssayPlanner from "./EssayPlanner";
 import EssayStudyMaterial from "./EssayStudyMaterial";
 import EssayTestSeries from "./EssayTestSeries";
 import EssayTopics from "./EssayTopics";
-import GsPracticeSeries from "./GsPracticeSeries";
+// import GsPracticeSeries from "./GsPracticeSeries";
 import GsPaper1 from "./GsPaper1";
 import GsPaper2 from "./GsPaper2";
 import GsPaper3 from "./GsPaper3";
@@ -46,7 +48,7 @@ import Error from "./404_Error";
 import RootLayout from "./RootLayout";
 import Registration from "./Registation";
 
-const routes = createBrowserRouter([
+const routes = createHashRouter([
   {
     path: "/",
     element: <RootLayout />,
@@ -67,7 +69,7 @@ const routes = createBrowserRouter([
       { path: "/essay-study-material", element: <EssayStudyMaterial /> },
       { path: "/essay-test-series", element: <EssayTestSeries /> },
       { path: "/essay-exams-topics", element: <EssayTopics /> },
-      { path: "/gs-prelims-success-general-series", element: <GsPracticeSeries /> },
+      // { path: "/gs-prelims-success-general-series", element: <GsPracticeSeries /> },
       { path: "/gs-paper1", element: <GsPaper1 /> },
       { path: "/gs-paper2", element: <GsPaper2 /> },
       { path: "/gs-paper3", element: <GsPaper3 /> },
@@ -104,11 +106,11 @@ function App() {
   return (
     <>
       <RouterProvider router={routes} />
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <div className="App">
           <ToastContainer position="top-left" />
         </div>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </>
   );
 }
