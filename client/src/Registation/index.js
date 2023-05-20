@@ -49,19 +49,19 @@ const Registration = (props) => {
       name: formData.name,
       email: formData.email,
       DOB: formData.DOB,
-      price: formData.price,
+      price: price,
       FatherName: formData.FatherName,
       Phone: formData.Phone,
       FatherMobileNumber: formData.FatherMobileNumber,
-      courseName: formData.courseName,
-      ONLINE_OFFLINE: formData.ONLINE_OFFLINE,
+      courseName: course,
+      ONLINE_OFFLINE: onlineOffline,
       Street: formData.Street,
       City: formData.City,
       State: formData.State,
       PinCode: formData.PinCode,
       gender: formData.gender,
     };
-
+debugger
     setUserdata(newData);
   };
 
@@ -75,13 +75,13 @@ const Registration = (props) => {
         <form onSubmit={submitHandler}>
           <div className={Styles.registrationSection}>
             <div className={Styles.registrationSection__regitrationFormArea}>
-              <RegistationForm value={course} disabled="disabled" errClass={userdata.courseName === "" ? Styles.err : ""} id="courseName" labelText="Course Name" inputType="text" onChange={onChangeHandler} />
+              <RegistationForm value={course} disabled="disabled"  id="courseName" labelText="Course Name" inputType="text" onChange={onChangeHandler} />
             </div>
             <div className={Styles.registrationSection__regitrationFormArea}>
-              <RegistationForm value={price} disabled="disabled" errClass={userdata.price === "" ? Styles.err : ""} id="price" labelText="Course Price" inputType="text" onChange={onChangeHandler} />
+              <RegistationForm value={price} disabled="disabled"  id="price" labelText="Course Price" inputType="text" onChange={onChangeHandler} />
             </div>
             <div className={Styles.registrationSection__regitrationFormArea}>
-              <RegistationForm value={onlineOffline} disabled="disabled" errClass={userdata.ONLINE_OFFLINE === "" ? Styles.err : ""} id="ONLINE_OFFLINE" labelText="ONLINE/OFFLINE" inputType="text" onChange={onChangeHandler} />
+              <RegistationForm value={onlineOffline} disabled="disabled"  id="ONLINE_OFFLINE" labelText="ONLINE/OFFLINE" inputType="text" onChange={onChangeHandler} />
             </div>
           </div>
           <RegistrationTittle titlleHead="Registration Details" />
