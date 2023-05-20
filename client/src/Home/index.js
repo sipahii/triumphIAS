@@ -6,6 +6,7 @@ import CampusVideo from "./CampusVideo";
 import CounterShow from "./CounterShow";
 import Feature from "./Feature";
 import ToppersCrousel from "./ToppersCrousel";
+import style from "./index.module.scss";
 
 const Home = () => {
   const [list, setList] = useState([]);
@@ -44,9 +45,11 @@ const Home = () => {
       <Banner />
       <AboutArea />
       <Feature />
-      <ToppersCrousel title="Our Toppers: Sociology" src1="/images/tas1.jpg" src2="/images/tas2.jpg" src3="/images/tas3.jpg" src4="/images/tas5.jpg" src5="/images/tas6.jpg" src6="/images/tas7.jpg" src7="/images/tas4.jpg" />
+      <div className={style.crouselArea}>
+        <ToppersCrousel title="Our Toppers: Sociology" src1="/images/tas1.jpg" src2="/images/tas2.jpg" src3="/images/tas3.jpg" src4="/images/tas5.jpg" src5="/images/tas6.jpg" src6="/images/tas7.jpg" src7="/images/tas4.jpg" />
+        <ToppersCrousel title="Our Toppers: Essay" src1="/images/tae1.jpg" src2="/images/tae2.jpg" src3="/images/tae3.jpg" src7="/images/tae5.jpg" src5="/images/tae6.jpg" src6="/images/tae7.jpg" src4="/images/tae4.jpg" />
+      </div>
       <CampusVideo />
-      <ToppersCrousel title="Our Toppers: Essay" src1="/images/tae1.jpg" src2="/images/tae2.jpg" src3="/images/tae3.jpg" src7="/images/tae5.jpg" src5="/images/tae6.jpg" src6="/images/tae7.jpg" src4="/images/tae4.jpg" />
       <CounterShow />
     </div>
   );
