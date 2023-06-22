@@ -10,8 +10,6 @@ const CounterShow = () => {
           <div className={Styles.counterShow__container__left}>
             <CounterComponent counter="04" counterType="PROFESSIONAL TEACHER" />
             <CounterComponent counter="06" counterType="NEWS COURSES EVERY YEARS" />
-          </div>
-          <div className={Styles.counterShow__container__right}>
             <CounterComponent counter="10K+" counterType="REGISTERED STUDENTS" />
           </div>
         </div>

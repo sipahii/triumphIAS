@@ -78,15 +78,12 @@
       display: flex;
       column-gap: 30px;
       align-items: center;
-      @include if-device(desktop) {
-        flex-wrap: wrap;
-        width: 340px;
-        row-gap: 30px;
-      }
+
       @include if-device(tablet) {
         flex-wrap: wrap;
-        width: 340px;
+        width: 100%;
         row-gap: 30px;
+        justify-content: space-between;
       }
       @include if-device(largephone) {
         flex-wrap: wrap;
@@ -104,6 +101,7 @@
 .wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   padding: 88px 0 100px 0;

@@ -4,7 +4,7 @@ import Styles from "./index.module.scss";
 import ReactOwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import Container from "../../component/Container";
+// import Container from "../../component/Container";
 
 const ToppersCrousel = (props) => {
   const options = {
@@ -18,7 +18,7 @@ const ToppersCrousel = (props) => {
     smartSpeed: 1500,
     responsive: {
       0: {
-        items: 1,
+        items: 2,
       },
       525: {
         items: 3,
@@ -34,7 +34,7 @@ const ToppersCrousel = (props) => {
   return (
     <>
       <div className={Styles.lecturerSection}>
-        <Container>
+        <div className={Styles.lecturerSection__container}>
           <h2>{props.title}</h2>
           <div className={Styles.lecturerSection__container__body}>
             <ReactOwlCarousel className="owl-theme" {...options}>
@@ -61,7 +61,7 @@ const ToppersCrousel = (props) => {
               </div>
             </ReactOwlCarousel>
           </div>
-        </Container>
+        </div>
       </div>
     </>
   );

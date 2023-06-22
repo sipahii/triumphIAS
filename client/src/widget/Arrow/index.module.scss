@@ -1,0 +1,14 @@
+.arrow {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  & > i {
+    font-size: 20px;
+  }
+}

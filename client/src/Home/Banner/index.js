@@ -2,6 +2,7 @@ import React from "react";
 import Styles from "./index.module.scss";
 import ReactOwlCrousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
+import RequestCallback from "../../component/RequestCallback";
 
 const Banner = () => {
   const options = {
@@ -25,10 +26,14 @@ const Banner = () => {
   return (
     <>
       <div className={Styles.mainBanner}>
+        <div className={Styles.mainBanner__bannerImages__form}>
+          <RequestCallback />
+        </div>
         <ReactOwlCrousel className="owl-theme slider" {...options}>
           <div className="item">
             <div className={Styles.mainBanner__bannerImages}>
               <img src="/images/sociology.jpeg" alt="" />
+
               {/* <div className={Styles.mainBanner__bannerImages__content}>
                 <h1 className={Styles.mainBanner__title} id="title1">
                   Best Education For UI Design
@@ -69,6 +74,7 @@ const Banner = () => {
           <div className="item">
             <div className={Styles.mainBanner__bannerImages}>
               <img src="/images/ban3.jpg" alt="" />
+
               {/* <div className={Styles.mainBanner__bannerImages__content}>
                 <h1 className={Styles.mainBanner__title} id="title3">
                   Best Education For PHP

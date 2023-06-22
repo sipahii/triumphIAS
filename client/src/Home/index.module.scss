@@ -1,0 +1,28 @@
+@import "../../public/Style/breakpoints";
+
+.crouselArea {
+  width: 1164px;
+  margin: auto;
+  padding: 88px 0 100px 0;
+
+  @include if-device(smallPhone) {
+    width: 100%;
+    padding: 0 10px;
+  }
+  @include if-device(desktop) {
+    width: 100%;
+    padding: 88px 50px 100px 50px;
+  }
+  @include if-device(tablet) {
+    width: 100%;
+    padding: 88px 50px 100px 50px;
+  }
+  @include if-device(largephone) {
+    width: 100%;
+    padding: 88px 50px 100px 50px;
+  }
+  @include if-device(phone) {
+    width: 100%;
+    padding: 88px 20px 100px 20px;
+  }
+}
