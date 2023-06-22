@@ -9,10 +9,16 @@ import TextArea from "./TextArea";
 import RadioButton from "./radioButton";
 import CommonButton from "./CommonButto";
 import ScrollToTop from "../component/ScrollToTop";
+import UploadField from "../widget/UploadField";
 
 const Registration = (props) => {
   const { course, price, onlineOffline } = props;
   const [userdata, setUserdata] = useState({});
+  const [idImages, setIdImages] = useState();
+  const [genderErr, setGenderErr] = useState(false);
+  const [userImages, setUserImages] = useState();
+  const [userImgErr, setUserImgErr] = useState();
+  const [idImgErr, setIdImgErr] = useState();
   const [disabled, setDisabled] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -29,22 +35,30 @@ const Registration = (props) => {
     State: "",
     PinCode: "",
     gender: "",
+    additionalInfo: "",
   });
 
   const onChangeHandler = (event) => {
+    console.log(event);
     let fieldName = event.target.getAttribute("id");
     let fieldValue = event.target.value;
 
     const newFormData = { ...formData };
 
     newFormData[fieldName] = fieldValue;
-    const isNotEmpty = newFormData.name !== "" && newFormData.price !== "" && newFormData.email.includes("@") && newFormData.DOB !== "" && newFormData.FatherName !== "" && newFormData.Phone.length === 10 && newFormData.FatherMobileNumber.length === 10 && newFormData.courseName !== "" && newFormData.ONLINE_OFFLINE !== "" && newFormData.Street !== "" && newFormData.City !== "" && newFormData.State !== "" && newFormData.PinCode.length === 6 && newFormData.gender !== "";
+
+    const isNotEmpty = newFormData.name !== "" && newFormData.email.includes("@") && newFormData.DOB !== "" && newFormData.FatherName !== "" && newFormData.Phone.length === 10 && newFormData.FatherMobileNumber.length === 10 && newFormData.Street !== "" && newFormData.City !== "" && newFormData.State !== "" && newFormData.PinCode.length === 6 && newFormData.gender !== "" && idImages !== undefined && userImages !== undefined;
+    debugger;
     setFormData(newFormData);
     setDisabled(isNotEmpty);
   };
 
   const submitHandler = (event) => {
     event.preventDefault();
+    setUserImgErr(userImages === undefined ? Styles.err : "");
+    setIdImgErr(idImages === undefined ? Styles.err : "");
+    setGenderErr(formData.gender === "");
+
     let newData = {
       name: formData.name,
       email: formData.email,
@@ -60,9 +74,22 @@ const Registration = (props) => {
       State: formData.State,
       PinCode: formData.PinCode,
       gender: formData.gender,
+      userImg: userImages,
+      idImg: idImages,
+      additionalInfo: formData.additionalInfo,
     };
-debugger
+    // debugger;
     setUserdata(newData);
+  };
+
+  const onUserImgHandler = (e) => {
+    let image = URL.createObjectURL(e.target.files[0]);
+    setUserImages(image);
+  };
+
+  const onIdImgHandler = (e) => {
+    let image = URL.createObjectURL(e.target.files[0]);
+    setIdImages(image);
   };
 
   return (
@@ -75,13 +102,13 @@ debugger
         <form onSubmit={submitHandler}>
           <div className={Styles.registrationSection}>
             <div className={Styles.registrationSection__regitrationFormArea}>
-              <RegistationForm value={course} disabled="disabled"  id="courseName" labelText="Course Name" inputType="text" onChange={onChangeHandler} />
+              <RegistationForm value={course} disabled="disabled" id="courseName" labelText="Course Name" inputType="text" onChange={onChangeHandler} />
             </div>
             <div className={Styles.registrationSection__regitrationFormArea}>
-              <RegistationForm value={price} disabled="disabled"  id="price" labelText="Course Price" inputType="text" onChange={onChangeHandler} />
+              <RegistationForm value={price} disabled="disabled" id="price" labelText="Course Price" inputType="text" onChange={onChangeHandler} />
             </div>
             <div className={Styles.registrationSection__regitrationFormArea}>
-              <RegistationForm value={onlineOffline} disabled="disabled"  id="ONLINE_OFFLINE" labelText="ONLINE/OFFLINE" inputType="text" onChange={onChangeHandler} />
+              <RegistationForm value={onlineOffline} disabled="disabled" id="ONLINE_OFFLINE" labelText="ONLINE/OFFLINE" inputType="text" onChange={onChangeHandler} />
             </div>
           </div>
           <RegistrationTittle titlleHead="Registration Details" />
@@ -90,7 +117,7 @@ debugger
               <RegistationForm errClass={userdata.name === "" ? Styles.err : ""} id="name" labelText="Name" inputType="text" onChange={onChangeHandler} errorMessage={userdata.name === "" ? "message" : ""} />
               <RegistationForm errClass={userdata.email === "" ? Styles.err : ""} id="email" labelText="Email-ID" inputType="email" onChange={onChangeHandler} />
               <RegistationForm errClass={userdata.FatherName === "" ? Styles.err : ""} id="FatherName" labelText="Father Name" inputType="text" onChange={onChangeHandler} />
-              <RadioButton id="gender" errClass={userdata.gender === "" ? Styles.err : ""} onChange={onChangeHandler} />
+              <RadioButton formData={formData} genderErr={genderErr} id="gender" errClass={userdata.gender === "" ? Styles.err : ""} onChange={onChangeHandler} />
             </div>
             <div className={Styles.registrationSection__regitrationFormArea}>
               <RegistationForm errClass={userdata.Phone === "" ? Styles.err : ""} id="Phone" labelText="Phone" inputType="number" onChange={onChangeHandler} />
@@ -112,15 +139,15 @@ debugger
           <RegistrationTittle titlleHead="Upload Documents" />
           <div className={Styles.registrationSection}>
             <div className={Styles.registrationSection__regitrationFormArea}>
-              <RegistationForm id="Image (Max-size: 300kb)jpeg " labelText="Image (Max-size: 300kb)jpeg" inputType="file" />
+              <UploadField id="userImg" errClass={userImgErr} labelText="Image (Max-size: 300kb)jpeg" onChange={onUserImgHandler} />
             </div>
             <div className={Styles.registrationSection__regitrationFormArea}>
-              <RegistationForm id="ID Card (Aadhar Card / VoteroId / Passport) (Max-size: 300kb) jpeg " labelText="ID Card (Aadhar Card / VoteroId / Passport) (Max-size: 300kb) jpeg" inputType="file" />
+              <UploadField id="idImg" errClass={idImgErr} labelText="ID Card (Aadhar Card / VoteroId / Passport) (Max-size: 300kb) jpeg" onChange={onIdImgHandler} />
             </div>
           </div>
           <RegistrationTittle titlleHead="Additional Information Details" />
-          <TextArea lable="Additional Information" labelText="Additional Information" />
-          <CommonButton onClick={submitHandler} buttonText="Next" />
+          <TextArea onChange={onChangeHandler} lable="Additional Information" labelText="Additional Information" />
+          <CommonButton disabled={!disabled ? "disabled" : ""} onClick={submitHandler} buttonText="Next" />
         </form>
       </Container>
     </>

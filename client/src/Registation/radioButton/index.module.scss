@@ -14,6 +14,12 @@
       color: #d70026;
     }
   }
+
+  &__err {
+    color: red;
+    margin-top: 5px;
+  }
+
   &__inputField {
     display: flex;
     align-items: center;
