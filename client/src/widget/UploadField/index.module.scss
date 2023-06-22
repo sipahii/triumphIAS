@@ -1,4 +1,4 @@
-.textAreaSection {
+.formSection {
   font-family: "Roboto", sans-serif;
   margin-bottom: 15px;
   & > label {
@@ -7,15 +7,16 @@
     color: #333333;
     font-weight: 400;
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 15px;
+
     & > span {
-      font-size: 14px;
+      color: #d70026;
     }
   }
-  & > textarea {
-    display: block;
+  &__input {
     width: 100%;
-    height: 150px;
+    display: block;
+    height: 40px;
     border: 1px solid #dcdcdc;
     border-radius: 0;
     box-shadow: none;

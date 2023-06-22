@@ -5,10 +5,10 @@ const TextArea = (props) => {
   return (
     <>
       <div className={Styles.textAreaSection}>
-        <label form={props.lable}>
-          {props.labelText} <span>*</span>
+        <label htmlFor="additionalInfo" form={props.lable}>
+          {props.labelText} <span>(Optional)</span>
         </label>
-        <textarea placeholder={props.textareaPlace}></textarea>
+        <textarea id="additionalInfo" onChange={props.onChange} placeholder={props.textareaPlace}></textarea>
       </div>
     </>
   );

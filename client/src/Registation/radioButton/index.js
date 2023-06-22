@@ -7,14 +7,15 @@ const RadioButton = (props) => {
       <label htmlFor="">
         Gender <span>*</span>
       </label>
-      <div className={Styles.radiobuttonArea__inputField}>
-        <input type="radio" name="Gender" id={props.id} required></input>
+      <div className={`${Styles.radiobuttonArea__inputField}`}>
+        <input onChange={props.onChange} value="Male" type="radio" name="Gender" id={props.id} required></input>
         <span>Male</span>
-        <input type="radio" name="Gender" id={props.id} required></input>
+        <input onChange={props.onChange} value="Female" type="radio" name="Gender" id={props.id} required></input>
         <span>Female</span>
-        <input type="radio" name="Gender" id={props.id} required></input>
+        <input onChange={props.onChange} value="Other" type="radio" name="Gender" id={props.id} required></input>
         <span>Other</span>
       </div>
+      {props.genderErr && <p className={Styles.radiobuttonArea__err}>Please Select Gender!</p>}
     </div>
   );
 };
